@@ -1,0 +1,43 @@
+{
+  "keys": [
+    "drpyS_木偶ᵐ[盘]",
+    "drpyS_采王2024",
+    "drpyS_非凡采集[采]"
+  ],
+  "meta": {
+    "generatedAt": "2026-02-22T05:36:13.796Z",
+    "basedOnReport": "reports/source-checker-batch/20260222-133310/report.json",
+    "summary": {
+      "totalErrorsInReport": 6,
+      "confirmedInvalid": 3,
+      "clientSideOnly": 0,
+      "recoveredOrUnstable": 3
+    }
+  },
+  "sources": [
+    {
+      "key": "drpyS_木偶ᵐ[盘]",
+      "name": "木偶ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_采王2024",
+      "name": "采王2024(DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/采集之王[合]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_非凡采集[采]",
+      "name": "非凡采集[采](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/非凡采集[采]",
+      "reason": "home_and_category_failed_all_retries"
+    }
+  ]
+}

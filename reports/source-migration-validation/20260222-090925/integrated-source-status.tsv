@@ -1,0 +1,26 @@
+key	name	status	api	message
+ext_tvbox_ctf_netflixgc_17e0d0a5	CTF-NetflixGC [外部:tvbox]	error	http://127.0.0.1:7788/api/netflixgc	推荐和分类接口均异常
+ext_tvbox_ctf_ysxq_b1f67587	CTF-播剧影视 [外部:tvbox]	error	http://127.0.0.1:7788/api/ysxq	推荐和分类接口均异常
+ext_tvbox_ctf_cz233_09222274	CTF-cz233 [外部:tvbox]	error	http://127.0.0.1:7788/api/cz233	推荐和分类接口均异常
+ext_tvbox_ctf_bgm_f0785b8a	CTF-bgm [外部:tvbox]	error	http://127.0.0.1:7788/api/bgm	推荐和分类接口均异常
+ext_tvbox_ctf_4kvm_a5f8f6a5	CTF-4kvm [外部:tvbox]	error	http://127.0.0.1:7788/api/kvm4	推荐和分类接口均异常
+ext_tvbox_ctf_libvio_bdc5ef61	CTF-libvio [外部:tvbox]	error	http://127.0.0.1:7788/api/libvio	推荐和分类接口均异常
+ext_tvbox_ctf_kanbot_a05222cd	CTF-kanbot [外部:tvbox]	error	http://127.0.0.1:7788/api/kanbot	推荐和分类接口均异常
+ext_tvbox_ctf_kuangren_5c8adfae	CTF-kuangren [外部:tvbox]	error	http://127.0.0.1:7788/api/kuangren	推荐和分类接口均异常
+ext_tvbox_ctf_dbkk_4e72dab7	CTF-独播库 [外部:tvbox]	error	http://127.0.0.1:7788/api/dbkk	推荐和分类接口均异常
+ext_tvbox_ctf_iyf_78af5d1d	CTF-iyf [外部:tvbox]	error	http://127.0.0.1:7788/api/iyf	推荐和分类接口均异常
+ext_tvbox_ctf_aiyifan_d48ecd55	CTF-aiyifan [外部:tvbox]	error	http://127.0.0.1:7788/api/aiyifan	推荐和分类接口均异常
+ext_tvbox_ctf_allinone_f60924f1	CTF-影视墙 [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_netflixgc_01dd7d22	CTF-NetflixGC [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_ysxq_7d3dd8e7	CTF-播剧影视 [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_cz233_e74f66bc	CTF-cz233 [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_bgm_67f861fc	CTF-bgm [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_4kvm_0d129313	CTF-4kvm [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_libvio_1c262f4f	CTF-libvio [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kanbot_7b4e20d5	CTF-kanbot [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kuangren_fcf0ef8f	CTF-kuangren [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_dbkk_bd03b8b9	CTF-独播库 [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_iyf_86b105e0	CTF-iyf [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_aiyifan_0587a225	CTF-aiyifan [外部:tvbox]	success	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan	4/4 接口正常（play为附加探针）
+ext_tvbox_site_d5ad9e00	🪔聚合┃短剧 [外部:tvbox]	error	https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js	推荐和分类接口均异常
+ext_tvbox_demo_drpy_426eef1c	同构Demo源 [外部:tvbox]	error	http://127.0.0.1:9977/js/lib/drpy2.min.js	推荐和分类接口均异常

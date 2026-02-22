@@ -1,0 +1,3843 @@
+[
+  {
+    "key": "ext_tvbox_ctf_netflixgc_17e0d0a5",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/netflixgc",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/netflixgc",
+      "category": "http://127.0.0.1:7788/api/netflixgc?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/netflixgc?ac=detail&ids=netflixgc_1",
+      "play": "http://127.0.0.1:7788/api/netflixgc?ac=play&id=netflixgc_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/netflixgc",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "netflixgc_1",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:19.684Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=detail&ids=netflixgc_1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "netflixgc_1",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:19.685Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=play&id=netflixgc_1&play=1",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:19.686Z",
+    "manuallyMarked": false,
+    "durationMs": 2
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_b1f67587",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/ysxq",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/ysxq",
+      "category": "http://127.0.0.1:7788/api/ysxq?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/ysxq?ac=detail&ids=ysxq_1",
+      "play": "http://127.0.0.1:7788/api/ysxq?ac=play&id=ysxq_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/ysxq",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "ysxq_1",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=200) fallback_snapshot=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:29:17.285Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=detail&ids=ysxq_1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "ysxq_1",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=200) fallback_snapshot=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:29:17.286Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=play&id=ysxq_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.288Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_09222274",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/cz233",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/cz233",
+      "category": "http://127.0.0.1:7788/api/cz233?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/cz233?ac=detail&ids=cz233_1",
+      "play": "http://127.0.0.1:7788/api/cz233?ac=play&id=cz233_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/cz233",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "cz233_1",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕(2): Scene 01 | Credits",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:29:18.197Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/峡谷.m3u8#线路2$https://v3-fq-tts.fqnovelvod.com/2d89548030722230213b479c537ea9cf/699a872b/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4#线路3$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路4$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=detail&ids=cz233_1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "cz233_1",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕(2): Scene 01 | Credits",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:29:18.199Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/峡谷.m3u8#线路2$https://v3-fq-tts.fqnovelvod.com/2d89548030722230213b479c537ea9cf/699a872b/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4#线路3$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路4$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=play&id=cz233_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:18.201Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_f0785b8a",
+    "name": "CTF-bgm [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/bgm",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/bgm",
+      "category": "http://127.0.0.1:7788/api/bgm?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/bgm?ac=detail&ids=bgm_1",
+      "play": "http://127.0.0.1:7788/api/bgm?ac=play&id=bgm_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/bgm",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "bgm_1",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true count=12 ; 字幕(6): https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/001.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/02.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/03.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/04.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/05.xml",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:29:18.091Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8#线路2$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/02/playlist.m3u8#线路3$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/03/playlist.m3u8#线路4$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/04/playlist.m3u8#线路5$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/05/playlist.m3u8#线路6$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/06/playlist.m3u8#线路7$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/07/playlist.m3u8#线路8$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/01/playlist.m3u8#线路9$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/02/playlist.m3u8#线路10$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/03/playlist.m3u8#线路11$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/04/playlist.m3u8#线路12$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/05/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=detail&ids=bgm_1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "bgm_1",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true count=12 ; 字幕(6): https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/001.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/02.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/03.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/04.xml | https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/05.xml",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:29:18.093Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8#线路2$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/02/playlist.m3u8#线路3$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/03/playlist.m3u8#线路4$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/04/playlist.m3u8#线路5$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/05/playlist.m3u8#线路6$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/06/playlist.m3u8#线路7$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/07/playlist.m3u8#线路8$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/01/playlist.m3u8#线路9$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/02/playlist.m3u8#线路10$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/03/playlist.m3u8#线路11$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/04/playlist.m3u8#线路12$https://ai.girigirilove.net/zijian/oldanime/2026/01/OsananajimitowaLoveComedyniNaranai/05/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=play&id=bgm_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:18.096Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_a5f8f6a5",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kvm4",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kvm4",
+      "category": "http://127.0.0.1:7788/api/kvm4?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kvm4?ac=detail&ids=kvm4_1",
+      "play": "http://127.0.0.1:7788/api/kvm4?ac=play&id=kvm4_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kvm4",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kvm4_1",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕(1): https://4k.danmk.info/api.php?postid=14975.0&action=get_danmuku",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:29:17.207Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://play.kvmplay.org/m3/89cf36e1771766765/60Njk5YTViMmQ3OTMyNCQzNTY3JDEkMTc3MTcyMzU2NQ699a5b2d79321.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=detail&ids=kvm4_1",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kvm4_1",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕(1): https://4k.danmk.info/api.php?postid=14975.0&action=get_danmuku",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:29:17.208Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://play.kvmplay.org/m3/89cf36e1771766765/60Njk5YTViMmQ3OTMyNCQzNTY3JDEkMTc3MTcyMzU2NQ699a5b2d79321.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=play&id=kvm4_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.209Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_bdc5ef61",
+    "name": "CTF-libvio [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/libvio",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/libvio",
+      "category": "http://127.0.0.1:7788/api/libvio?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/libvio?ac=detail&ids=libvio_1",
+      "play": "http://127.0.0.1:7788/api/libvio?ac=play&id=libvio_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/libvio",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "libvio_1",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "local_script_unavailable fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:29:19.319Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=detail&ids=libvio_1",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "libvio_1",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "local_script_unavailable fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:29:19.320Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=play&id=libvio_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:19.322Z",
+    "manuallyMarked": false,
+    "durationMs": 3
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_a05222cd",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kanbot",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kanbot",
+      "category": "http://127.0.0.1:7788/api/kanbot?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kanbot?ac=detail&ids=kanbot_1",
+      "play": "http://127.0.0.1:7788/api/kanbot?ac=play&id=kanbot_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kanbot",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kanbot_1",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:29:18.439Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://v.lzcdn28.com/20260215/8578_a032d144/index.m3u8#线路3$https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8#线路4$https://s1.fengbao9.com/video/2026xinjiangguojichunjielianhuanwanhui/2feaffaa8dfd/index.m3u8#线路5$https://vip.dytt-cinema.com/20260215/49425_d78e4f87/index.m3u8#线路6$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=detail&ids=kanbot_1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kanbot_1",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:29:18.442Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://v.lzcdn28.com/20260215/8578_a032d144/index.m3u8#线路3$https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8#线路4$https://s1.fengbao9.com/video/2026xinjiangguojichunjielianhuanwanhui/2feaffaa8dfd/index.m3u8#线路5$https://vip.dytt-cinema.com/20260215/49425_d78e4f87/index.m3u8#线路6$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=play&id=kanbot_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:18.444Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_5c8adfae",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kuangren",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kuangren",
+      "category": "http://127.0.0.1:7788/api/kuangren?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kuangren?ac=detail&ids=kuangren_1",
+      "play": "http://127.0.0.1:7788/api/kuangren?ac=play&id=kuangren_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kuangren",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kuangren_1",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_dbgE_ok=true ; 字幕(1): https://soul.ezplayer.me/xlin7nCGmZDi7Ter7Cnn5g/pk8/ghsr6mxj/tmwzup/thumbnail.vtt",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:29:19.130Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8#线路2$https://185.237.106.95/v4/xUYd0gD-rabj0PEvsQ5qYA/1771620664/pk8/98dem/master.m3u8?v=1770717509#线路3$https://185.237.106.95/v4/C9Rn1p-H0k4Wz6Zvn1n0yg/1771244727/pk8/98dem/master.m3u8?v=1770717509"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=detail&ids=kuangren_1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "kuangren_1",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_dbgE_ok=true ; 字幕(1): https://soul.ezplayer.me/xlin7nCGmZDi7Ter7Cnn5g/pk8/ghsr6mxj/tmwzup/thumbnail.vtt",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:29:19.132Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8#线路2$https://185.237.106.95/v4/xUYd0gD-rabj0PEvsQ5qYA/1771620664/pk8/98dem/master.m3u8?v=1770717509#线路3$https://185.237.106.95/v4/C9Rn1p-H0k4Wz6Zvn1n0yg/1771244727/pk8/98dem/master.m3u8?v=1770717509"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=play&id=kuangren_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:19.135Z",
+    "manuallyMarked": false,
+    "durationMs": 7
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_4e72dab7",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/dbkk",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/dbkk",
+      "category": "http://127.0.0.1:7788/api/dbkk?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/dbkk?ac=detail&ids=dbkk_1",
+      "play": "http://127.0.0.1:7788/api/dbkk?ac=play&id=dbkk_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/dbkk",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "dbkk_1",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_e2e_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:29:17.406Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=detail&ids=dbkk_1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "dbkk_1",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_e2e_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:29:17.410Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=play&id=dbkk_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.412Z",
+    "manuallyMarked": false,
+    "durationMs": 8
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_78af5d1d",
+    "name": "CTF-iyf [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/iyf",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/iyf",
+      "category": "http://127.0.0.1:7788/api/iyf?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/iyf?ac=detail&ids=iyf_1",
+      "play": "http://127.0.0.1:7788/api/iyf?ac=play&id=iyf_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/iyf",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "iyf_1",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_files_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:18.328Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路3$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/manifest.mpd?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路4$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/chunklist.m3u8?vendtime=1771443214&vhash=TRd5UeeP-WdKrFVfVMukRGKgG-IKEKgPzAT8z7lSoho=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路5$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/manifest.mpd?vendtime=1771443214&vhash=TRd5UeeP-WdKrFVfVMukRGKgG-IKEKgPzAT8z7lSoho=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路6$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771443220&vhash=l_g_KZG0kk933ad3pPud89_-zMN--USSpy6M6Zl8reA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路7$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771443220&vhash=l_g_KZG0kk933ad3pPud89_-zMN--USSpy6M6Zl8reA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路8$https://s1-a1.global-cdn.me/vod/D4260231135-52705.mp4#线路9$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/chunklist.m3u8?vendtime=1771443226&vhash=KmTQ1luqkgZIrrXDhil5HxK719FbCNh_XzhnMyL4QME=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路10$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/manifest.mpd?vendtime=1771443226&vhash=KmTQ1luqkgZIrrXDhil5HxK719FbCNh_XzhnMyL4QME=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路11$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/chunklist.m3u8?vendtime=1771443232&vhash=XSeRnFxdeu6Uf8lcOrqzVHe0PlJgCh9sCzihUxfB-Go=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路12$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/manifest.mpd?vendtime=1771443232&vhash=XSeRnFxdeu6Uf8lcOrqzVHe0PlJgCh9sCzihUxfB-Go=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路13$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/chunklist.m3u8?vendtime=1771443238&vhash=lPWvSC5ri5lduK3yPyhDf64BgMwOW_SZFRbNp3KHhjQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路14$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/manifest.mpd?vendtime=1771443238&vhash=lPWvSC5ri5lduK3yPyhDf64BgMwOW_SZFRbNp3KHhjQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路15$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771443245&vhash=LZ4MYY7tyrYvu8B3W7RLmkPt5noxDsB1NyxXS_yGoQg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路16$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771443245&vhash=LZ4MYY7tyrYvu8B3W7RLmkPt5noxDsB1NyxXS_yGoQg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路17$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/chunklist.m3u8?vendtime=1771443250&vhash=zXKzNwYHhBkarOQwFj9QE6djd2yIVGNVvQKnupRgmT4=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路18$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/manifest.mpd?vendtime=1771443250&vhash=zXKzNwYHhBkarOQwFj9QE6djd2yIVGNVvQKnupRgmT4=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路19$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/chunklist.m3u8?vendtime=1771443256&vhash=UCu5iokpULwBoWG9PxMRSyuPBwi6qjwOsMKxBOKrYps=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路20$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/manifest.mpd?vendtime=1771443256&vhash=UCu5iokpULwBoWG9PxMRSyuPBwi6qjwOsMKxBOKrYps=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路21$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/chunklist.m3u8?vendtime=1771443264&vhash=N_sMP1uKI68NR-RnDTi44ejyMZDdFI6aF69qz10cyVQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路22$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/manifest.mpd?vendtime=1771443264&vhash=N_sMP1uKI68NR-RnDTi44ejyMZDdFI6aF69qz10cyVQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路23$https://s1-a1.global-cdn.me/vod/307A241863-62533.mp4#线路24$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771422273&vhash=l8TCGQ8dBdZAMA1GpkcqwKMVyt1opTTZyqDtwBfwoBc=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路25$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/manifest.mpd?vendtime=1771422273&vhash=l8TCGQ8dBdZAMA1GpkcqwKMVyt1opTTZyqDtwBfwoBc=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路26$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/chunklist.m3u8?vendtime=1771422283&vhash=e4IdLOHwrRo4NwR83sOWJBvgyDUCDb3hTLKzi5hnYvg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路27$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/manifest.mpd?vendtime=1771422283&vhash=e4IdLOHwrRo4NwR83sOWJBvgyDUCDb3hTLKzi5hnYvg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路28$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771422292&vhash=k4Tu-Rkt5raV61TAnXpoXrMtrJYiO9vRMuQ8tmQ6nQY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路29$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771422292&vhash=k4Tu-Rkt5raV61TAnXpoXrMtrJYiO9vRMuQ8tmQ6nQY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路30$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/chunklist.m3u8?vendtime=1771422301&vhash=HCu_y27xsgw4WQktWGsFOCPojbMPtVnmw6bvSMW3Q-I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路31$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/manifest.mpd?vendtime=1771422301&vhash=HCu_y27xsgw4WQktWGsFOCPojbMPtVnmw6bvSMW3Q-I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路32$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/chunklist.m3u8?vendtime=1771422313&vhash=_rm1WoxwGZoSsFPAKvE-om14oRfryo9NI4VQef6ZQPw=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路33$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/manifest.mpd?vendtime=1771422313&vhash=_rm1WoxwGZoSsFPAKvE-om14oRfryo9NI4VQef6ZQPw=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路34$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/chunklist.m3u8?vendtime=1771422322&vhash=E1uuTelsqOQtX1XUypTaTx_Gt-1XAk6gfk5-6q9_ERA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路35$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/manifest.mpd?vendtime=1771422322&vhash=E1uuTelsqOQtX1XUypTaTx_Gt-1XAk6gfk5-6q9_ERA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路36$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771422327&vhash=iGm5TgZZKkEjYlVdfVJjZfvuo3pSHczVxvZ-bTPc56k=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路37$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771422327&vhash=iGm5TgZZKkEjYlVdfVJjZfvuo3pSHczVxvZ-bTPc56k=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路38$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/chunklist.m3u8?vendtime=1771422334&vhash=rs9HBc8RPj9EpSpV_-M9eFfI-kObgz7U5BYRLzPe5JY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路39$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/manifest.mpd?vendtime=1771422334&vhash=rs9HBc8RPj9EpSpV_-M9eFfI-kObgz7U5BYRLzPe5JY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路40$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路41$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/chunklist.m3u8?vendtime=1771422343&vhash=qTQ58KvumN8JmZUwe6sTv9xEleI2tAhgp207yd52N7U=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路42$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/manifest.mpd?vendtime=1771422343&vhash=qTQ58KvumN8JmZUwe6sTv9xEleI2tAhgp207yd52N7U=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路43$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/chunklist.m3u8?vendtime=1771422351&vhash=Lj__T_u_fLXLJ4QumutrU9kqhbeD7eoGkIRVcn4r9_I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路44$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/manifest.mpd?vendtime=1771422351&vhash=Lj__T_u_fLXLJ4QumutrU9kqhbeD7eoGkIRVcn4r9_I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路45$https://s100-e1.cuagainmetargct.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQZ8ACOcnmOc9gMcXgRcHWNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=PwHo2IjqE_mA9nW6vdiMZJEmCM4qh1i-X2c3Epje1kE=&vCustomParameter=0_144.24.69.162_KR_0&lb=1f25ce6ac5944eb430ab70589f1a0415&proxy=Sp4mC2rbCIvZTM5dOMbkRMLqON9dOtGkOsyslZcOc1WMifYNCRgmix2qjpQokZ2vCx8w5p6tjhuvc9WO5hAObp6wiBEmjBSsihemkJEokXSnjxQz7CnC30jPJ4kTtLaQMPbRcTeTMysEhSmbp6tjhuvc9WO5hAObpkwiZIpChSpj3gtjZgtCHSnjxD#线路46$https://s100-e1.etcbbd.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQd1WWefcRcfgPbfYOc1eRbpQu64/chunklist.m3u8?vendtime=1771417850&vhash=yNpOMgfp9OPffJpCwmulwArU91a33CzgfXP9MgaOeso=&vCustomParameter=0_144.24.69.162_KR_0&lb=9d2da05cd91f37d38024fec1e7750ee4&proxy=Sp4mC2rbCIvbT6DYOcGkU7bwV7CnC30jPJ4kPNHZOc9bBdXvUdnpCJ0mBMKnBcLqOs9YPYvuUNfyEPYO61Qoc9SokZ6nCJENF3oydnpCJ0mBMKnBcLqOs9YQ2vuUNA#线路47$https://s100-e1.tfbgeee.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQWc9iS69eP61YS6XQQ69kQ6XSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=oBSi0wI5ARFnpVr1mzCYJEqGGoc7rbTKCNJgJCENQcg=&vCustomParameter=0_144.24.69.162_KR_0&lb=0523e3e1d56d2f6d10bf0e6f8465396e&proxy=Sp4mC2rbCIvqPc9dPMLbBcDlRNnpCJ0mBMKnBdHcOcyyM5XOIvZRsryEPYO61Qoc9SwCp4tlB2miHSnjxQz7CnC30jPJ4kT6PYRtbXOMCkOsyslZcOc1WMifYNEZCnDxomiB8NCRUs1#线路48$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfaPcHWY6Y2P61iOcnQQ69cRcnSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=psRKV3mj3Ug1QckWU3TEAOuxpPZujt0Z22L8PR0HH9U=&vCustomParameter=0_144.24.69.162_KR_0&lb=80cf9fd30e5a174addf843c5b8336a1c&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路49$https://s100-e1.uutesti.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQXcw6R8fWPcncP5faQ6PmP5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=dDbV6LXyFdXUv2cj2kA-ixsPIW6eECygklHzf9Q7YZY=&vCustomParameter=0_144.24.69.162_KR_0&lb=fc9212e8662436a9d0d4e9bd6cf92076&proxy=Sp4mC2rbCIvrTNHbStHfBcDlRNnpCJ0mBMKnBdLrT6LpT6ekOsyslZcOc1WMifYNEhgwChcwDPSnjxQz7CnC30jPJ4kTNLqPNDqR2vZRsryEPYO61Qoc9SwkheokResbp6tj5#线路50$https://s100-e1.uutestf.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQXco6R6fcPcHiQ5fmP61iR5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=zAst-ljFLGvu8rSKJbDnped-CsaeijJhp-1zLL-yMoM=&vCustomParameter=0_144.24.69.162_KR_0&lb=00030eaf59836f210a1afead0ddb02d9&proxy=Sp4mC2rbCIvrTNHbStHcBcDlRNnpCJ0mBMKnBdLrT6LpT6SkOsyslZcOc1WMifYNEhgwChcwD1SnjxQz7CnC30jPJ4kTNLqPNDqQIvZRsryEPYO61Qoc9SwkheokRer5p6tj5#线路51$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbg4X8Y2Sd1aR6XaO5feRc9mO5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=w9s1xawVXDO8T7ox3z9WPdy8RTHW0QYPYavq3Bf_Mz4=&vCustomParameter=0_144.24.69.162_KR_0&lb=93f4852aa57d72d27aecdb556dcadb51&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路52$https://s100-e1.uutestc.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQP72CQ71mScnYRcveMcPeP6nmNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=30EHjnfdmZjyfOk9T5QlLrkjzbI6isOWqWlPkm1tcH8=&vCustomParameter=0_144.24.69.162_KR_0&lb=400712c0f4058181c348431ecc8e2c60&proxy=Sp4mC2rbCIvrTNHbStHZBcDlRNnpCJ0mBMKnBdLrT6LpT6GkOsyslZcOc1WMifYNEhgwChcwCfSnjxQz7CnC30jPJ4kTNLqPNDqPYvZRsryEPYO61Qoc9SwkheokRepbp6tj5#线路53$https://s100-e1.uutestg.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfkS6PiRcvaPcvQO71mO6vSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=6IZdvNeKR9sjI4rm4wZWeHThJkM1Di3Ix3ZOnN0AG8A=&vCustomParameter=0_144.24.69.162_KR_0&lb=44e7cced97844cb1787ac31d899eec63&proxy=Sp4mC2rbCIvrTNHbStHdBcDlRNnpCJ0mBMKnBdLrT6LpT6WkOsyslZcOc1WMifYNEhgwChcwD9SnjxQz7CnC30jPJ4kTNLqPNDqQYvZRsryEPYO61Qoc9SwkheokRerbp6tj5#线路54$https://s100-e1.uutestl.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfcQc1YSeIAOcfYPc1QP6fkO61Ssk1K/chunklist.m3u8?vendtime=1771417850&vhash=742PFqzWOZ4VdzgtqaPNFFgNrSEjk00_J12pf4T2MIw=&vCustomParameter=0_144.24.69.162_KR_0&lb=7b7aa55dda413520bc02a3fcb3d50e20&proxy=Sp4mC2rbCIvrTNHbStHiBcDlRNnpCJ0mBMKnBdLrT6LpT6qkOsyslZcOc1WMifYNEhgwChcwDnSnjxQz7CnC30jPJ4kTNLqPNDqRovZRsryEPYO61Qoc9SwCp4piB2mbp6tj5#线路55$https://s100-e1.etcbbh.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQY6veY8fgQ69cO69QP6fkRcfSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=OIuNrx1f1gdxOhlQkl7HU35vIWr0p2tr9Wah8ar9bmU=&vCustomParameter=0_144.24.69.162_KR_0&lb=476206f296041ac7e187b3be802f1aa1&proxy=Sp4mC2rbCIvbT6DYOcWkU7bwV7CnC30jPJ4kPNHZOc9fBdXvUdnpCJ0mBMKnBcLqOs9YQYvuUNfyEPYO61Qoc9SmiB2oCBembpmyNfyEPYO61Qoc9SnCJ4oCBembpmyNA#线路56$https://s100-e1.wudifenghuolunb.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbg4WcXeOc1eQ6vYMcvkRcngNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=2jYn7BctY07MlCWeN5rRzzT_QLb8WIOXXSyyJnYznaE=&vCustomParameter=0_144.24.69.162_KR_0&lb=ebcf5c10533b9ac45ad78e38c2ad281c&proxy=Sp4mC2rbCIvtTMHfPcLkPsXrRsnrRc8kOsyslZcOc1WMifYNExgoDBCojpEqEhUsEhSnbp6tjhuvc9WO5hAObpkwiZIpChSpj3gtjZgtCXSnjxQz7CnC30jPJ4kTtLaQMPbRcTeTMysEhSobp6tjhuvc9WO5hAObp6wiJ6mkheqipgs5p6tj5#线路57$https://s100-e1.uutesti.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQ8PiWe9iWd1eRcfWMcXaR6faNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=x3dOONOdhBovjI6nQS3aaS2dbn2Mnxka0KrzdZ8-V9U=&vCustomParameter=0_144.24.69.162_KR_0&lb=9c08220952b18fbf581560260d916336&proxy=Sp4mC2rbCIvrTNHbStHfBcDlRNnpCJ0mBMKnBdLrT6LpT6ekOsyslZcOc1WMifYNEhgwChcwDPSnjxQz7CnC30jPJ4kTNLqPNDqR2vZRsryEPYO61Qoc9SwkheokResbp6tj5#线路58$https://s100-e1.cubdautiful.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQR6Y2Y6vcOcfmS71QP6ngQ71Ssk1K/chunklist.m3u8?vendtime=1771417850&vhash=v4mTLoXqJlzJU5rnNHR9YJTXC5whFBg2xPeRlkCNrIw=&vCustomParameter=0_144.24.69.162_KR_0&lb=328d052710eee4474cf56fe56da15f14&proxy=Sp4mC2rbCIvZTM9aONLqQMPrR2vZRsryEPYO61Qoc9SwkheokRembp6tjhuvc9WO5hAObpgwkZAvkZ4NCRUslZcOc1WMifYNEhgwChcwCPSnjxQz7CnC30jPJ4kTNLqPNDqP2vZRsD#线路59$https://s100-e1.uuteste.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfoSeQAOc1YR69QR6vmR6PSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=1XqbsIueAueGJunQi9tQRthKso2b3PAcWwvrmnVV728=&vCustomParameter=0_144.24.69.162_KR_0&lb=93d1096df753778e4f0cde7324920b2d&proxy=Sp4mC2rbCIvrTNHbStHbBcDlRNnpCJ0mBMKnBdLrT6LpT6OkOsyslZcOc1WMifYNEhgwChcwCvSnjxQz7CnC30jPJ4kTNLqPNDqQ2vZRsryEPYO61Qoc9SwkheokReqbp6tj5#线路60$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQQ6I2O6fWS6HQP6niQ6HSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=aH7FJfo6z9wrQHLpHVYdm8m20yG1HaY25pTwqp4uWfw=&vCustomParameter=0_144.24.69.162_KR_0&lb=caedac45a555e7adb31992cd651be8ea&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路61$https://s100-e1.cobiae.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQOefaY8nmQ6XiO5fYQc9cO5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=swdLssREFUuy3UvV71wIZxSZ16ubJdPqkjIlyQOXoKM=&vCustomParameter=0_144.24.69.162_KR_0&lb=1ea653aae1308b0893c1c7b9ef16d1cb&proxy=Sp4mC2rbCIvZRs9fOMKkU7bwV7CnC30jPJ4kOtLXPs5fRcrbT65oPs5qBcDlRNnpCJ0mBMKnBcDrOMTXQMvjPNHXScTYT2vZRsryEPYO61Qoc9Snkh2piBItDhAwCBapiReNCRUslZcOc1WMifYNCRgmix2qjpQokZ2vCx8w5p6tj5#线路62$https://s100-e1.tfboyaae.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQcncYc9WQ6PmP6PcMc1cR69kNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=H9ukqk1FNPrjnkKacJGAyFOKbIbDMic19badcIiIOhE=&vCustomParameter=0_144.24.69.162_KR_0&lb=a096ff7294fa631e522475d5674b9670&proxy=Sp4mC2rbCIvqPc9lUM5XPIvZRsryEPYO61Qoc9SokZ6nCJ2NF3oydnpCJ0mBMKnBcLqOs9YOYvuUNfyEPYO61Qoc9SokZ6nCJ6NF3oydnpCJ0mBMKnBcLqOs9YP2vuUNA#线路63$https://s100-e1.ddddata.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfkO8PgRc9kPcHiMcngP6PmNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=rUstu_N0IiABzCUwZPEbcqzYxl9tbHA4CyuqZeiOVkE=&vCustomParameter=0_144.24.69.162_KR_0&lb=7c34f88c5556467be9d7fcb3947ecf5a&proxy=Sp4mC2rbCIvaP6HaONHXBdXvUdnpCJ0mBMKnBcLbPMHXT64kU7bwV7CnC30jPJ4kOsynDB2mbpmyNfyEPYO61Qoc9Snjx4qiB4NF3oydnpCJ0mBMKnBcDlOcbXOovuUNA#线路64$https://s100-e1.tfboyaad.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQYd1gS6Q8XcvkO69iMcXYPc1YNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=TZ1Q0r-tmsJXHEPL7IgsJXsdGVf9NepvLHtRU5EIY8o=&vCustomParameter=0_144.24.69.162_KR_0&lb=71fd22a762d31035f403c57b9b7cc604&proxy=Sp4mC2rbCIvqPc9lUM5XP2vZRsryEPYO61Qoc9SwCp4tlB2mifSnjxQz7CnC30jPJ4kPNHZOc9XBdXvUdnpCJ0mBMKnBcLqOs9YOYvuUNfyEPYO61Qoc9SokZ6nCJ6NF3oy2"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=detail&ids=iyf_1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "iyf_1",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_files_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:18.331Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路3$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/manifest.mpd?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路4$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/chunklist.m3u8?vendtime=1771443214&vhash=TRd5UeeP-WdKrFVfVMukRGKgG-IKEKgPzAT8z7lSoho=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路5$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/manifest.mpd?vendtime=1771443214&vhash=TRd5UeeP-WdKrFVfVMukRGKgG-IKEKgPzAT8z7lSoho=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路6$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771443220&vhash=l_g_KZG0kk933ad3pPud89_-zMN--USSpy6M6Zl8reA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路7$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771443220&vhash=l_g_KZG0kk933ad3pPud89_-zMN--USSpy6M6Zl8reA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路8$https://s1-a1.global-cdn.me/vod/D4260231135-52705.mp4#线路9$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/chunklist.m3u8?vendtime=1771443226&vhash=KmTQ1luqkgZIrrXDhil5HxK719FbCNh_XzhnMyL4QME=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路10$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/manifest.mpd?vendtime=1771443226&vhash=KmTQ1luqkgZIrrXDhil5HxK719FbCNh_XzhnMyL4QME=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路11$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/chunklist.m3u8?vendtime=1771443232&vhash=XSeRnFxdeu6Uf8lcOrqzVHe0PlJgCh9sCzihUxfB-Go=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路12$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/manifest.mpd?vendtime=1771443232&vhash=XSeRnFxdeu6Uf8lcOrqzVHe0PlJgCh9sCzihUxfB-Go=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路13$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/chunklist.m3u8?vendtime=1771443238&vhash=lPWvSC5ri5lduK3yPyhDf64BgMwOW_SZFRbNp3KHhjQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路14$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/manifest.mpd?vendtime=1771443238&vhash=lPWvSC5ri5lduK3yPyhDf64BgMwOW_SZFRbNp3KHhjQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路15$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771443245&vhash=LZ4MYY7tyrYvu8B3W7RLmkPt5noxDsB1NyxXS_yGoQg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路16$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771443245&vhash=LZ4MYY7tyrYvu8B3W7RLmkPt5noxDsB1NyxXS_yGoQg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路17$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/chunklist.m3u8?vendtime=1771443250&vhash=zXKzNwYHhBkarOQwFj9QE6djd2yIVGNVvQKnupRgmT4=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路18$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/manifest.mpd?vendtime=1771443250&vhash=zXKzNwYHhBkarOQwFj9QE6djd2yIVGNVvQKnupRgmT4=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路19$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/chunklist.m3u8?vendtime=1771443256&vhash=UCu5iokpULwBoWG9PxMRSyuPBwi6qjwOsMKxBOKrYps=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路20$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/manifest.mpd?vendtime=1771443256&vhash=UCu5iokpULwBoWG9PxMRSyuPBwi6qjwOsMKxBOKrYps=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路21$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/chunklist.m3u8?vendtime=1771443264&vhash=N_sMP1uKI68NR-RnDTi44ejyMZDdFI6aF69qz10cyVQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路22$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/manifest.mpd?vendtime=1771443264&vhash=N_sMP1uKI68NR-RnDTi44ejyMZDdFI6aF69qz10cyVQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路23$https://s1-a1.global-cdn.me/vod/307A241863-62533.mp4#线路24$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771422273&vhash=l8TCGQ8dBdZAMA1GpkcqwKMVyt1opTTZyqDtwBfwoBc=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路25$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/manifest.mpd?vendtime=1771422273&vhash=l8TCGQ8dBdZAMA1GpkcqwKMVyt1opTTZyqDtwBfwoBc=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路26$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/chunklist.m3u8?vendtime=1771422283&vhash=e4IdLOHwrRo4NwR83sOWJBvgyDUCDb3hTLKzi5hnYvg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路27$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-02-013C69BFD.mp4/manifest.mpd?vendtime=1771422283&vhash=e4IdLOHwrRo4NwR83sOWJBvgyDUCDb3hTLKzi5hnYvg=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=09adf3f7b2587c28d9df33013749bbb3&us=1&proxy=SpOjPJ4kPsLkPN9XR6DaRYvZRsryEPiMifYNDpAxkxoniZSNCRUslZcR5hAObpSokxoxE32NCRUslZcR5hAObpSokxoxE38NCRUslZcR5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路28$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771422292&vhash=k4Tu-Rkt5raV61TAnXpoXrMtrJYiO9vRMuQ8tmQ6nQY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路29$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771422292&vhash=k4Tu-Rkt5raV61TAnXpoXrMtrJYiO9vRMuQ8tmQ6nQY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路30$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/chunklist.m3u8?vendtime=1771422301&vhash=HCu_y27xsgw4WQktWGsFOCPojbMPtVnmw6bvSMW3Q-I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路31$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-04-01AFFECF4.mp4/manifest.mpd?vendtime=1771422301&vhash=HCu_y27xsgw4WQktWGsFOCPojbMPtVnmw6bvSMW3Q-I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=1133cbf308ff925316b2c0d32ff8aeaf&us=1&proxy=SpOjPJ4kOsnlTMHfRtCkTcbmV7CsBMKnBcDiRtLaRM5ZBdPfS7npDYrbCIvZR6ywiZ6tjxMNEpIuFZcR5hAObp6sDxgoCJOmjpMNEpIuFZcR5hAObp6sDxgoDZIt5piqk0&proxyize=5#线路32$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/chunklist.m3u8?vendtime=1771422313&vhash=_rm1WoxwGZoSsFPAKvE-om14oRfryo9NI4VQef6ZQPw=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路33$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-05-03398D113.mp4/manifest.mpd?vendtime=1771422313&vhash=_rm1WoxwGZoSsFPAKvE-om14oRfryo9NI4VQef6ZQPw=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=7b18b38334f28d0b663820c9d855ed3d&us=1&proxy=Sp8jPJ4kPNHZOc9YBdXvUdnpCYrbCIvbT6DYOcCkU7bwV7CoBMKnBcLqOs9YP2vuUNfyEPaMifYNCheniJ4obpmyNfyEPaMifYNCheniJ4p5pmyNA&proxyize=5#线路34$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/chunklist.m3u8?vendtime=1771422322&vhash=E1uuTelsqOQtX1XUypTaTx_Gt-1XAk6gfk5-6q9_ERA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路35$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-06-01758DACE.mp4/manifest.mpd?vendtime=1771422322&vhash=E1uuTelsqOQtX1XUypTaTx_Gt-1XAk6gfk5-6q9_ERA=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=8f83f0f0e5267097d7b4ddcdae6a6124&us=1&proxy=Sp8jPJ4kON9bOdbqPIvuUNfyEPaMifYNER4miRIqbp6tjhuvcHQoc9SnDBexiBooiBeNCRUslZcP5hAObp4yNHtRsTbRcLoOMmkOsyslZcP5hAObpeqjhAuEJAnihINCRUs1&proxyize=5#线路36$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771422327&vhash=iGm5TgZZKkEjYlVdfVJjZfvuo3pSHczVxvZ-bTPc56k=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路37$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771422327&vhash=iGm5TgZZKkEjYlVdfVJjZfvuo3pSHczVxvZ-bTPc56k=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路38$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/chunklist.m3u8?vendtime=1771422334&vhash=rs9HBc8RPj9EpSpV_-M9eFfI-kObgz7U5BYRLzPe5JY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路39$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-08-030B7A7A4.mp4/manifest.mpd?vendtime=1771422334&vhash=rs9HBc8RPj9EpSpV_-M9eFfI-kObgz7U5BYRLzPe5JY=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a9bfb7c0a7f7d5a7fd0649f0b6f860ca&us=1&proxy=Sp8jPJ4kT6PYPs9YOYvZRsryEPaMifYNEZCnCx6niPSnjxQz7CoBMKnBdHcOcTaP6GkOsyslZcP5hAObpepCJEoihANCRUslZcP5hAObpEojpAvCBOniZSNCRUs1&proxyize=5#线路40$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路41$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/chunklist.m3u8?vendtime=1771422343&vhash=qTQ58KvumN8JmZUwe6sTv9xEleI2tAhgp207yd52N7U=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路42$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-09-009AC3D92.mp4/manifest.mpd?vendtime=1771422343&vhash=qTQ58KvumN8JmZUwe6sTv9xEleI2tAhgp207yd52N7U=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=ea8e2d02753873084e6b74e0da35f289&us=1&proxy=Sp8jPJ4kT6PYPsDZOovZRsryEPaMifYNEZCnCx8oCXSnjxQz7CoBMKnBdHcOcTbPMKkOsyslZcP5hAObpEojpAvCBOniZSNCRUslZcP5hAObpSokxkyMDaRYvZRsD&proxyize=5#线路43$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/chunklist.m3u8?vendtime=1771422351&vhash=Lj__T_u_fLXLJ4QumutrU9kqhbeD7eoGkIRVcn4r9_I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路44$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-10-03640C7AE.mp4/manifest.mpd?vendtime=1771422351&vhash=Lj__T_u_fLXLJ4QumutrU9kqhbeD7eoGkIRVcn4r9_I=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=27c0cf4f4387d1c70b78c21a086b213c&us=1&proxy=Sp8jPJ4kOsnlTMHcRt9cTMukTcbmV7CoBMKnBcDiRtLaQcyrDvSxDBWz7CoBMKnBcDiRtLaOsytjXSxDBWz7CoBMKnBcDiRtLaSsXbQMukTcbmV7CoBMKnBdHcOcyyM5XOIvZRsD&proxyize=5#线路45$https://s100-e1.cuagainmetargct.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQZ8ACOcnmOc9gMcXgRcHWNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=PwHo2IjqE_mA9nW6vdiMZJEmCM4qh1i-X2c3Epje1kE=&vCustomParameter=0_144.24.69.162_KR_0&lb=1f25ce6ac5944eb430ab70589f1a0415&proxy=Sp4mC2rbCIvZTM5dOMbkRMLqON9dOtGkOsyslZcOc1WMifYNCRgmix2qjpQokZ2vCx8w5p6tjhuvc9WO5hAObp6wiBEmjBSsihemkJEokXSnjxQz7CnC30jPJ4kTtLaQMPbRcTeTMysEhSmbp6tjhuvc9WO5hAObpkwiZIpChSpj3gtjZgtCHSnjxD#线路46$https://s100-e1.etcbbd.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQd1WWefcRcfgPbfYOc1eRbpQu64/chunklist.m3u8?vendtime=1771417850&vhash=yNpOMgfp9OPffJpCwmulwArU91a33CzgfXP9MgaOeso=&vCustomParameter=0_144.24.69.162_KR_0&lb=9d2da05cd91f37d38024fec1e7750ee4&proxy=Sp4mC2rbCIvbT6DYOcGkU7bwV7CnC30jPJ4kPNHZOc9bBdXvUdnpCJ0mBMKnBcLqOs9YPYvuUNfyEPYO61Qoc9SokZ6nCJENF3oydnpCJ0mBMKnBcLqOs9YQ2vuUNA#线路47$https://s100-e1.tfbgeee.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQWc9iS69eP61YS6XQQ69kQ6XSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=oBSi0wI5ARFnpVr1mzCYJEqGGoc7rbTKCNJgJCENQcg=&vCustomParameter=0_144.24.69.162_KR_0&lb=0523e3e1d56d2f6d10bf0e6f8465396e&proxy=Sp4mC2rbCIvqPc9dPMLbBcDlRNnpCJ0mBMKnBdHcOcyyM5XOIvZRsryEPYO61Qoc9SwCp4tlB2miHSnjxQz7CnC30jPJ4kT6PYRtbXOMCkOsyslZcOc1WMifYNEZCnDxomiB8NCRUs1#线路48$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfaPcHWY6Y2P61iOcnQQ69cRcnSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=psRKV3mj3Ug1QckWU3TEAOuxpPZujt0Z22L8PR0HH9U=&vCustomParameter=0_144.24.69.162_KR_0&lb=80cf9fd30e5a174addf843c5b8336a1c&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路49$https://s100-e1.uutesti.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQXcw6R8fWPcncP5faQ6PmP5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=dDbV6LXyFdXUv2cj2kA-ixsPIW6eECygklHzf9Q7YZY=&vCustomParameter=0_144.24.69.162_KR_0&lb=fc9212e8662436a9d0d4e9bd6cf92076&proxy=Sp4mC2rbCIvrTNHbStHfBcDlRNnpCJ0mBMKnBdLrT6LpT6ekOsyslZcOc1WMifYNEhgwChcwDPSnjxQz7CnC30jPJ4kTNLqPNDqR2vZRsryEPYO61Qoc9SwkheokResbp6tj5#线路50$https://s100-e1.uutestf.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQXco6R6fcPcHiQ5fmP61iR5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=zAst-ljFLGvu8rSKJbDnped-CsaeijJhp-1zLL-yMoM=&vCustomParameter=0_144.24.69.162_KR_0&lb=00030eaf59836f210a1afead0ddb02d9&proxy=Sp4mC2rbCIvrTNHbStHcBcDlRNnpCJ0mBMKnBdLrT6LpT6SkOsyslZcOc1WMifYNEhgwChcwD1SnjxQz7CnC30jPJ4kTNLqPNDqQIvZRsryEPYO61Qoc9SwkheokRer5p6tj5#线路51$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbg4X8Y2Sd1aR6XaO5feRc9mO5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=w9s1xawVXDO8T7ox3z9WPdy8RTHW0QYPYavq3Bf_Mz4=&vCustomParameter=0_144.24.69.162_KR_0&lb=93f4852aa57d72d27aecdb556dcadb51&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路52$https://s100-e1.uutestc.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQP72CQ71mScnYRcveMcPeP6nmNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=30EHjnfdmZjyfOk9T5QlLrkjzbI6isOWqWlPkm1tcH8=&vCustomParameter=0_144.24.69.162_KR_0&lb=400712c0f4058181c348431ecc8e2c60&proxy=Sp4mC2rbCIvrTNHbStHZBcDlRNnpCJ0mBMKnBdLrT6LpT6GkOsyslZcOc1WMifYNEhgwChcwCfSnjxQz7CnC30jPJ4kTNLqPNDqPYvZRsryEPYO61Qoc9SwkheokRepbp6tj5#线路53$https://s100-e1.uutestg.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfkS6PiRcvaPcvQO71mO6vSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=6IZdvNeKR9sjI4rm4wZWeHThJkM1Di3Ix3ZOnN0AG8A=&vCustomParameter=0_144.24.69.162_KR_0&lb=44e7cced97844cb1787ac31d899eec63&proxy=Sp4mC2rbCIvrTNHbStHdBcDlRNnpCJ0mBMKnBdLrT6LpT6WkOsyslZcOc1WMifYNEhgwChcwD9SnjxQz7CnC30jPJ4kTNLqPNDqQYvZRsryEPYO61Qoc9SwkheokRerbp6tj5#线路54$https://s100-e1.uutestl.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfcQc1YSeIAOcfYPc1QP6fkO61Ssk1K/chunklist.m3u8?vendtime=1771417850&vhash=742PFqzWOZ4VdzgtqaPNFFgNrSEjk00_J12pf4T2MIw=&vCustomParameter=0_144.24.69.162_KR_0&lb=7b7aa55dda413520bc02a3fcb3d50e20&proxy=Sp4mC2rbCIvrTNHbStHiBcDlRNnpCJ0mBMKnBdLrT6LpT6qkOsyslZcOc1WMifYNEhgwChcwDnSnjxQz7CnC30jPJ4kTNLqPNDqRovZRsryEPYO61Qoc9SwCp4piB2mbp6tj5#线路55$https://s100-e1.etcbbh.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQY6veY8fgQ69cO69QP6fkRcfSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=OIuNrx1f1gdxOhlQkl7HU35vIWr0p2tr9Wah8ar9bmU=&vCustomParameter=0_144.24.69.162_KR_0&lb=476206f296041ac7e187b3be802f1aa1&proxy=Sp4mC2rbCIvbT6DYOcWkU7bwV7CnC30jPJ4kPNHZOc9fBdXvUdnpCJ0mBMKnBcLqOs9YQYvuUNfyEPYO61Qoc9SmiB2oCBembpmyNfyEPYO61Qoc9SnCJ4oCBembpmyNA#线路56$https://s100-e1.wudifenghuolunb.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbg4WcXeOc1eQ6vYMcvkRcngNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=2jYn7BctY07MlCWeN5rRzzT_QLb8WIOXXSyyJnYznaE=&vCustomParameter=0_144.24.69.162_KR_0&lb=ebcf5c10533b9ac45ad78e38c2ad281c&proxy=Sp4mC2rbCIvtTMHfPcLkPsXrRsnrRc8kOsyslZcOc1WMifYNExgoDBCojpEqEhUsEhSnbp6tjhuvc9WO5hAObpkwiZIpChSpj3gtjZgtCXSnjxQz7CnC30jPJ4kTtLaQMPbRcTeTMysEhSobp6tjhuvc9WO5hAObp6wiJ6mkheqipgs5p6tj5#线路57$https://s100-e1.uutesti.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQ8PiWe9iWd1eRcfWMcXaR6faNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=x3dOONOdhBovjI6nQS3aaS2dbn2Mnxka0KrzdZ8-V9U=&vCustomParameter=0_144.24.69.162_KR_0&lb=9c08220952b18fbf581560260d916336&proxy=Sp4mC2rbCIvrTNHbStHfBcDlRNnpCJ0mBMKnBdLrT6LpT6ekOsyslZcOc1WMifYNEhgwChcwDPSnjxQz7CnC30jPJ4kTNLqPNDqR2vZRsryEPYO61Qoc9SwkheokResbp6tj5#线路58$https://s100-e1.cubdautiful.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsnfTcLVRcLtSoyiAvQR6Y2Y6vcOcfmS71QP6ngQ71Ssk1K/chunklist.m3u8?vendtime=1771417850&vhash=v4mTLoXqJlzJU5rnNHR9YJTXC5whFBg2xPeRlkCNrIw=&vCustomParameter=0_144.24.69.162_KR_0&lb=328d052710eee4474cf56fe56da15f14&proxy=Sp4mC2rbCIvZTM9aONLqQMPrR2vZRsryEPYO61Qoc9SwkheokRembp6tjhuvc9WO5hAObpgwkZAvkZ4NCRUslZcOc1WMifYNEhgwChcwCPSnjxQz7CnC30jPJ4kTNLqPNDqP2vZRsD#线路59$https://s100-e1.uuteste.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfoSeQAOc1YR69QR6vmR6PSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=1XqbsIueAueGJunQi9tQRthKso2b3PAcWwvrmnVV728=&vCustomParameter=0_144.24.69.162_KR_0&lb=93d1096df753778e4f0cde7324920b2d&proxy=Sp4mC2rbCIvrTNHbStHbBcDlRNnpCJ0mBMKnBdLrT6LpT6OkOsyslZcOc1WMifYNEhgwChcwCvSnjxQz7CnC30jPJ4kTNLqPNDqQ2vZRsryEPYO61Qoc9SwkheokReqbp6tj5#线路60$https://s100-e1.etcbbc.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQQ6I2O6fWS6HQP6niQ6HSsk1K/chunklist.m3u8?vendtime=1771417850&vhash=aH7FJfo6z9wrQHLpHVYdm8m20yG1HaY25pTwqp4uWfw=&vCustomParameter=0_144.24.69.162_KR_0&lb=caedac45a555e7adb31992cd651be8ea&proxy=Sp4mC2rbCIvbT6DYOcCkU7bwV7CnC30jPJ4kPNHZOc9aBdXvUdnpCJ0mBMKnBcLqOs9YPIvuUNfyEPYO61Qoc9SokZ6nCJCNF3oydnpCJ0mBMKnBcLqOs9YPovuUNA#线路61$https://s100-e1.cobiae.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQOefaY8nmQ6XiO5fYQc9cO5pQu64/chunklist.m3u8?vendtime=1771417850&vhash=swdLssREFUuy3UvV71wIZxSZ16ubJdPqkjIlyQOXoKM=&vCustomParameter=0_144.24.69.162_KR_0&lb=1ea653aae1308b0893c1c7b9ef16d1cb&proxy=Sp4mC2rbCIvZRs9fOMKkU7bwV7CnC30jPJ4kOtLXPs5fRcrbT65oPs5qBcDlRNnpCJ0mBMKnBcDrOMTXQMvjPNHXScTYT2vZRsryEPYO61Qoc9Snkh2piBItDhAwCBapiReNCRUslZcOc1WMifYNCRgmix2qjpQokZ2vCx8w5p6tj5#线路62$https://s100-e1.tfboyaae.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsbsRsHVRcLtSoyiAvQQcncYc9WQ6PmP6PcMc1cR69kNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=H9ukqk1FNPrjnkKacJGAyFOKbIbDMic19badcIiIOhE=&vCustomParameter=0_144.24.69.162_KR_0&lb=a096ff7294fa631e522475d5674b9670&proxy=Sp4mC2rbCIvqPc9lUM5XPIvZRsryEPYO61Qoc9SokZ6nCJ2NF3oydnpCJ0mBMKnBcLqOs9YOYvuUNfyEPYO61Qoc9SokZ6nCJ6NF3oydnpCJ0mBMKnBcLqOs9YP2vuUNA#线路63$https://s100-e1.ddddata.xyz/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBtPlP5ytChkvbwmhbfkO8PgRc9kPcHiMcngP6PmNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=rUstu_N0IiABzCUwZPEbcqzYxl9tbHA4CyuqZeiOVkE=&vCustomParameter=0_144.24.69.162_KR_0&lb=7c34f88c5556467be9d7fcb3947ecf5a&proxy=Sp4mC2rbCIvaP6HaONHXBdXvUdnpCJ0mBMKnBcLbPMHXT64kU7bwV7CnC30jPJ4kOsynDB2mbpmyNfyEPYO61Qoc9Snjx4qiB4NF3oydnpCJ0mBMKnBcDlOcbXOovuUNA#线路64$https://s100-e1.tfboyaad.com/ppotb62-S71lT2yliZApDBSvkYzBsrmD3fpCJ0mBsXsRsHVRcLtSoyiAvQYd1gS6Q8XcvkO69iMcXYPc1YNDhWQ0/chunklist.m3u8?vendtime=1771417850&vhash=TZ1Q0r-tmsJXHEPL7IgsJXsdGVf9NepvLHtRU5EIY8o=&vCustomParameter=0_144.24.69.162_KR_0&lb=71fd22a762d31035f403c57b9b7cc604&proxy=Sp4mC2rbCIvqPc9lUM5XP2vZRsryEPYO61Qoc9SwCp4tlB2mifSnjxQz7CnC30jPJ4kPNHZOc9XBdXvUdnpCJ0mBMKnBcLqOs9YOYvuUNfyEPYO61Qoc9SokZ6nCJ6NF3oy2"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=play&id=iyf_1&play=1",
+        "status": 200,
+        "durationMs": 0,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:18.333Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_d48ecd55",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/aiyifan",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/aiyifan",
+      "category": "http://127.0.0.1:7788/api/aiyifan?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/aiyifan?ac=detail&ids=aiyifan_1",
+      "play": "http://127.0.0.1:7788/api/aiyifan?ac=play&id=aiyifan_1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/aiyifan",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "aiyifan_1",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_files_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:18.029Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路3$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路4$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437770&vhash=d3JfdX7xHjDj-yo8OcFcpMFB5TJGHOI6Jsa9kpHR0mo=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路5$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771437770&vhash=d3JfdX7xHjDj-yo8OcFcpMFB5TJGHOI6Jsa9kpHR0mo=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路6$https://s1-a1.global-cdn.me/vod/141B56583-77253.mp4#线路7$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771439099&vhash=nTul5RgWaB3erVSYnLmYS8U-eJnYylR8a-GYx9oOjBQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路8$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771439099&vhash=nTul5RgWaB3erVSYnLmYS8U-eJnYylR8a-GYx9oOjBQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路9$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771439207&vhash=5VfpIlf2jAMFIJYKFS9G-ZGLTF-wrOHPcqC1xW7rVEk=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路10$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771439207&vhash=5VfpIlf2jAMFIJYKFS9G-ZGLTF-wrOHPcqC1xW7rVEk=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路11$https://global.dudupro.com/s8/ppot/_definst_/mp4:s16/ivod/lxj-sxfysmfsd1j-07-0283527D0.mp4/chunklist.m3u8?vendtime=1771439208&vhash=zq747nVM2mGoKoqmsJmFiBo7wANWPLfRulHY2ritFog=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a414b94f1693481b1a0310cfabfb81ae&us=1&proxy=SpWjPJ4kT6bjPN1oPMDbQIvZRsryEPmMifYNEx2yNHlPsytCfSnjxQz7CuBMKnBcHbRcbbStGkOsyslZcS5hAObp8ojpeqkRAvkXSnjxQz7CuBMKnBcHlOMrfRdTeRsnbBcDlR1&proxyize=5#线路12$https://global.dudupro.com/s8/ppot/_definst_/mp4:s16/ivod/lxj-sxfysmfsd1j-07-0283527D0.mp4/manifest.mpd?vendtime=1771439208&vhash=zq747nVM2mGoKoqmsJmFiBo7wANWPLfRulHY2ritFog=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a414b94f1693481b1a0310cfabfb81ae&us=1&proxy=SpWjPJ4kT6bjPN1oPMDbQIvZRsryEPmMifYNEx2yNHlPsytCfSnjxQz7CuBMKnBcHbRcbbStGkOsyslZcS5hAObp8ojpeqkRAvkXSnjxQz7CuBMKnBcHlOMrfRdTeRsnbBcDlR1&proxyize=5#线路13$https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1#线路14$https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1#线路15$https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1#线路16$https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1#线路17$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路18$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=detail&ids=aiyifan_1",
+        "status": 200,
+        "durationMs": 2,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "aiyifan_1",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "snapshot_files_ok=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:18.031Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路3$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路4$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437770&vhash=d3JfdX7xHjDj-yo8OcFcpMFB5TJGHOI6Jsa9kpHR0mo=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路5$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771437770&vhash=d3JfdX7xHjDj-yo8OcFcpMFB5TJGHOI6Jsa9kpHR0mo=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路6$https://s1-a1.global-cdn.me/vod/141B56583-77253.mp4#线路7$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771439099&vhash=nTul5RgWaB3erVSYnLmYS8U-eJnYylR8a-GYx9oOjBQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路8$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771439099&vhash=nTul5RgWaB3erVSYnLmYS8U-eJnYylR8a-GYx9oOjBQ=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路9$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771439207&vhash=5VfpIlf2jAMFIJYKFS9G-ZGLTF-wrOHPcqC1xW7rVEk=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路10$https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771439207&vhash=5VfpIlf2jAMFIJYKFS9G-ZGLTF-wrOHPcqC1xW7rVEk=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5#线路11$https://global.dudupro.com/s8/ppot/_definst_/mp4:s16/ivod/lxj-sxfysmfsd1j-07-0283527D0.mp4/chunklist.m3u8?vendtime=1771439208&vhash=zq747nVM2mGoKoqmsJmFiBo7wANWPLfRulHY2ritFog=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a414b94f1693481b1a0310cfabfb81ae&us=1&proxy=SpWjPJ4kT6bjPN1oPMDbQIvZRsryEPmMifYNEx2yNHlPsytCfSnjxQz7CuBMKnBcHbRcbbStGkOsyslZcS5hAObp8ojpeqkRAvkXSnjxQz7CuBMKnBcHlOMrfRdTeRsnbBcDlR1&proxyize=5#线路12$https://global.dudupro.com/s8/ppot/_definst_/mp4:s16/ivod/lxj-sxfysmfsd1j-07-0283527D0.mp4/manifest.mpd?vendtime=1771439208&vhash=zq747nVM2mGoKoqmsJmFiBo7wANWPLfRulHY2ritFog=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=a414b94f1693481b1a0310cfabfb81ae&us=1&proxy=SpWjPJ4kT6bjPN1oPMDbQIvZRsryEPmMifYNEx2yNHlPsytCfSnjxQz7CuBMKnBcHbRcbbStGkOsyslZcS5hAObp8ojpeqkRAvkXSnjxQz7CuBMKnBcHlOMrfRdTeRsnbBcDlR1&proxyize=5#线路13$https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1#线路14$https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1#线路15$https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1#线路16$https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1#线路17$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5#线路18$https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=play&id=aiyifan_1&play=1",
+        "status": 200,
+        "durationMs": 1,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:18.034Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  },
+  {
+    "key": "ext_tvbox_ctf_allinone_f60924f1",
+    "name": "CTF-影视墙 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+        "status": 200,
+        "durationMs": 1466,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1106,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:39.080Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+        "status": 200,
+        "durationMs": 357,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:39.080Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1",
+        "status": 200,
+        "durationMs": 365,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.662Z",
+    "manuallyMarked": false,
+    "durationMs": 3647
+  },
+  {
+    "key": "ext_tvbox_ctf_netflixgc_01dd7d22",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=detail&ids=910001",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=play&id=910001&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+        "status": 200,
+        "durationMs": 1783,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 355,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:40.345Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1673,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=detail&ids=910001",
+        "status": 200,
+        "durationMs": 380,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:42.405Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=play&id=910001&play=1",
+        "status": 200,
+        "durationMs": 388,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:24.266Z",
+    "manuallyMarked": false,
+    "durationMs": 4580
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_7d3dd8e7",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=detail&ids=910002",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=play&id=910002&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+        "status": 200,
+        "durationMs": 1954,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1437,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910002",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:29:39.207Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 355,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=detail&ids=910002",
+        "status": 200,
+        "durationMs": 354,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910002",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:29:39.918Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=play&id=910002&play=1",
+        "status": 200,
+        "durationMs": 366,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.754Z",
+    "manuallyMarked": false,
+    "durationMs": 4466
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_e74f66bc",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=detail&ids=910003",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=play&id=910003&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+        "status": 200,
+        "durationMs": 1792,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 820,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910003",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:29:39.340Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路2$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=detail&ids=910003",
+        "status": 200,
+        "durationMs": 351,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910003",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:29:40.045Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路2$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=play&id=910003&play=1",
+        "status": 200,
+        "durationMs": 368,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.885Z",
+    "manuallyMarked": false,
+    "durationMs": 3684
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_67f861fc",
+    "name": "CTF-bgm [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=detail&ids=910004",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=play&id=910004&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+        "status": 200,
+        "durationMs": 1492,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 817,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910004",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:29:38.932Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 371,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=detail&ids=910004",
+        "status": 200,
+        "durationMs": 360,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910004",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:29:39.660Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=play&id=910004&play=1",
+        "status": 200,
+        "durationMs": 360,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.496Z",
+    "manuallyMarked": false,
+    "durationMs": 3400
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_0d129313",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=detail&ids=910005",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=play&id=910005&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+        "status": 200,
+        "durationMs": 1572,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2775,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910005",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:29:40.082Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8#线路3$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 398,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=detail&ids=910005",
+        "status": 200,
+        "durationMs": 610,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910005",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:29:40.913Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8#线路3$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=play&id=910005&play=1",
+        "status": 200,
+        "durationMs": 513,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:23.077Z",
+    "manuallyMarked": false,
+    "durationMs": 5868
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_1c262f4f",
+    "name": "CTF-libvio [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=detail&ids=910006",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=play&id=910006&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+        "status": 200,
+        "durationMs": 1444,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1612,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910006",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:29:40.685Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 2286,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=detail&ids=910006",
+        "status": 200,
+        "durationMs": 1750,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910006",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:29:44.914Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=play&id=910006&play=1",
+        "status": 200,
+        "durationMs": 415,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:26.829Z",
+    "manuallyMarked": false,
+    "durationMs": 7507
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_7b4e20d5",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=detail&ids=910007",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=play&id=910007&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+        "status": 200,
+        "durationMs": 1458,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2315,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910007",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:29:40.598Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 953,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=detail&ids=910007",
+        "status": 200,
+        "durationMs": 1427,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910007",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:29:43.113Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=play&id=910007&play=1",
+        "status": 200,
+        "durationMs": 358,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:24.955Z",
+    "manuallyMarked": false,
+    "durationMs": 6511
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_fcf0ef8f",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=detail&ids=910008",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=play&id=910008&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+        "status": 200,
+        "durationMs": 1456,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 382,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910008",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:29:39.504Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 413,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=detail&ids=910008",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910008",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:29:40.269Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=play&id=910008&play=1",
+        "status": 200,
+        "durationMs": 499,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:22.238Z",
+    "manuallyMarked": false,
+    "durationMs": 3103
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_bd03b8b9",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=detail&ids=910009",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=play&id=910009&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+        "status": 200,
+        "durationMs": 1811,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1405,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910009",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:29:39.147Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=detail&ids=910009",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910009",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:29:39.866Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=play&id=910009&play=1",
+        "status": 200,
+        "durationMs": 354,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.690Z",
+    "manuallyMarked": false,
+    "durationMs": 4278
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_86b105e0",
+    "name": "CTF-iyf [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=detail&ids=910010",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=play&id=910010&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+        "status": 200,
+        "durationMs": 1456,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910010",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:38.666Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 355,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=detail&ids=910010",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910010",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:39.375Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=play&id=910010&play=1",
+        "status": 200,
+        "durationMs": 350,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:21.203Z",
+    "manuallyMarked": false,
+    "durationMs": 2870
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_0587a225",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=detail&ids=910011",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=play&id=910011&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+        "status": 200,
+        "durationMs": 1450,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 420,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910011",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:38.434Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 349,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=detail&ids=910011",
+        "status": 200,
+        "durationMs": 358,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910011",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:29:39.141Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=play&id=910011&play=1",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:20.964Z",
+    "manuallyMarked": false,
+    "durationMs": 2930
+  },
+  {
+    "key": "ext_tvbox_site_d5ad9e00",
+    "name": "🪔聚合┃短剧 [外部:tvbox]",
+    "api": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "success",
+    "message": "API资源可加载",
+    "testUrls": {
+      "api": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js"
+    },
+    "details": {
+      "api": {
+        "success": true,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+        "status": 200,
+        "durationMs": 261,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niu",
+        "error": ""
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.446Z",
+    "manuallyMarked": false,
+    "durationMs": 261
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c",
+    "name": "同构Demo源 [外部:tvbox]",
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "success",
+    "message": "API与EXT资源均可加载",
+    "testUrls": {
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "ext": "http://127.0.0.1:9977/js/demo_source.js"
+    },
+    "details": {
+      "api": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "status": 200,
+        "durationMs": 4,
+        "bodySample": "import cheerio from\"assets://js/lib/cheerio.min.js\";import\"assets://js/lib/crypto-js.js\";import\"./jsencrypt.js\";import\"./node-rsa.js\";import",
+        "error": ""
+      },
+      "ext": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/demo_source.js",
+        "status": 200,
+        "durationMs": 3,
+        "bodySample": "var rule = {     title: \"同构Demo源\",     host: \"http://127.0.0.1:9977\",     homeUrl: \"/api/home\",     url: \"/api/category?type=fyclass&page=fy",
+        "error": ""
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.200Z",
+    "manuallyMarked": false,
+    "durationMs": 7
+  },
+  {
+    "key": "ext_tvbox_ctf_allinone_f60924f1_2",
+    "name": "CTF-饭太硬同款 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+        "status": 200,
+        "durationMs": 1537,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2310,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:39.814Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 367,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+        "status": 200,
+        "durationMs": 576,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:29:39.814Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1",
+        "status": 200,
+        "durationMs": 601,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:29:22.839Z",
+    "manuallyMarked": false,
+    "durationMs": 5393
+  },
+  {
+    "key": "ext_tvbox_site_e5f40762",
+    "name": "☯️微信公众号：NGZ南歌(关注不迷路) [外部:tvbox]",
+    "api": "csp_Douban",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Douban"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Douban",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_4d376aaa",
+    "name": "🗂个人云盘┃配置 [外部:tvbox]",
+    "api": "csp_Config",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Config"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Config",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f",
+    "name": "🎇NGZ聚合┃4K弹幕 [外部:tvbox]",
+    "api": "csp_AppGet",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_AppGet"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_AppGet",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_qiao4k2_6bc837d1",
+    "name": "🎑巧技┃4K至臻 [外部:tvbox]",
+    "api": "csp_Qiji",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Qiji"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Qiji",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_3bc43c5f",
+    "name": "🎯移动┃在线4K [外部:tvbox]",
+    "api": "csp_YD",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_YD"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_YD",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_hipy_js_4k_av_2713e15f",
+    "name": "🧲磁力在线┃原盘 [外部:tvbox]",
+    "api": "csp_XYQHiker",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XYQHiker"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XYQHiker",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_68668575",
+    "name": "🍉GZ┃HD2K [外部:tvbox]",
+    "api": "csp_Gz360",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Gz360"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Gz360",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_39d28ddb",
+    "name": "🔦金牌┃HD2K [外部:tvbox]",
+    "api": "csp_Jpys",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Jpys"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Jpys",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_2713e15f",
+    "name": "🏮农民┃秒播 [外部:tvbox]",
+    "api": "csp_XYQHiker",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XYQHiker"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XYQHiker",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_2186f762",
+    "name": "🫧韩剧┃蓝光 [外部:tvbox]",
+    "api": "csp_XBPQ",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XBPQ"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XBPQ",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.187Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15",
+    "name": "🧽网盘┃玩偶哥哥 [外部:tvbox]",
+    "api": "csp_PanWebShare",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_PanWebShare"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_PanWebShare",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15_2",
+    "name": "🧽网盘┃玩偶至臻 [外部:tvbox]",
+    "api": "csp_PanWebShare",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_PanWebShare"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_PanWebShare",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15_3",
+    "name": "🧽网盘┃玩偶多多 [外部:tvbox]",
+    "api": "csp_PanWebShare",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_PanWebShare"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_PanWebShare",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_4cad1779",
+    "name": "🩴米搜┃网盘 [外部:tvbox]",
+    "api": "csp_MiSou",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_MiSou"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_MiSou",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_6d2949b2",
+    "name": "🍼漫国丨动漫 [外部:tvbox]",
+    "api": "csp_AppSy",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_AppSy"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_AppSy",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 1
+  },
+  {
+    "key": "ext_tvbox_site_2186f762_2",
+    "name": "🍼樱花｜动漫 [外部:tvbox]",
+    "api": "csp_XBPQ",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XBPQ"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XBPQ",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_2713e15f_2",
+    "name": "🍼巴士｜动漫 [外部:tvbox]",
+    "api": "csp_XYQHiker",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XYQHiker"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XYQHiker",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f_2",
+    "name": "🍼番薯丨动漫 [外部:tvbox]",
+    "api": "csp_AppGet",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_AppGet"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_AppGet",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f_3",
+    "name": "🍼米饭｜动漫 [外部:tvbox]",
+    "api": "csp_AppGet",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_AppGet"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_AppGet",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_c1a1db0b",
+    "name": "📻本地┃视频 [外部:tvbox]",
+    "api": "csp_LocalFile",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_LocalFile"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_LocalFile",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_b43c3af1",
+    "name": "🎧酷狗┃音乐 [外部:tvbox]",
+    "api": "csp_Kugou",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Kugou"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Kugou",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_78ae3c1d",
+    "name": "🎧全网┃音乐 [外部:tvbox]",
+    "api": "csp_Bili",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Bili"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Bili",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_site_645c2129",
+    "name": "⛑️急救┃教学 [外部:tvbox]",
+    "api": "csp_FirstAid",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_FirstAid"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_FirstAid",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_926_69ce7be7",
+    "name": "🏀926┃看球 [外部:tvbox]",
+    "api": "csp_Sir88",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Sir88"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Sir88",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_jrsjs_b69c0d59",
+    "name": "⚽实时┃球迷 [外部:tvbox]",
+    "api": "csp_Kanqiu",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_Kanqiu"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_Kanqiu",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.184Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_csp_xpath_45dc77f5",
+    "name": "🥅企鹅┃体育直播 [外部:tvbox]",
+    "api": "csp_XPath",
+    "type": 3,
+    "searchable": 0,
+    "lang": "external_3",
+    "status": "pending",
+    "message": "非HTTP API，需人工在客户端侧校验",
+    "testUrls": {
+      "api": "csp_XPath"
+    },
+    "details": {
+      "api": {
+        "success": false,
+        "url": "csp_XPath",
+        "error": "non-http api"
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.185Z",
+    "manuallyMarked": false,
+    "durationMs": 0
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c_2",
+    "name": "同构Demo源 [外部:tvbox]",
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "success",
+    "message": "API与EXT资源均可加载",
+    "testUrls": {
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "ext": "http://127.0.0.1:9977/js/demo_source.js"
+    },
+    "details": {
+      "api": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "status": 200,
+        "durationMs": 3,
+        "bodySample": "import cheerio from\"assets://js/lib/cheerio.min.js\";import\"assets://js/lib/crypto-js.js\";import\"./jsencrypt.js\";import\"./node-rsa.js\";import",
+        "error": ""
+      },
+      "ext": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/demo_source.js",
+        "status": 200,
+        "durationMs": 2,
+        "bodySample": "var rule = {     title: \"同构Demo源\",     host: \"http://127.0.0.1:9977\",     homeUrl: \"/api/home\",     url: \"/api/category?type=fyclass&page=fy",
+        "error": ""
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.205Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c_3",
+    "name": "同构Demo源 [外部:参考tvbox]",
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "type": 3,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "success",
+    "message": "API与EXT资源均可加载",
+    "testUrls": {
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "ext": "http://127.0.0.1:9977/js/demo_source.js"
+    },
+    "details": {
+      "api": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "status": 200,
+        "durationMs": 3,
+        "bodySample": "import cheerio from\"assets://js/lib/cheerio.min.js\";import\"assets://js/lib/crypto-js.js\";import\"./jsencrypt.js\";import\"./node-rsa.js\";import",
+        "error": ""
+      },
+      "ext": {
+        "success": true,
+        "url": "http://127.0.0.1:9977/js/demo_source.js",
+        "status": 200,
+        "durationMs": 3,
+        "bodySample": "var rule = {     title: \"同构Demo源\",     host: \"http://127.0.0.1:9977\",     homeUrl: \"/api/home\",     url: \"/api/category?type=fyclass&page=fy",
+        "error": ""
+      }
+    },
+    "checkTime": "2026-02-22T01:29:17.193Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  }
+]

@@ -55,6 +55,63 @@ function logExt(_ext) {
     return Array.isArray(_ext) || typeof _ext == "object" ? JSON.stringify(_ext) : _ext
 }
 
+const CTF_LOCAL_SITE_META = [
+    {id: 'kvm4', key: 'ctf_local_kvm4', name: 'CTF-4kvm(Local)'},
+    {id: 'cz233', key: 'ctf_local_cz233', name: 'CTF-cz233(Local)'},
+    {id: 'netflixgc', key: 'ctf_local_netflixgc', name: 'CTF-netflixgc(Local)'},
+    {id: 'ysxq', key: 'ctf_local_ysxq', name: 'CTF-boju(Local)'},
+    {id: 'dbkk', key: 'ctf_local_dbkk', name: 'CTF-dbkk(Local)'},
+    {id: 'aiyifan', key: 'ctf_local_aiyifan', name: 'CTF-aiyifan(Local)'},
+    {id: 'bgm', key: 'ctf_local_bgm', name: 'CTF-bgm(Local)'},
+    {id: 'kuangren', key: 'ctf_local_kuangren', name: 'CTF-kuangren(Local)'},
+    {id: 'kanbot', key: 'ctf_local_kanbot', name: 'CTF-kanbot(Local)'},
+    {id: 'iyf', key: 'ctf_local_iyf', name: 'CTF-iyf(Local)'},
+    {id: 'libvio', key: 'ctf_local_libvio', name: 'CTF-libvio(Local)'},
+];
+
+function buildCtfLocalSites(requestHost, pwd) {
+    return CTF_LOCAL_SITE_META.map((item) => {
+        let api = `${requestHost}/ctf-adapter/api/${item.id}`;
+        if (pwd) {
+            api += `?pwd=${pwd}`;
+        }
+        return {
+            key: item.key,
+            name: item.name,
+            type: 4,
+            api,
+            searchable: 1,
+            filterable: 1,
+            quickSearch: 1,
+            ext: '',
+            lang: 'ctf_local',
+        };
+    });
+}
+
+function loadDisabledSourceKeys(rootDir) {
+    const p = path.join(rootDir, 'data', 'source-checker', 'disabled-sources.json');
+    if (!existsSync(p)) return new Set();
+    try {
+        const raw = readFileSync(p, 'utf-8');
+        const j = JSON.parse(raw);
+        const keys = [];
+        if (Array.isArray(j)) {
+            keys.push(...j);
+        } else if (Array.isArray(j?.keys)) {
+            keys.push(...j.keys);
+        } else if (Array.isArray(j?.sources)) {
+            j.sources.forEach((x) => {
+                if (x && typeof x.key === 'string') keys.push(x.key);
+            });
+        }
+        return new Set(keys.map((x) => String(x || '').trim()).filter(Boolean));
+    } catch (e) {
+        console.warn('[config] failed to load disabled-sources.json:', e.message);
+        return new Set();
+    }
+}
+
 /**
  * 生成站点配置JSON数据
  * 扫描各种类型的源文件并生成统一的配置格式
@@ -684,30 +741,53 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
     if (ENV.get('enable_link_data', '0') === '1') {
         log(`开始挂载外部T4数据`);
         let link_sites = [];
-        let link_url = ENV.get('link_url');
+        let link_url = (ENV.get('link_url', '') || '').trim();
         let enable_link_push = ENV.get('enable_link_push', '0');
         let enable_link_jar = ENV.get('enable_link_jar', '0');
         try {
             let link_data = readFileSync(path.join(rootDir, './data/settings/link_data.json'), 'utf-8');
             let link_config = JSON.parse(link_data);
-            link_sites = link_config.sites.filter(site => site.type = 4);
+            link_sites = Array.isArray(link_config?.sites)
+                ? link_config.sites.filter(site => [3, 4].includes(Number(site?.type)))
+                : [];
+            const resolveLinkPath = (value) => {
+                if (typeof value !== 'string' || !value) {
+                    return value;
+                }
+                if (value.startsWith('http')) {
+                    return value;
+                }
+                if (!/^[./]/.test(value)) {
+                    return value;
+                }
+                if (!link_url) {
+                    return value;
+                }
+                return urljoin(link_url, value);
+            };
             if (link_config.spider && enable_link_jar === '1') {
                 let link_spider_arr = link_config.spider.split(';');
-                link_jar = urljoin(link_url, link_spider_arr[0]);
+                link_jar = resolveLinkPath(link_spider_arr[0]);
                 if (link_spider_arr.length > 1) {
                     link_jar = [link_jar].concat(link_spider_arr.slice(1)).join(';')
                 }
                 log(`开始挂载外部T4 Jar: ${link_jar}`);
             }
-            link_sites.forEach((site) => {
+            link_sites.forEach((rawSite) => {
+                const site = {...rawSite};
                 if (site.key === 'push_agent' && enable_link_push !== '1') {
                     return
                 }
-                if (site.api && !site.api.startsWith('http')) {
-                    site.api = urljoin(link_url, site.api)
+                const siteType = Number(site?.type) || 4;
+                if (siteType === 4 && site.api && !site.api.startsWith('http') && !link_url) {
+                    log(`[link_data] skip non-http api without link_url: ${site.key || site.name || 'unknown'}`);
+                    return;
                 }
-                if (site.ext && site.ext.startsWith('.')) {
-                    site.ext = urljoin(link_url, site.ext)
+                if (site.api) {
+                    site.api = resolveLinkPath(site.api);
+                }
+                if (typeof site.ext === 'string' && site.ext) {
+                    site.ext = resolveLinkPath(site.ext);
                 }
                 if (site.key === 'push_agent' && enable_link_push === '1') { // 推送覆盖
                     let pushIndex = sites.findIndex(s => s.key === 'push_agent');
@@ -735,6 +815,24 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
     // 青少年模式再次处理自定义别名的情况
     if (ENV.get('hide_adult') === '1') {
         sites = sites.filter(it => !(new RegExp('\\[[密]\\]|密+')).test(it.name));
+    }
+    if (ENV.get('enable_ctf_local_adapter', '1') === '1') {
+        const keySet = new Set(sites.map((s) => s.key));
+        const ctfSites = buildCtfLocalSites(requestHost, pwd);
+        ctfSites.forEach((site) => {
+            if (!keySet.has(site.key)) {
+                sites.push(site);
+                keySet.add(site.key);
+            }
+        });
+    }
+    if (ENV.get('enable_disabled_source_filter', '1') === '1') {
+        const disabledKeys = loadDisabledSourceKeys(rootDir);
+        if (disabledKeys.size > 0) {
+            const before = sites.length;
+            sites = sites.filter((site) => !disabledKeys.has(site.key));
+            console.log(`Filtered out disabled sources: ${before - sites.length}, remaining: ${sites.length}`);
+        }
     }
     // console.log('sort_list:', sort_list);
     sites = naturalSort(sites, 'name', sort_list);

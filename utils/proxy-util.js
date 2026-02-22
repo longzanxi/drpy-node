@@ -742,15 +742,44 @@ export const CacheManagerFactory = {
  * @param {Map|SmartCacheManager} additionalCache - 额外缓存（可选）
  * @returns {Object} 健康检查响应
  */
-export function createHealthResponse(serviceName, requestCache, additionalCache = null) {
+export function createHealthResponse(serviceNameOrCache, requestCacheOrAdditional = null, additionalCacheOrOptions = null) {
+    const isCacheLike = (obj) => obj && (typeof obj.getStats === 'function' || obj instanceof Map || typeof obj.size === 'number');
+
+    let serviceName = 'Proxy Service';
+    let requestCache = null;
+    let additionalCache = null;
+    let options = {};
+
+    // 兼容两种调用方式：
+    // 1) createHealthResponse('Service', requestCache, additionalCache)
+    // 2) createHealthResponse(requestCache, additionalCache, {features: [...]})
+    if (typeof serviceNameOrCache === 'string') {
+        serviceName = serviceNameOrCache;
+        requestCache = requestCacheOrAdditional;
+        if (isCacheLike(additionalCacheOrOptions)) {
+            additionalCache = additionalCacheOrOptions;
+        } else if (additionalCacheOrOptions && typeof additionalCacheOrOptions === 'object') {
+            options = additionalCacheOrOptions;
+        }
+    } else {
+        requestCache = serviceNameOrCache;
+        if (isCacheLike(requestCacheOrAdditional)) {
+            additionalCache = requestCacheOrAdditional;
+        } else if (requestCacheOrAdditional && typeof requestCacheOrAdditional === 'object') {
+            options = requestCacheOrAdditional;
+        }
+        if (additionalCacheOrOptions && typeof additionalCacheOrOptions === 'object' && !isCacheLike(additionalCacheOrOptions)) {
+            options = additionalCacheOrOptions;
+        }
+    }
+
     const response = {
         status: 'ok',
         service: serviceName,
         timestamp: new Date().toISOString(),
         cache: {}
     };
-    
-    // 支持新的SmartCacheManager和旧的Map
+
     if (requestCache) {
         if (typeof requestCache.getStats === 'function') {
             response.cache.requests = {
@@ -761,7 +790,7 @@ export function createHealthResponse(serviceName, requestCache, additionalCache 
             response.cache.requests = requestCache.size;
         }
     }
-    
+
     if (additionalCache) {
         if (typeof additionalCache.getStats === 'function') {
             response.cache.additional = {
@@ -772,10 +801,13 @@ export function createHealthResponse(serviceName, requestCache, additionalCache 
             response.cache.additional = additionalCache.size;
         }
     }
-    
+
+    if (options && Array.isArray(options.features)) {
+        response.features = options.features;
+    }
+
     return response;
 }
-
 /**
  * 创建标准的状态响应
  * @param {string} serviceName - 服务名称

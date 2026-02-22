@@ -1,0 +1,14 @@
+{
+  "keys": [],
+  "meta": {
+    "generatedAt": "2026-02-22T11:45:14.527Z",
+    "basedOnReport": "reports/source-checker-batch/20260222-194303/report.json",
+    "summary": {
+      "totalErrorsInReport": 1,
+      "confirmedInvalid": 0,
+      "clientSideOnly": 0,
+      "recoveredOrUnstable": 1
+    }
+  },
+  "sources": []
+}

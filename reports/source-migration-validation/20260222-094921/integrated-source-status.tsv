@@ -1,0 +1,55 @@
+key	name	status	type	api	message
+ext_tvbox_ctf_netflixgc_17e0d0a5	CTF-NetflixGC [外部:tvbox]	success	4	http://127.0.0.1:7788/api/netflixgc	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_ysxq_b1f67587	CTF-播剧影视 [外部:tvbox]	success	4	http://127.0.0.1:7788/api/ysxq	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_cz233_09222274	CTF-cz233 [外部:tvbox]	success	4	http://127.0.0.1:7788/api/cz233	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_bgm_f0785b8a	CTF-bgm [外部:tvbox]	success	4	http://127.0.0.1:7788/api/bgm	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_4kvm_a5f8f6a5	CTF-4kvm [外部:tvbox]	success	4	http://127.0.0.1:7788/api/kvm4	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_libvio_bdc5ef61	CTF-libvio [外部:tvbox]	success	4	http://127.0.0.1:7788/api/libvio	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kanbot_a05222cd	CTF-kanbot [外部:tvbox]	success	4	http://127.0.0.1:7788/api/kanbot	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kuangren_5c8adfae	CTF-kuangren [外部:tvbox]	success	4	http://127.0.0.1:7788/api/kuangren	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_dbkk_4e72dab7	CTF-独播库 [外部:tvbox]	success	4	http://127.0.0.1:7788/api/dbkk	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_iyf_78af5d1d	CTF-iyf [外部:tvbox]	success	4	http://127.0.0.1:7788/api/iyf	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_aiyifan_d48ecd55	CTF-aiyifan [外部:tvbox]	success	4	http://127.0.0.1:7788/api/aiyifan	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_allinone_f60924f1	CTF-影视墙 [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_netflixgc_01dd7d22	CTF-NetflixGC [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_ysxq_7d3dd8e7	CTF-播剧影视 [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_cz233_e74f66bc	CTF-cz233 [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_bgm_67f861fc	CTF-bgm [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_4kvm_0d129313	CTF-4kvm [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_libvio_1c262f4f	CTF-libvio [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kanbot_7b4e20d5	CTF-kanbot [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_kuangren_fcf0ef8f	CTF-kuangren [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_dbkk_bd03b8b9	CTF-独播库 [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_iyf_86b105e0	CTF-iyf [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf	4/4 接口正常（play为附加探针）
+ext_tvbox_ctf_aiyifan_0587a225	CTF-aiyifan [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan	4/4 接口正常（play为附加探针）
+ext_tvbox_site_d5ad9e00	🪔聚合┃短剧 [外部:tvbox]	success	3	https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js	api resource reachable
+ext_tvbox_demo_drpy_426eef1c	同构Demo源 [外部:tvbox]	success	3	http://127.0.0.1:9977/js/lib/drpy2.min.js	api/ext resources reachable (1)
+ext_tvbox_ctf_allinone_f60924f1_2	CTF-饭太硬同款 [外部:tvbox]	success	4	https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone	4/4 接口正常（play为附加探针）
+ext_tvbox_site_e5f40762	☯️微信公众号：NGZ南歌(关注不迷路) [外部:tvbox]	pending	3	csp_Douban	non-http api requires client-side validation
+ext_tvbox_site_4d376aaa	🗂个人云盘┃配置 [外部:tvbox]	pending	3	csp_Config	non-http api requires client-side validation
+ext_tvbox_site_56778c5f	🎇NGZ聚合┃4K弹幕 [外部:tvbox]	success	3	csp_AppGet	non-http api but ext resources reachable (1)
+ext_tvbox_qiao4k2_6bc837d1	🎑巧技┃4K至臻 [外部:tvbox]	pending	3	csp_Qiji	non-http api requires client-side validation
+ext_tvbox_site_3bc43c5f	🎯移动┃在线4K [外部:tvbox]	pending	3	csp_YD	non-http api requires client-side validation
+ext_tvbox_hipy_js_4k_av_2713e15f	🧲磁力在线┃原盘 [外部:tvbox]	success	3	csp_XYQHiker	non-http api but ext resources reachable (1)
+ext_tvbox_site_68668575	🍉GZ┃HD2K [外部:tvbox]	pending	3	csp_Gz360	non-http api requires client-side validation
+ext_tvbox_site_39d28ddb	🔦金牌┃HD2K [外部:tvbox]	success	3	csp_Jpys	non-http api but ext resources reachable (5)
+ext_tvbox_site_2713e15f	🏮农民┃秒播 [外部:tvbox]	success	3	csp_XYQHiker	non-http api but ext resources reachable (1)
+ext_tvbox_site_2186f762	🫧韩剧┃蓝光 [外部:tvbox]	success	3	csp_XBPQ	non-http api but ext resources reachable (1)
+ext_tvbox_site_009bcb15	🧽网盘┃玩偶哥哥 [外部:tvbox]	success	3	csp_PanWebShare	non-http api but ext resources reachable (1)
+ext_tvbox_site_009bcb15_2	🧽网盘┃玩偶至臻 [外部:tvbox]	success	3	csp_PanWebShare	non-http api but ext resources reachable (1)
+ext_tvbox_site_009bcb15_3	🧽网盘┃玩偶多多 [外部:tvbox]	success	3	csp_PanWebShare	non-http api but ext resources reachable (1)
+ext_tvbox_site_4cad1779	🩴米搜┃网盘 [外部:tvbox]	pending	3	csp_MiSou	non-http api requires client-side validation
+ext_tvbox_site_6d2949b2	🍼漫国丨动漫 [外部:tvbox]	success	3	csp_AppSy	non-http api but ext resources reachable (1)
+ext_tvbox_site_2186f762_2	🍼樱花｜动漫 [外部:tvbox]	success	3	csp_XBPQ	non-http api but ext resources reachable (1)
+ext_tvbox_site_2713e15f_2	🍼巴士｜动漫 [外部:tvbox]	success	3	csp_XYQHiker	non-http api but ext resources reachable (1)
+ext_tvbox_site_56778c5f_2	🍼番薯丨动漫 [外部:tvbox]	success	3	csp_AppGet	non-http api but ext resources reachable (1)
+ext_tvbox_site_56778c5f_3	🍼米饭｜动漫 [外部:tvbox]	pending	3	csp_AppGet	non-http api ext resources unreachable (1), client validation required
+ext_tvbox_site_c1a1db0b	📻本地┃视频 [外部:tvbox]	pending	3	csp_LocalFile	non-http api requires client-side validation
+ext_tvbox_site_b43c3af1	🎧酷狗┃音乐 [外部:tvbox]	pending	3	csp_Kugou	non-http api requires client-side validation
+ext_tvbox_site_78ae3c1d	🎧全网┃音乐 [外部:tvbox]	success	3	csp_Bili	non-http api but ext resources reachable (1)
+ext_tvbox_site_645c2129	⛑️急救┃教学 [外部:tvbox]	pending	3	csp_FirstAid	non-http api requires client-side validation
+ext_tvbox_926_69ce7be7	🏀926┃看球 [外部:tvbox]	pending	3	csp_Sir88	non-http api requires client-side validation
+ext_tvbox_jrsjs_b69c0d59	⚽实时┃球迷 [外部:tvbox]	pending	3	csp_Kanqiu	non-http api requires client-side validation
+ext_tvbox_csp_xpath_45dc77f5	🥅企鹅┃体育直播 [外部:tvbox]	success	3	csp_XPath	non-http api but ext resources reachable (1)
+ext_tvbox_demo_drpy_426eef1c_2	同构Demo源 [外部:tvbox]	success	3	http://127.0.0.1:9977/js/lib/drpy2.min.js	api/ext resources reachable (1)
+ext_tvbox_demo_drpy_426eef1c_3	同构Demo源 [外部:参考tvbox]	success	3	http://127.0.0.1:9977/js/lib/drpy2.min.js	api/ext resources reachable (1)

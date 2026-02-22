@@ -1,0 +1,690 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T02:55:36.588Z",
+    "finishedAt": "2026-02-22T02:55:48.079Z",
+    "root": "d:\\code\\yingshi\\drpy-node"
+  },
+  "environment": {
+    "runtime": {
+      "node": "v24.9.0",
+      "python": "Python 3.13.0",
+      "npm": "不可用",
+      "pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+    },
+    "pluginConfigSource": "d:\\code\\yingshi\\drpy-node\\.plugins.example.js",
+    "pluginConfigLoadError": "",
+    "userPluginsExists": false,
+    "pluginsDirExists": false
+  },
+  "ports": {
+    "5757": {
+      "port": 5757,
+      "role": "主服务端口",
+      "tests": [
+        {
+          "category": "健康",
+          "name": "/health",
+          "request": "GET /health",
+          "expected": "200+ok",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"timestamp\":\"2026-02-22 10:55:45\",\"python\":{\"available\":true,\"daemon_running\":true}}",
+          "startedAt": "2026-02-22T02:55:45.292Z",
+          "finishedAt": "2026-02-22T02:55:45.328Z",
+          "durationMs": 36,
+          "note": ""
+        },
+        {
+          "category": "基础",
+          "name": "/",
+          "request": "GET /",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "                 <!DOCTYPE html>                 <html lang=\"en\">                 <head>                     <meta charset=\"UTF-8\">                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0",
+          "startedAt": "2026-02-22T02:55:45.328Z",
+          "finishedAt": "2026-02-22T02:55:45.351Z",
+          "durationMs": 23,
+          "note": ""
+        },
+        {
+          "category": "WS桥接",
+          "name": "/ws/status",
+          "request": "GET /ws/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"timestamp\":\"2026-02-22 10:55:45\",\"clients\":0,\"console_intercepted\":true}",
+          "startedAt": "2026-02-22T02:55:45.351Z",
+          "finishedAt": "2026-02-22T02:55:45.354Z",
+          "durationMs": 3,
+          "note": ""
+        },
+        {
+          "category": "WS桥接",
+          "name": "/ws echo",
+          "request": "ws://127.0.0.1:5757/ws",
+          "expected": "welcome+echo",
+          "passed": true,
+          "actual": "收到welcome+echo",
+          "evidence": "{\"type\":\"welcome\",\"message\":\"WebSocket connection established\",\"clientId\":1771728945359.5203,\"timestamp\":1771728945360} | {\"type\":\"echo\",\"originalMessage\":{\"type\":\"heartbeat\",\"from\":\"validator\"},\"timestamp\":1771728945362,\"clientId\":1771728945",
+          "startedAt": "2026-02-22T02:55:45.354Z",
+          "finishedAt": "2026-02-22T02:55:45.362Z",
+          "durationMs": 8,
+          "note": ""
+        },
+        {
+          "category": "引擎",
+          "name": "JS设置中心",
+          "request": "GET /api/%E8%AE%BE%E7%BD%AE%E4%B8%AD%E5%BF%83",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"type\":\"设置\",\"hikerListCol\":\"icon_round_4\",\"hikerClassListCol\":\"avatar\",\"class\":[{\"type_id\":\"push\",\"type_name\":\"推送\",\"type_flag\":\"3-11-S\"},{\"type_id\":\"quark\",\"type_name\":\"夸克\",\"type_flag\":\"3-11-S\"},{\"type_id\":\"uc\",\"type_name\":\"UC\",\"type_flag\":\"3-11-S\"},{\"type_id\":\"ali\",\"type_name\":\"阿里\",\"type_flag\":\"3-11-S\"},{\"type_id\":\"baidu\",\"type_name\":\"百度\",\"type_flag\":\"3-11-S\"},{\"type_id\":\"bili\",\"type_name\":\"哔哩\",",
+          "startedAt": "2026-02-22T02:55:45.362Z",
+          "finishedAt": "2026-02-22T02:55:45.398Z",
+          "durationMs": 36,
+          "note": ""
+        },
+        {
+          "category": "引擎",
+          "name": "PY依赖测试",
+          "request": "GET /api/%E4%BE%9D%E8%B5%96%E6%B5%8B%E8%AF%95?do=py",
+          "expected": "200",
+          "passed": false,
+          "actual": "HTTP 500",
+          "evidence": "{\"error\":\"Failed to process module 依赖测试: Failed to initialize module:connect ECONNREFUSED 127.0.0.1:57570\"}",
+          "startedAt": "2026-02-22T02:55:45.398Z",
+          "finishedAt": "2026-02-22T02:55:45.405Z",
+          "durationMs": 7,
+          "note": ""
+        },
+        {
+          "category": "引擎",
+          "name": "CAT猫测试",
+          "request": "GET /api/%E7%8C%AB%E6%B5%8B%E8%AF%95?do=cat",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"class\":[{\"type_id\":\"test\",\"type_name\":\"测试分类\"}],\"list\":[{\"vod_name\":\"测试\",\"vod_id\":\"index.html\",\"vod_pic\":\"https://gitee.com/CherishRx/imagewarehouse/raw/master/image/13096725fe56ce9cf643a0e4cd0c159c.gif\",\"vod_remarks\":\"原始JS\"}]}",
+          "startedAt": "2026-02-22T02:55:45.405Z",
+          "finishedAt": "2026-02-22T02:55:45.466Z",
+          "durationMs": 61,
+          "note": ""
+        },
+        {
+          "category": "引擎",
+          "name": "CAT代理",
+          "request": "GET /proxy/%E7%8C%AB%E6%B5%8B%E8%AF%95/ping?do=cat",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "hello drpyS, 我是猫测试的本地代理",
+          "startedAt": "2026-02-22T02:55:45.466Z",
+          "finishedAt": "2026-02-22T02:55:45.470Z",
+          "durationMs": 4,
+          "note": ""
+        },
+        {
+          "category": "引擎",
+          "name": "解析不存在",
+          "request": "GET /parse/__not_exists__",
+          "expected": "404",
+          "passed": true,
+          "actual": "HTTP 404",
+          "evidence": "{\"error\":\"解析 __not_exists__ not found\"}",
+          "startedAt": "2026-02-22T02:55:45.470Z",
+          "finishedAt": "2026-02-22T02:55:45.473Z",
+          "durationMs": 3,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/file-proxy/health",
+          "request": "GET /file-proxy/health",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"service\":\"Remote File Proxy\",\"timestamp\":\"2026-02-22T02:55:45.474Z\",\"cache\":{\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"FileProxy-RequestCache\",\"defaultTTL\":300000,\"cleanupInterval\":600",
+          "startedAt": "2026-02-22T02:55:45.473Z",
+          "finishedAt": "2026-02-22T02:55:45.475Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/file-proxy/status",
+          "request": "GET /file-proxy/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"service\":\"Remote File Proxy Controller\",\"version\":\"1.0.0\",\"status\":\"running\",\"cache\":{\"timeout\":300000,\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"FileProxy-RequestCache\",\"defaultTTL\":300000,\"cleanupI",
+          "startedAt": "2026-02-22T02:55:45.475Z",
+          "finishedAt": "2026-02-22T02:55:45.476Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/m3u8-proxy/health",
+          "request": "GET /m3u8-proxy/health",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"service\":\"Proxy Service\",\"timestamp\":\"2026-02-22T02:55:45.477Z\",\"cache\":{\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"M3U8Proxy-RequestCache\",\"defaultTTL\":300000,\"cleanupInterval\":60000}}",
+          "startedAt": "2026-02-22T02:55:45.476Z",
+          "finishedAt": "2026-02-22T02:55:45.478Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/m3u8-proxy/status",
+          "request": "GET /m3u8-proxy/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"service\":\"M3U8 Stream Proxy Controller\",\"version\":\"1.0.0\",\"status\":\"running\",\"cache\":{\"timeout\":300000,\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"M3U8Proxy-RequestCache\",\"defaultTTL\":300000,\"cleanupI",
+          "startedAt": "2026-02-22T02:55:45.478Z",
+          "finishedAt": "2026-02-22T02:55:45.480Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/unified-proxy/health",
+          "request": "GET /unified-proxy/health",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"service\":\"Unified Smart Proxy\",\"timestamp\":\"2026-02-22T02:55:45.482Z\",\"cache\":{\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"UnifiedProxy-RequestCache\",\"defaultTTL\":300000,\"cleanupInterval",
+          "startedAt": "2026-02-22T02:55:45.480Z",
+          "finishedAt": "2026-02-22T02:55:45.483Z",
+          "durationMs": 3,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/unified-proxy/status",
+          "request": "GET /unified-proxy/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"service\":\"Unified Smart Proxy Controller\",\"version\":\"1.0.0\",\"status\":\"running\",\"cache\":{\"timeout\":300000,\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":1000,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"UnifiedProxy-RequestCache\",\"defaultTTL\":300000,\"cle",
+          "startedAt": "2026-02-22T02:55:45.483Z",
+          "finishedAt": "2026-02-22T02:55:45.484Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/webdav/health",
+          "request": "GET /webdav/health",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"service\":\"Proxy Service\",\"timestamp\":\"2026-02-22T02:55:45.485Z\",\"cache\":{\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":100,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"WebDAVProxy-ClientCache\",\"defaultTTL\":300000,\"cleanupInterval\":60000}}",
+          "startedAt": "2026-02-22T02:55:45.484Z",
+          "finishedAt": "2026-02-22T02:55:45.486Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/webdav/status",
+          "request": "GET /webdav/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"service\":\"WebDAV Proxy Controller\",\"version\":\"1.0.0\",\"status\":\"running\",\"cache\":{\"timeout\":300000,\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":100,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"WebDAVProxy-ClientCache\",\"defaultTTL\":300000,\"cleanupInterv",
+          "startedAt": "2026-02-22T02:55:45.486Z",
+          "finishedAt": "2026-02-22T02:55:45.488Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/ftp/health",
+          "request": "GET /ftp/health",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"status\":\"ok\",\"service\":\"Proxy Service\",\"timestamp\":\"2026-02-22T02:55:45.489Z\",\"cache\":{\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":100,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"FTPProxy-ClientCache\",\"defaultTTL\":300000,\"cleanupInterval\":60000}},\"a",
+          "startedAt": "2026-02-22T02:55:45.488Z",
+          "finishedAt": "2026-02-22T02:55:45.489Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/ftp/status",
+          "request": "GET /ftp/status",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"service\":\"FTP Proxy Controller\",\"version\":\"1.0.0\",\"status\":\"running\",\"cache\":{\"timeout\":300000,\"requests\":{\"size\":0,\"stats\":{\"hits\":0,\"misses\":0,\"evictions\":0,\"expirations\":0,\"cleanups\":0,\"size\":0,\"maxSize\":100,\"hitRate\":\"0.00%\",\"memoryUsage\":\"0B\",\"name\":\"FTPProxy-ClientCache\",\"defaultTTL\":300000,\"cleanupInterval\":60",
+          "startedAt": "2026-02-22T02:55:45.489Z",
+          "finishedAt": "2026-02-22T02:55:45.490Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/docs/apidoc.md",
+          "request": "GET /docs/apidoc.md",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "\"\\n                <!DOCTYPE html>\\n                <html lang=\\\"en\\\">\\n                <head>\\n                    <meta charset=\\\"UTF-8\\\">\\n                    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n                    <title>drpyS-apidoc.md</title>\\n                    <style>\\n ",
+          "startedAt": "2026-02-22T02:55:45.490Z",
+          "finishedAt": "2026-02-22T02:55:45.495Z",
+          "durationMs": 5,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/source-checker/config/default",
+          "request": "GET /source-checker/config/default",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"success\":true,\"configUrl\":\"http://127.0.0.1:5757/config/1?sub=all&healthy=0&pwd=\",\"message\":\"获取默认配置地址成功\"}",
+          "startedAt": "2026-02-22T02:55:45.495Z",
+          "finishedAt": "2026-02-22T02:55:45.496Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/image/memory",
+          "request": "GET /image/memory",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"success\":true,\"data\":{\"imageCount\":0,\"totalSize\":0,\"totalSizeMB\":\"0.00\"}}",
+          "startedAt": "2026-02-22T02:55:45.496Z",
+          "finishedAt": "2026-02-22T02:55:45.498Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/image/list",
+          "request": "GET /image/list",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"success\":true,\"data\":{\"images\":[],\"total\":0}}",
+          "startedAt": "2026-02-22T02:55:45.498Z",
+          "finishedAt": "2026-02-22T02:55:45.499Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/clipboard/read",
+          "request": "GET /clipboard/read",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "\"\"",
+          "startedAt": "2026-02-22T02:55:45.499Z",
+          "finishedAt": "2026-02-22T02:55:45.500Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "/config/index.js",
+          "request": "GET /config/index.js",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "\"var O7=Object.create;var Ed=Object.defineProperty;var P7=Object.getOwnPropertyDescriptor;var D7=Object.getOwnPropertyNames;var L7=Object.getPrototypeOf,k7=Object.prototype.hasOwnProperty;var _=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),ci=(e,t)=>{for(var r in t)Ed(e,r,{get:t[r],enumerable:!0})},GA=(e,t,r,",
+          "startedAt": "2026-02-22T02:55:45.500Z",
+          "finishedAt": "2026-02-22T02:55:45.524Z",
+          "durationMs": 24,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/file-proxy/proxy无auth",
+          "request": "GET /file-proxy/proxy",
+          "expected": "401",
+          "passed": true,
+          "actual": "HTTP 401",
+          "evidence": "{\"error\":\"Unauthorized\",\"message\":\"Missing or invalid auth parameter\",\"code\":401}",
+          "startedAt": "2026-02-22T02:55:45.524Z",
+          "finishedAt": "2026-02-22T02:55:45.527Z",
+          "durationMs": 3,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/file-proxy/proxy?auth=drpys",
+          "request": "GET /file-proxy/proxy?auth=drpys",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: url\"}",
+          "startedAt": "2026-02-22T02:55:45.527Z",
+          "finishedAt": "2026-02-22T02:55:45.529Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/m3u8-proxy/playlist?auth=drpys",
+          "request": "GET /m3u8-proxy/playlist?auth=drpys",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: url\"}",
+          "startedAt": "2026-02-22T02:55:45.529Z",
+          "finishedAt": "2026-02-22T02:55:45.531Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/unified-proxy/proxy?auth=drpys",
+          "request": "GET /unified-proxy/proxy?auth=drpys",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: url\"}",
+          "startedAt": "2026-02-22T02:55:45.531Z",
+          "finishedAt": "2026-02-22T02:55:45.533Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/webdav/file",
+          "request": "GET /webdav/file",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: path\"}",
+          "startedAt": "2026-02-22T02:55:45.533Z",
+          "finishedAt": "2026-02-22T02:55:45.535Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/ftp/file",
+          "request": "GET /ftp/file",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: path\"}",
+          "startedAt": "2026-02-22T02:55:45.535Z",
+          "finishedAt": "2026-02-22T02:55:45.537Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "参数校验",
+          "name": "/mediaProxy",
+          "request": "GET /mediaProxy",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameter: url\"}",
+          "startedAt": "2026-02-22T02:55:45.537Z",
+          "finishedAt": "2026-02-22T02:55:45.538Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "安全",
+          "name": "unified内网拦截",
+          "request": "/unified-proxy/proxy?auth=drpys&url=http://127.0.0.1",
+          "expected": "403",
+          "passed": true,
+          "actual": "HTTP 403",
+          "evidence": "{\"error\":\"Access to internal network addresses is not allowed\"}",
+          "startedAt": "2026-02-22T02:55:45.538Z",
+          "finishedAt": "2026-02-22T02:55:45.540Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "authcoder",
+          "request": "/authcoder?len=8&number=3",
+          "expected": "200+3行",
+          "passed": true,
+          "actual": "HTTP 200, lines=3",
+          "evidence": "1oojZCf2 usaGAngH vz6UZfZg",
+          "startedAt": "2026-02-22T02:55:45.540Z",
+          "finishedAt": "2026-02-22T02:55:45.541Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "encoder",
+          "request": "POST /encoder",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": "{\"success\":true,\"result\":\"ZHJweS1ub2Rl\"}",
+          "startedAt": "2026-02-22T02:55:45.541Z",
+          "finishedAt": "2026-02-22T02:55:45.549Z",
+          "durationMs": 8,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "decoder参数校验",
+          "request": "POST /decoder",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Missing required parameters: code and auth_code\"}",
+          "startedAt": "2026-02-22T02:55:45.549Z",
+          "finishedAt": "2026-02-22T02:55:45.553Z",
+          "durationMs": 4,
+          "note": ""
+        },
+        {
+          "category": "控制器",
+          "name": "ws/broadcast参数校验",
+          "request": "POST /ws/broadcast",
+          "expected": "400",
+          "passed": true,
+          "actual": "HTTP 400",
+          "evidence": "{\"error\":\"Message is required\"}",
+          "startedAt": "2026-02-22T02:55:45.553Z",
+          "finishedAt": "2026-02-22T02:55:45.555Z",
+          "durationMs": 2,
+          "note": ""
+        }
+      ],
+      "summary": {
+        "total": 37,
+        "passed": 36,
+        "failed": 1,
+        "status": "FAIL"
+      }
+    },
+    "57570": {
+      "port": 57570,
+      "role": "Python daemon端口",
+      "tests": [
+        {
+          "category": "Daemon",
+          "name": "TCP监听",
+          "request": "TCP 57570",
+          "expected": "open",
+          "passed": false,
+          "actual": "CLOSED(ECONNREFUSED)",
+          "evidence": "{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":1}",
+          "startedAt": "2026-02-22T02:55:45.559Z",
+          "finishedAt": "2026-02-22T02:55:45.561Z",
+          "durationMs": 2,
+          "note": ""
+        },
+        {
+          "category": "Daemon",
+          "name": "health一致性",
+          "request": "/health vs tcp",
+          "expected": "available=true时tcp=open",
+          "passed": false,
+          "actual": "available=true,daemon_running=true,tcp=false",
+          "evidence": "{\"py0\":{\"available\":true,\"daemon_running\":true},\"t\":{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":0}}",
+          "note": "",
+          "startedAt": "2026-02-22T02:55:45.561Z",
+          "finishedAt": "2026-02-22T02:55:45.561Z",
+          "durationMs": 0
+        }
+      ],
+      "summary": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2,
+        "status": "FAIL"
+      }
+    },
+    "57571": {
+      "port": 57571,
+      "role": "插件端口 req-proxy",
+      "tests": [
+        {
+          "category": "插件端口",
+          "name": "req-proxy",
+          "request": "TCP 57571",
+          "expected": "按active和路径判定",
+          "passed": true,
+          "actual": "CLOSED(ECONNREFUSED) | 预期CLOSED",
+          "evidence": "{\"active\":false,\"params\":\"-p 57571\",\"exists\":false,\"probe\":{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":0}}",
+          "note": "插件未激活",
+          "startedAt": "2026-02-22T02:55:45.562Z",
+          "finishedAt": "2026-02-22T02:55:45.562Z",
+          "durationMs": 0
+        }
+      ],
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "57572": {
+      "port": 57572,
+      "role": "插件端口 pvideo",
+      "tests": [
+        {
+          "category": "插件端口",
+          "name": "pvideo",
+          "request": "TCP 57572",
+          "expected": "按active和路径判定",
+          "passed": true,
+          "actual": "CLOSED(ECONNREFUSED) | 预期CLOSED",
+          "evidence": "{\"active\":false,\"params\":\"-port 57572 -dns 8.8.8.8\",\"exists\":false,\"probe\":{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":1}}",
+          "note": "插件未激活",
+          "startedAt": "2026-02-22T02:55:45.562Z",
+          "finishedAt": "2026-02-22T02:55:45.563Z",
+          "durationMs": 1
+        }
+      ],
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "57573": {
+      "port": 57573,
+      "role": "插件端口 pup-sniffer",
+      "tests": [
+        {
+          "category": "插件端口",
+          "name": "pup-sniffer",
+          "request": "TCP 57573",
+          "expected": "按active和路径判定",
+          "passed": true,
+          "actual": "CLOSED(ECONNREFUSED) | 预期CLOSED",
+          "evidence": "{\"active\":false,\"params\":\"-port 57573\",\"exists\":false,\"probe\":{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":0}}",
+          "note": "插件未激活",
+          "startedAt": "2026-02-22T02:55:45.563Z",
+          "finishedAt": "2026-02-22T02:55:45.563Z",
+          "durationMs": 0
+        }
+      ],
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "57574": {
+      "port": 57574,
+      "role": "插件端口 mediaProxy",
+      "tests": [
+        {
+          "category": "插件端口",
+          "name": "mediaProxy",
+          "request": "TCP 57574",
+          "expected": "按active和路径判定",
+          "passed": true,
+          "actual": "CLOSED(ECONNREFUSED) | 预期CLOSED",
+          "evidence": "{\"active\":false,\"params\":\"-port 57574\",\"exists\":false,\"probe\":{\"open\":false,\"err\":\"ECONNREFUSED\",\"latencyMs\":1}}",
+          "note": "插件未激活",
+          "startedAt": "2026-02-22T02:55:45.563Z",
+          "finishedAt": "2026-02-22T02:55:45.564Z",
+          "durationMs": 1
+        }
+      ],
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "57575": {
+      "port": 57575,
+      "role": "独立WS端口",
+      "tests": [
+        {
+          "category": "WS端口",
+          "name": "/",
+          "request": "GET /",
+          "expected": "200",
+          "passed": true,
+          "actual": "HTTP 200",
+          "evidence": " <!DOCTYPE html> <html lang=\"zh-CN\"> <head>     <meta charset=\"UTF-8\">     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">     <title>WebSocket 服务 - 端口 57575</title>     <style>         body {             font-family: 'Segoe UI",
+          "startedAt": "2026-02-22T02:55:45.555Z",
+          "finishedAt": "2026-02-22T02:55:45.556Z",
+          "durationMs": 1,
+          "note": ""
+        },
+        {
+          "category": "WS端口",
+          "name": "/not-found",
+          "request": "GET /not-found",
+          "expected": "404",
+          "passed": true,
+          "actual": "HTTP 404",
+          "evidence": "{\"message\":\"Route GET:/not-found not found\",\"error\":\"Not Found\",\"statusCode\":404}",
+          "startedAt": "2026-02-22T02:55:45.556Z",
+          "finishedAt": "2026-02-22T02:55:45.559Z",
+          "durationMs": 3,
+          "note": ""
+        }
+      ],
+      "summary": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0,
+        "status": "PASS"
+      }
+    }
+  }
+}

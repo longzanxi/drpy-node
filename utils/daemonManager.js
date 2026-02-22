@@ -13,11 +13,12 @@ import path from 'path';
 import fs from 'fs';
 import net from 'net';
 import {promisify} from 'util';
-import {exec} from 'child_process';
+import {exec, execFile} from 'child_process';
 import {fileURLToPath} from "url";
 
 // 将exec转换为Promise形式
 const execAsync = promisify(exec);
+const execFileAsync = promisify(execFile);
 // 获取当前模块的目录路径
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // 项目根目录路径
@@ -100,8 +101,23 @@ export class DaemonManager {
         // 如果在虚拟环境中，使用虚拟环境的Python
         if (process.env.VIRTUAL_ENV) {
             return process.platform === 'win32'
-                ? path.join(process.env.VIRTUAL_ENV, 'Scripts', 'python')
+                ? path.join(process.env.VIRTUAL_ENV, 'Scripts', 'python.exe')
                 : path.join(process.env.VIRTUAL_ENV, 'bin', 'python');
+        }
+        // Windows + Chocolatey 场景下，优先使用 LocalAppData 下真实 python.exe
+        if (process.platform === 'win32' && process.env.LOCALAPPDATA) {
+            const pyRoot = path.join(process.env.LOCALAPPDATA, 'Programs', 'Python');
+            if (fs.existsSync(pyRoot)) {
+                const dirs = fs.readdirSync(pyRoot, {withFileTypes: true})
+                    .filter((d) => d.isDirectory())
+                    .map((d) => d.name)
+                    .sort()
+                    .reverse();
+                for (const d of dirs) {
+                    const exe = path.join(pyRoot, d, 'python.exe');
+                    if (fs.existsSync(exe)) return exe;
+                }
+            }
         }
         // 默认Python路径
         return process.platform === 'win32' ? 'python.exe' : 'python3';
@@ -113,10 +129,11 @@ export class DaemonManager {
      */
     async isPythonAvailable() {
         try {
-            const {stdout} = await execAsync(`${this.getPythonPath()} --version`);
-            return stdout.includes('Python');
-        } catch {
-            return false;
+            const {stdout = '', stderr = ''} = await execFileAsync(this.getPythonPath(), ['--version']);
+            return /Python\s+\d+/i.test(`${stdout}\n${stderr}`);
+        } catch (error) {
+            // 一些环境会将版本信息输出到 stderr
+            return /Python\s+\d+/i.test(`${error?.stdout || ''}\n${error?.stderr || ''}`);
         }
     }
 

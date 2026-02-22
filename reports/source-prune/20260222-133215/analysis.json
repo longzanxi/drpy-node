@@ -1,0 +1,4380 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T05:32:15.022Z",
+    "finishedAt": "2026-02-22T05:32:47.081Z",
+    "timeoutMs": 15000,
+    "retries": 2,
+    "concurrency": 10,
+    "reportPath": "reports/source-checker-batch/20260222-115201/report.json",
+    "apply": true,
+    "disableFile": "D:/code/yingshi/drpy-node/data/source-checker/disabled-sources.json"
+  },
+  "summary": {
+    "totalErrorsInReport": 68,
+    "confirmedInvalid": 63,
+    "clientSideOnly": 0,
+    "recoveredOrUnstable": 5
+  },
+  "results": [
+    {
+      "key": "drpyS_3Q影视[优]",
+      "name": "3Q影视[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/3Q影视[优]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 42,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_木兮[优]",
+      "name": "木兮[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/木兮[优]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_樱花动漫[优]",
+      "name": "樱花动漫[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/樱花动漫[优]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 10,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_麻雀视频[优]",
+      "name": "麻雀视频[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/麻雀视频[优]",
+      "originalMessage": "仅 1/4 接口正常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_玩偶哥哥DM[盘]",
+      "name": "玩偶哥哥DM[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/玩偶哥哥DM[盘]",
+      "originalMessage": "仅 1/4 接口正常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 10,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_蜡笔ᵐ[盘]",
+      "name": "蜡笔ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 10,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_虎斑ᵐ[盘]",
+      "name": "虎斑ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_多多ᵐ[盘]",
+      "name": "多多ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_牛牛短剧[短]",
+      "name": "牛牛短剧[短](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/牛牛短剧[短]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_哔哩大杂烩[官]",
+      "name": "哔哩大杂烩[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+      "originalMessage": "仅 1/4 接口正常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 8,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_音乐磁场[听]",
+      "name": "音乐磁场[听](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/音乐磁场[听]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_顶点小说[书]",
+      "name": "顶点小说[书](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/顶点小说[书]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_蓝鹰_Appget",
+      "name": "蓝鹰[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_仓鼠_Appget",
+      "name": "仓鼠[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_云云_Appget",
+      "name": "云云[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 8,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_奇奇_Appget",
+      "name": "奇奇[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 8,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_鲸鱼_Appget",
+      "name": "鲸鱼[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 9,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_咖啡_Appget",
+      "name": "咖啡[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 9,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_小猪_Appget",
+      "name": "小猪[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 9,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_影视_Appget",
+      "name": "影视[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 10,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_优兔_Appget",
+      "name": "优兔[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 11,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_王子_Appget",
+      "name": "王子[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 10,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_紫金_Appget",
+      "name": "紫金[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 9,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_数字_Appget",
+      "name": "数字[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 8,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_火锅_Appget",
+      "name": "火锅[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_五八_Appget",
+      "name": "五八[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_旗星_Appget",
+      "name": "旗星[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_灵虎_Appget",
+      "name": "灵虎[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_剧梦_Appget",
+      "name": "剧梦[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_火狐_Appget",
+      "name": "火狐[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_金牌_Appget",
+      "name": "金牌[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_爱盈_Appget",
+      "name": "爱盈[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_顾我_Appget",
+      "name": "顾我[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_爆炸_Appget",
+      "name": "爆炸[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_丫丫动漫_Appget",
+      "name": "丫丫动漫[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_番薯动漫_Appget",
+      "name": "番薯动漫[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_咕咕动漫_Appget",
+      "name": "咕咕动漫[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_元咲动漫_Appget",
+      "name": "元咲动漫[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_方舟动漫_Appget",
+      "name": "方舟动漫[M](GET)",
+      "lang": "unknown",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Appget[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_网盘资源[搜]",
+      "name": "网盘资源[搜](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘资源[搜]",
+      "originalMessage": "仅 1/4 接口正常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_王子TV",
+      "name": "王子TV(DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/王子TV",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 7,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 28,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_零度",
+      "name": "零度(DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/零度",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 28,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_黑料不打烊[密]",
+      "name": "黑料不打烊[密](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/黑料不打烊[密]",
+      "originalMessage": "仅 1/4 接口正常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 28,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "hipy_py_木瓜影视[AFX]",
+      "name": "木瓜影视[AFX](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppFox.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://www.yezitv.top/dtym.json",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 15008,
+                "error": "This operation was aborted",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 15007,
+                "error": "This operation was aborted",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_五八[AG¹]",
+      "name": "五八[AG¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppGet.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 17,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://dy.58ys.vip",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 1010,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_看客联盟[AS]",
+      "name": "看客联盟[AS](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppSk.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 27,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://kankelm.cn:2024/appdomain.txt",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 201,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 128,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_Free影视[AS]",
+      "name": "Free影视[AS](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppSk.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 27,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://sk.xiaoyaoys.top/skkkkkkk.txt",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": 444,
+                "durationMs": 1484,
+                "error": "",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": 444,
+                "durationMs": 856,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV1.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 28,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://ziyuncms.feifan12.xyz/api.php",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 664,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_好震惊[AV²]",
+      "name": "好震惊[AV²](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV2².py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 28,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://v.lnhaozhenjin.cn",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 380,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 2137,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_小雅动漫[EM³]",
+      "name": "小雅动漫[EM³](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/emby.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 29,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://139.9.106.196:2345",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 10559,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 10452,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_七月[AG³]",
+      "name": "七月[AG³](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/getapp3.4.4.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://99.jl8.top/1.txt",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": 404,
+                "durationMs": 2913,
+                "error": "",
+                "sample": "<html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Foun"
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": 404,
+                "durationMs": 451,
+                "error": "",
+                "sample": "<html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Foun"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ext_tvbox_demo_drpy_426eef1c_3",
+      "name": "同构Demo源 [外部:参考tvbox]",
+      "lang": "external_3",
+      "type": 3,
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "originalMessage": "resource check failed: api=false extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://127.0.0.1:9977/js/demo_source.js",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 1,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 2,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ext_tvbox_demo_drpy_426eef1c",
+      "name": "同构Demo源 [外部:tvbox]",
+      "lang": "external_3",
+      "type": 3,
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "originalMessage": "resource check failed: api=false extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://127.0.0.1:9977/js/demo_source.js",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 1,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 2,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ext_tvbox_demo_drpy_426eef1c_2",
+      "name": "同构Demo源 [外部:tvbox]",
+      "lang": "external_3",
+      "type": 3,
+      "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+      "originalMessage": "resource check failed: api=false extAny=false",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "api_and_ext_unreachable",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://127.0.0.1:9977/js/demo_source.js",
+            "ok": false,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": false,
+                "status": -1,
+                "durationMs": 1,
+                "error": "fetch failed",
+                "sample": ""
+              },
+              {
+                "index": 2,
+                "ok": false,
+                "status": -1,
+                "durationMs": 1,
+                "error": "fetch failed",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_4kvm_a5f8f6a5",
+      "name": "CTF-4kvm [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/kvm4",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 0,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_4kvm_0d129313",
+      "name": "CTF-4kvm [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "at_least_one_endpoint_recovered",
+      "probes": {
+        "home": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 661,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"ok\",\"class\":[{\"type_id\":\"1\",\"type_name\":\"CTF实战\"}],\"filters\":{}}"
+            }
+          ]
+        },
+        "category": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 2654,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"数据列表\",\"page\":\"1\",\"pagecount\":\"1\",\"limit\":\"20\",\"total\":\"1\",\"list"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_ysxq_b1f67587",
+      "name": "CTF-播剧影视 [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/ysxq",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_dbkk_4e72dab7",
+      "name": "CTF-独播库 [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/dbkk",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_dbkk_bd03b8b9",
+      "name": "CTF-独播库 [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "at_least_one_endpoint_recovered",
+      "probes": {
+        "home": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 1739,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"ok\",\"class\":[{\"type_id\":\"1\",\"type_name\":\"CTF实战\"}],\"filters\":{}}"
+            }
+          ]
+        },
+        "category": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 1038,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"数据列表\",\"page\":\"1\",\"pagecount\":\"1\",\"limit\":\"20\",\"total\":\"1\",\"list"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_allinone_f60924f1_2",
+      "name": "CTF-饭太硬同款 [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "at_least_one_endpoint_recovered",
+      "probes": {
+        "home": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 688,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"ok\",\"class\":[{\"type_id\":\"1\",\"type_name\":\"CTF-NetflixGC\"},{\"type"
+            }
+          ]
+        },
+        "category": {
+          "ok": true,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": true,
+              "status": 200,
+              "durationMs": 1249,
+              "error": "",
+              "sample": "{\"code\":1,\"msg\":\"数据列表\",\"page\":\"1\",\"pagecount\":\"1\",\"limit\":\"20\",\"total\":\"1\",\"list"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_aiyifan_d48ecd55",
+      "name": "CTF-aiyifan [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/aiyifan",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 0,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_bgm_f0785b8a",
+      "name": "CTF-bgm [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/bgm",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 0,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_cz233_09222274",
+      "name": "CTF-cz233 [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/cz233",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_iyf_78af5d1d",
+      "name": "CTF-iyf [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/iyf",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_kanbot_a05222cd",
+      "name": "CTF-kanbot [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/kanbot",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_kuangren_5c8adfae",
+      "name": "CTF-kuangren [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/kuangren",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_libvio_bdc5ef61",
+      "name": "CTF-libvio [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/libvio",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "ext_tvbox_ctf_netflixgc_17e0d0a5",
+      "name": "CTF-NetflixGC [外部:tvbox]",
+      "lang": "external_1",
+      "type": 4,
+      "api": "http://127.0.0.1:7788/api/netflixgc",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "disablePreview": {
+    "keys": [
+      "drpyS_3Q影视[优]",
+      "drpyS_丫丫动漫_Appget",
+      "drpyS_云云_Appget",
+      "drpyS_五八_Appget",
+      "drpyS_仓鼠_Appget",
+      "drpyS_优兔_Appget",
+      "drpyS_元咲动漫_Appget",
+      "drpyS_剧梦_Appget",
+      "drpyS_咕咕动漫_Appget",
+      "drpyS_咖啡_Appget",
+      "drpyS_哔哩大杂烩[官]",
+      "drpyS_多多ᵐ[盘]",
+      "drpyS_奇奇_Appget",
+      "drpyS_小猪_Appget",
+      "drpyS_影视_Appget",
+      "drpyS_数字_Appget",
+      "drpyS_方舟动漫_Appget",
+      "drpyS_旗星_Appget",
+      "drpyS_木兮[优]",
+      "drpyS_樱花动漫[优]",
+      "drpyS_火狐_Appget",
+      "drpyS_火锅_Appget",
+      "drpyS_灵虎_Appget",
+      "drpyS_爆炸_Appget",
+      "drpyS_爱盈_Appget",
+      "drpyS_牛牛短剧[短]",
+      "drpyS_王子TV",
+      "drpyS_王子_Appget",
+      "drpyS_玩偶哥哥DM[盘]",
+      "drpyS_番薯动漫_Appget",
+      "drpyS_紫金_Appget",
+      "drpyS_网盘资源[搜]",
+      "drpyS_蓝鹰_Appget",
+      "drpyS_虎斑ᵐ[盘]",
+      "drpyS_蜡笔ᵐ[盘]",
+      "drpyS_金牌_Appget",
+      "drpyS_零度",
+      "drpyS_音乐磁场[听]",
+      "drpyS_顶点小说[书]",
+      "drpyS_顾我_Appget",
+      "drpyS_鲸鱼_Appget",
+      "drpyS_麻雀视频[优]",
+      "drpyS_黑料不打烊[密]",
+      "ext_tvbox_ctf_4kvm_a5f8f6a5",
+      "ext_tvbox_ctf_aiyifan_d48ecd55",
+      "ext_tvbox_ctf_bgm_f0785b8a",
+      "ext_tvbox_ctf_cz233_09222274",
+      "ext_tvbox_ctf_dbkk_4e72dab7",
+      "ext_tvbox_ctf_iyf_78af5d1d",
+      "ext_tvbox_ctf_kanbot_a05222cd",
+      "ext_tvbox_ctf_kuangren_5c8adfae",
+      "ext_tvbox_ctf_libvio_bdc5ef61",
+      "ext_tvbox_ctf_netflixgc_17e0d0a5",
+      "ext_tvbox_ctf_ysxq_b1f67587",
+      "ext_tvbox_demo_drpy_426eef1c",
+      "ext_tvbox_demo_drpy_426eef1c_2",
+      "ext_tvbox_demo_drpy_426eef1c_3",
+      "hipy_py_Free影视[AS]",
+      "hipy_py_七月[AG³]",
+      "hipy_py_好震惊[AV²]",
+      "hipy_py_小雅动漫[EM³]",
+      "hipy_py_木瓜影视[AFX]",
+      "hipy_py_看客联盟[AS]"
+    ],
+    "meta": {
+      "generatedAt": "2026-02-22T05:32:47.080Z",
+      "basedOnReport": "reports/source-checker-batch/20260222-115201/report.json",
+      "summary": {
+        "totalErrorsInReport": 68,
+        "confirmedInvalid": 63,
+        "clientSideOnly": 0,
+        "recoveredOrUnstable": 5
+      }
+    },
+    "sources": [
+      {
+        "key": "drpyS_3Q影视[优]",
+        "name": "3Q影视[优](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/3Q影视[优]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_木兮[优]",
+        "name": "木兮[优](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/木兮[优]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_樱花动漫[优]",
+        "name": "樱花动漫[优](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/樱花动漫[优]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_麻雀视频[优]",
+        "name": "麻雀视频[优](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/麻雀视频[优]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_玩偶哥哥DM[盘]",
+        "name": "玩偶哥哥DM[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/玩偶哥哥DM[盘]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_蜡笔ᵐ[盘]",
+        "name": "蜡笔ᵐ[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/网盘[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_虎斑ᵐ[盘]",
+        "name": "虎斑ᵐ[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/网盘[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_多多ᵐ[盘]",
+        "name": "多多ᵐ[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/网盘[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_牛牛短剧[短]",
+        "name": "牛牛短剧[短](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/牛牛短剧[短]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_哔哩大杂烩[官]",
+        "name": "哔哩大杂烩[官](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_音乐磁场[听]",
+        "name": "音乐磁场[听](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/音乐磁场[听]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_顶点小说[书]",
+        "name": "顶点小说[书](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/顶点小说[书]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_蓝鹰_Appget",
+        "name": "蓝鹰[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_仓鼠_Appget",
+        "name": "仓鼠[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_云云_Appget",
+        "name": "云云[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_奇奇_Appget",
+        "name": "奇奇[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_鲸鱼_Appget",
+        "name": "鲸鱼[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_咖啡_Appget",
+        "name": "咖啡[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_小猪_Appget",
+        "name": "小猪[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_影视_Appget",
+        "name": "影视[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_优兔_Appget",
+        "name": "优兔[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_王子_Appget",
+        "name": "王子[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_紫金_Appget",
+        "name": "紫金[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_数字_Appget",
+        "name": "数字[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_火锅_Appget",
+        "name": "火锅[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_五八_Appget",
+        "name": "五八[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_旗星_Appget",
+        "name": "旗星[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_灵虎_Appget",
+        "name": "灵虎[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_剧梦_Appget",
+        "name": "剧梦[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_火狐_Appget",
+        "name": "火狐[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_金牌_Appget",
+        "name": "金牌[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_爱盈_Appget",
+        "name": "爱盈[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_顾我_Appget",
+        "name": "顾我[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_爆炸_Appget",
+        "name": "爆炸[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_丫丫动漫_Appget",
+        "name": "丫丫动漫[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_番薯动漫_Appget",
+        "name": "番薯动漫[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_咕咕动漫_Appget",
+        "name": "咕咕动漫[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_元咲动漫_Appget",
+        "name": "元咲动漫[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_方舟动漫_Appget",
+        "name": "方舟动漫[M](GET)",
+        "lang": "unknown",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/Appget[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_网盘资源[搜]",
+        "name": "网盘资源[搜](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/网盘资源[搜]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_王子TV",
+        "name": "王子TV(DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/王子TV",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_零度",
+        "name": "零度(DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/零度",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_黑料不打烊[密]",
+        "name": "黑料不打烊[密](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/黑料不打烊[密]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "hipy_py_木瓜影视[AFX]",
+        "name": "木瓜影视[AFX](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/AppFox.py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "hipy_py_看客联盟[AS]",
+        "name": "看客联盟[AS](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/AppSk.py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "hipy_py_Free影视[AS]",
+        "name": "Free影视[AS](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/AppSk.py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "hipy_py_好震惊[AV²]",
+        "name": "好震惊[AV²](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/AppV2².py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "hipy_py_小雅动漫[EM³]",
+        "name": "小雅动漫[EM³](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/emby.py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "hipy_py_七月[AG³]",
+        "name": "七月[AG³](hipy)",
+        "lang": "hipy",
+        "type": 3,
+        "api": "http://127.0.0.1:5757/py/getapp3.4.4.py",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "ext_tvbox_demo_drpy_426eef1c_3",
+        "name": "同构Demo源 [外部:参考tvbox]",
+        "lang": "external_3",
+        "type": 3,
+        "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "ext_tvbox_demo_drpy_426eef1c",
+        "name": "同构Demo源 [外部:tvbox]",
+        "lang": "external_3",
+        "type": 3,
+        "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "ext_tvbox_demo_drpy_426eef1c_2",
+        "name": "同构Demo源 [外部:tvbox]",
+        "lang": "external_3",
+        "type": 3,
+        "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+        "reason": "api_and_ext_unreachable"
+      },
+      {
+        "key": "ext_tvbox_ctf_4kvm_a5f8f6a5",
+        "name": "CTF-4kvm [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/kvm4",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_ysxq_b1f67587",
+        "name": "CTF-播剧影视 [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/ysxq",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_dbkk_4e72dab7",
+        "name": "CTF-独播库 [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/dbkk",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_aiyifan_d48ecd55",
+        "name": "CTF-aiyifan [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/aiyifan",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_bgm_f0785b8a",
+        "name": "CTF-bgm [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/bgm",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_cz233_09222274",
+        "name": "CTF-cz233 [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/cz233",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_iyf_78af5d1d",
+        "name": "CTF-iyf [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/iyf",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_kanbot_a05222cd",
+        "name": "CTF-kanbot [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/kanbot",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_kuangren_5c8adfae",
+        "name": "CTF-kuangren [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/kuangren",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_libvio_bdc5ef61",
+        "name": "CTF-libvio [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/libvio",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "ext_tvbox_ctf_netflixgc_17e0d0a5",
+        "name": "CTF-NetflixGC [外部:tvbox]",
+        "lang": "external_1",
+        "type": 4,
+        "api": "http://127.0.0.1:7788/api/netflixgc",
+        "reason": "home_and_category_failed_all_retries"
+      }
+    ]
+  }
+}

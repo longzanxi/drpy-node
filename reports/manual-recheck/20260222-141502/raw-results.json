@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "batch": "20260222-141502",
+    "startedAt": "2026-02-22T06:15:04.643Z",
+    "finishedAt": "2026-02-22T06:15:04.698Z",
+    "port": 5757,
+    "timeoutMs": 60000
+  },
+  "summary": {
+    "total": 2,
+    "pass": 0,
+    "fail": 2
+  },
+  "sources": [
+    {
+      "key": "hipy_py_五八[AG¹]",
+      "name": "五八[AG¹](hipy)",
+      "module": "AppGet",
+      "ext": {
+        "host": "https://dy.58ys.vip",
+        "key": "JEWibY1AgWF0V1xx"
+      },
+      "status": "fail",
+      "failed": 6,
+      "steps": [
+        {
+          "name": "home",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppGet?do=py&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D",
+          "status": 500,
+          "message": "class=0,list=0",
+          "durationMs": 12
+        },
+        {
+          "name": "list",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppGet?do=py&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D&ac=list&t=1&pg=1",
+          "status": 500,
+          "message": "items=0",
+          "durationMs": 5
+        },
+        {
+          "name": "search",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppGet?do=py&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D&wd=%E4%BA%94%E5%85%AB%5BA&pg=1",
+          "status": 500,
+          "message": "wd=五八[A,items=0",
+          "durationMs": 4
+        },
+        {
+          "name": "detail",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppGet?do=py&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D&ac=detail&ids=1",
+          "status": 500,
+          "message": "items=0",
+          "durationMs": 5
+        },
+        {
+          "name": "play",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppGet?do=py&extend=%7B%22host%22%3A%22https%3A%2F%2Fdy.58ys.vip%22%2C%22key%22%3A%22JEWibY1AgWF0V1xx%22%7D",
+          "status": 500,
+          "message": "parse=undefined,url=",
+          "durationMs": 4
+        },
+        {
+          "name": "play_probe",
+          "ok": false,
+          "url": "",
+          "status": 200,
+          "message": "invalid_play_url",
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "module": "AppV1",
+      "ext": "http://ziyuncms.feifan12.xyz/api.php",
+      "status": "fail",
+      "failed": 6,
+      "steps": [
+        {
+          "name": "home",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppV1?do=py&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php",
+          "status": 500,
+          "message": "class=0,list=0",
+          "durationMs": 4
+        },
+        {
+          "name": "list",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppV1?do=py&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php&ac=list&t=1&pg=1",
+          "status": 500,
+          "message": "items=0",
+          "durationMs": 4
+        },
+        {
+          "name": "search",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppV1?do=py&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php&wd=%E7%B4%AB%E4%BA%91%5BA&pg=1",
+          "status": 500,
+          "message": "wd=紫云[A,items=0",
+          "durationMs": 4
+        },
+        {
+          "name": "detail",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppV1?do=py&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php&ac=detail&ids=1",
+          "status": 500,
+          "message": "items=0",
+          "durationMs": 5
+        },
+        {
+          "name": "play",
+          "ok": false,
+          "url": "http://127.0.0.1:5757/api/AppV1?do=py&extend=http%3A%2F%2Fziyuncms.feifan12.xyz%2Fapi.php",
+          "status": 500,
+          "message": "parse=undefined,url=",
+          "durationMs": 4
+        },
+        {
+          "name": "play_probe",
+          "ok": false,
+          "url": "",
+          "status": 200,
+          "message": "invalid_play_url",
+          "durationMs": 0
+        }
+      ]
+    }
+  ]
+}

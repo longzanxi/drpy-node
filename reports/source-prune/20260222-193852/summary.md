@@ -1,0 +1,56 @@
+# 源失效复测与下线建议报告
+
+- reportPath: reports/source-checker-batch/20260222-175130/report.json
+- timeoutMs: 20000
+- retries: 3
+- concurrency: 10
+- error来源总数: 83
+- 确认失效(建议下线): 44
+- 客户端专属(不应服务端删除): 0
+- 复测恢复/不稳定(暂不删除): 39
+
+## 建议下线 key
+- ctf_local_iyf
+- ctf_local_kanbot
+- ctf_local_libvio
+- ctf_local_netflixgc
+- drpyS_Emby[优]
+- drpyS_七猫小说[书]
+- drpyS_七猫短剧[短]
+- drpyS_二小ᵐ[盘]
+- drpyS_人人影视[优]
+- drpyS_优酷[官]
+- drpyS_凤凰FM[听]
+- drpyS_剧海影视[优]
+- drpyS_哔哩大全[官]
+- drpyS_哔哩少儿[官]
+- drpyS_哔哩影视[官]
+- drpyS_哔哩戏曲[官]
+- drpyS_哔哩收藏[官]
+- drpyS_哔哩教育[官]
+- drpyS_啊哈DJ[听]
+- drpyS_夸克影视[盘]
+- drpyS_奇珍异兽[官]
+- drpyS_小苹果[优]
+- drpyS_斗鱼直播弹幕[官]
+- drpyS_星芽短剧[短]
+- drpyS_欧歌ᵐ[盘]
+- drpyS_热播影视[优]
+- drpyS_爱推图[画]
+- drpyS_爱看机器人[虫]
+- drpyS_独播库[优]
+- drpyS_玩偶ᵐ[盘]
+- drpyS_番茄小说[书]
+- drpyS_番茄畅听[听]
+- drpyS_番茄短剧[短]
+- drpyS_百忙无果[官]
+- drpyS_盘Ta[盘]
+- drpyS_腾云驾雾[官]
+- drpyS_至臻ᵐ[盘]
+- drpyS_荐片[优]
+- drpyS_西饭短剧[短]
+- drpyS_追新影视[优]
+- drpyS_酷我听书[听]
+- drpyS_阅读助手[书]
+- drpyS_雷鲸小站[盘]
+- hipy_py_剧永久[AV⁶]

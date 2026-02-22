@@ -1,0 +1,629 @@
+[
+  {
+    "key": "ext_tvbox_ctf_netflixgc_17e0d0a5",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/netflixgc",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_b1f67587",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/ysxq",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_09222274",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/cz233",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_f0785b8a",
+    "name": "CTF-bgm [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/bgm",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_a5f8f6a5",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/kvm4",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_bdc5ef61",
+    "name": "CTF-libvio [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/libvio",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_a05222cd",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/kanbot",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_5c8adfae",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/kuangren",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_4e72dab7",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/dbkk",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_78af5d1d",
+    "name": "CTF-iyf [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/iyf",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_d48ecd55",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "type": 4,
+    "api": "http://127.0.0.1:7788/api/aiyifan",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_allinone_f60924f1",
+    "name": "CTF-影视墙 [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_allinone_f60924f1_2",
+    "name": "CTF-饭太硬同款 [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_netflixgc_01dd7d22",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_7d3dd8e7",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_e74f66bc",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_67f861fc",
+    "name": "CTF-bgm [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_0d129313",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_1c262f4f",
+    "name": "CTF-libvio [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_7b4e20d5",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_fcf0ef8f",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_bd03b8b9",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_86b105e0",
+    "name": "CTF-iyf [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_0587a225",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "type": 4,
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_1"
+  },
+  {
+    "key": "ext_tvbox_site_e5f40762",
+    "name": "☯️微信公众号：NGZ南歌(关注不迷路) [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Douban",
+    "searchable": 0,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_4d376aaa",
+    "name": "🗂个人云盘┃配置 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Config",
+    "searchable": 0,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f",
+    "name": "🎇NGZ聚合┃4K弹幕 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_AppGet",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": {
+      "site": "https://mk1080.top/get.txt",
+      "dataKey": "c60d88b2eep53za8",
+      "dataIv": "c60d88b2eep53za8",
+      "token": "4181e508e7a17657d6a6246e70b1b13553e5ae9d8d287dc47000fb2df638dffa",
+      "ua": "okhttp/3.14.9"
+    },
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_qiao4k2_6bc837d1",
+    "name": "🎑巧技┃4K至臻 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Qiji",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "7lj763gg402i7942553k9hj9lk5h8h86k4gg845kili63835585155k7k103470h1k955lhk9706ih80280ikij0g7l91jlhl565775ikjhj9lg422962ig23ili4845k6g492l0",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_3bc43c5f",
+    "name": "🎯移动┃在线4K [外部:tvbox]",
+    "type": 3,
+    "api": "csp_YD",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_hipy_js_4k_av_2713e15f",
+    "name": "🧲磁力在线┃原盘 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XYQHiker",
+    "searchable": 0,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "https://16409.kstore.vip/js/dyg.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_68668575",
+    "name": "🍉GZ┃HD2K [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Gz360",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_39d28ddb",
+    "name": "🔦金牌┃HD2K [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Jpys",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_2713e15f",
+    "name": "🏮农民┃秒播 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XYQHiker",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "http://192.140.163.220:9986/svip/lib/农民影视.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_2186f762",
+    "name": "🫧韩剧┃蓝光 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XBPQ",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "https://16409.kstore.vip/js/hanjukan.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_d5ad9e00",
+    "name": "🪔聚合┃短剧 [外部:tvbox]",
+    "type": 3,
+    "api": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15",
+    "name": "🧽网盘┃玩偶哥哥 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_PanWebShare",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "https://16409.kstore.vip/js/wogg.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15_2",
+    "name": "🧽网盘┃玩偶至臻 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_PanWebShare",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "https://16409.kstore.vip/js/zz.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_009bcb15_3",
+    "name": "🧽网盘┃玩偶多多 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_PanWebShare",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "https://16409.kstore.vip/js/yyds.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_4cad1779",
+    "name": "🩴米搜┃网盘 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_MiSou",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_6d2949b2",
+    "name": "🍼漫国丨动漫 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_AppSy",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": {
+      "site": "http://192.140.163.220:9986/svip/lib/api.txt",
+      "siteKey": "rectangleadsadxa",
+      "listKey": "aassddwwxxllsx1x",
+      "parsesKey": "aassddwwxxllsx1x"
+    },
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_2186f762_2",
+    "name": "🍼樱花｜动漫 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XBPQ",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "http://192.140.163.220:9986/svip/lib/樱花动漫.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_2713e15f_2",
+    "name": "🍼巴士｜动漫 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XYQHiker",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "http://192.140.163.220:9986/svip/lib/巴士动漫.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f_2",
+    "name": "🍼番薯丨动漫 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_AppGet",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": {
+      "url": "https://new.app.bytegooty.com",
+      "site": "",
+      "dataKey": "N4yj7l7xKxHF4*gz",
+      "dataIv": "N4yj7l7xKxHF4*gz",
+      "deviceId": "",
+      "version": "",
+      "ua": ""
+    },
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_56778c5f_3",
+    "name": "🍼米饭｜动漫 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_AppGet",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": {
+      "url": "https://get.mymifun.com",
+      "site": "",
+      "dataKey": "GETMIFUNGEIMIFUN",
+      "dataIv": "GETMIFUNGEIMIFUN",
+      "deviceId": "",
+      "version": ""
+    },
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_c1a1db0b",
+    "name": "📻本地┃视频 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_LocalFile",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_b43c3af1",
+    "name": "🎧酷狗┃音乐 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Kugou",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": {
+      "classes": [
+        {
+          "type_name": "酷狗",
+          "type_id": "kugou"
+        }
+      ]
+    },
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_78ae3c1d",
+    "name": "🎧全网┃音乐 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Bili",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "ext": "https://16409.kstore.vip/js/%E5%93%94%E5%93%A9MTV.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_site_645c2129",
+    "name": "⛑️急救┃教学 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_FirstAid",
+    "searchable": 0,
+    "quickSearch": 0,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_926_69ce7be7",
+    "name": "🏀926┃看球 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Sir88",
+    "searchable": 0,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_jrsjs_b69c0d59",
+    "name": "⚽实时┃球迷 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_Kanqiu",
+    "searchable": 0,
+    "quickSearch": 0,
+    "filterable": 0,
+    "ext": "",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_csp_xpath_45dc77f5",
+    "name": "🥅企鹅┃体育直播 [外部:tvbox]",
+    "type": 3,
+    "api": "csp_XPath",
+    "searchable": 0,
+    "quickSearch": 0,
+    "filterable": 0,
+    "ext": "https://16409.kstore.vip/js/%E4%BC%81%E9%B9%85%E7%9B%B4%E6%92%AD.json",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c",
+    "name": "同构Demo源 [外部:tvbox]",
+    "type": 3,
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "http://127.0.0.1:9977/js/demo_source.js",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c_2",
+    "name": "同构Demo源 [外部:tvbox]",
+    "type": 3,
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "http://127.0.0.1:9977/js/demo_source.js",
+    "lang": "external_3"
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c_3",
+    "name": "同构Demo源 [外部:参考tvbox]",
+    "type": 3,
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 0,
+    "ext": "http://127.0.0.1:9977/js/demo_source.js",
+    "lang": "external_3"
+  }
+]

@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T05:36:12.834Z",
+    "finishedAt": "2026-02-22T05:36:13.796Z",
+    "timeoutMs": 15000,
+    "retries": 2,
+    "concurrency": 6,
+    "reportPath": "reports/source-checker-batch/20260222-133310/report.json",
+    "apply": true,
+    "disableFile": "D:/code/yingshi/drpy-node/data/source-checker/disabled-sources.json"
+  },
+  "summary": {
+    "totalErrorsInReport": 6,
+    "confirmedInvalid": 3,
+    "clientSideOnly": 0,
+    "recoveredOrUnstable": 3
+  },
+  "results": [
+    {
+      "key": "drpyS_木偶ᵐ[盘]",
+      "name": "木偶ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 34,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_采王2024",
+      "name": "采王2024(DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/采集之王[合]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 32,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "drpyS_非凡采集[采]",
+      "name": "非凡采集[采](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/非凡采集[采]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 31,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "hipy_py_五八[AG¹]",
+      "name": "五八[AG¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppGet.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://dy.58ys.vip",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 737,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_拾光视频[Hs]",
+      "name": "拾光视频[Hs](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppHs.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 31,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://dy.jmzp.net.cn",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 708,
+                "error": "",
+                "sample": "<!DOCTYPE html> <html> <head> <title>Welcome to nginx!</title> <style>     body "
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV1.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 33,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://ziyuncms.feifan12.xyz/api.php",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 709,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "disablePreview": {
+    "keys": [
+      "drpyS_木偶ᵐ[盘]",
+      "drpyS_采王2024",
+      "drpyS_非凡采集[采]"
+    ],
+    "meta": {
+      "generatedAt": "2026-02-22T05:36:13.796Z",
+      "basedOnReport": "reports/source-checker-batch/20260222-133310/report.json",
+      "summary": {
+        "totalErrorsInReport": 6,
+        "confirmedInvalid": 3,
+        "clientSideOnly": 0,
+        "recoveredOrUnstable": 3
+      }
+    },
+    "sources": [
+      {
+        "key": "drpyS_木偶ᵐ[盘]",
+        "name": "木偶ᵐ[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/网盘[模板]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_采王2024",
+        "name": "采王2024(DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/采集之王[合]",
+        "reason": "home_and_category_failed_all_retries"
+      },
+      {
+        "key": "drpyS_非凡采集[采]",
+        "name": "非凡采集[采](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/非凡采集[采]",
+        "reason": "home_and_category_failed_all_retries"
+      }
+    ]
+  }
+}

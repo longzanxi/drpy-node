@@ -1430,7 +1430,7 @@ var rule = {
                 let data = pathLib.readFile('./settings/link_data.json');
                 let sites = [];
                 try {
-                    sites = JSON.parse(data).sites.filter(site => site.type = 4);
+                    sites = JSON.parse(data).sites.filter(site => [3, 4].includes(Number(site.type)));
                 } catch (e) {
                 }
                 sites = JSON.stringify(sites);

@@ -1,0 +1,635 @@
+{
+  "meta": {
+    "batch": "20260222-104258",
+    "startedAt": "2026-02-22T02:42:58.069Z",
+    "finishedAt": "2026-02-22T02:43:17.411Z",
+    "port": 5757,
+    "timeoutMs": 22000,
+    "concurrency": 11,
+    "reusedService": false
+  },
+  "summary": {
+    "total": 11,
+    "success": 10,
+    "pending": 1,
+    "error": 0
+  },
+  "sources": [
+    {
+      "id": "kvm4",
+      "key": "ctf_local_kvm4",
+      "name": "CTF-4kvm(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kvm4",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 12698,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?ac=detail&ids=kvm4_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?ac=play&id=kvm4_1"
+      },
+      "firstPlayableUrl": "https://play.kvmplay.org/m3/dc4a95d1771214316/58Njk5MWVkMmMzOTJlYiQzNTY3JDEkMTc3MTE3MTExNg6991ed2c392e8.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://play.kvmplay.org/m3/dc4a95d1771214316/58Njk5MWVkMmMzOTJlYiQzNTY3JDEkMTc3MTE3MTExNg6991ed2c392e8.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "cz233",
+      "key": "ctf_local_cz233",
+      "name": "CTF-cz233(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/cz233",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 12180,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 4,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?ac=detail&ids=cz233_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?ac=play&id=cz233_1"
+      },
+      "firstPlayableUrl": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "netflixgc",
+      "key": "ctf_local_netflixgc",
+      "name": "CTF-netflixgc(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 12260,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?ac=detail&ids=netflixgc_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?ac=play&id=netflixgc_1"
+      },
+      "firstPlayableUrl": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "ysxq",
+      "key": "ctf_local_ysxq",
+      "name": "CTF-boju(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/ysxq",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 12715,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 4,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?ac=detail&ids=ysxq_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?ac=play&id=ysxq_1"
+      },
+      "firstPlayableUrl": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "dbkk",
+      "key": "ctf_local_dbkk",
+      "name": "CTF-dbkk(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/dbkk",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 9095,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?ac=detail&ids=dbkk_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?ac=play&id=dbkk_1"
+      },
+      "firstPlayableUrl": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "aiyifan",
+      "key": "ctf_local_aiyifan",
+      "name": "CTF-aiyifan(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 9448,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 5,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 6,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?ac=detail&ids=aiyifan_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 5,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?ac=play&id=aiyifan_1"
+      },
+      "firstPlayableUrl": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=video/mp4",
+        "status": 206,
+        "tested": [
+          {
+            "url": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+            "ok": true,
+            "reason": "content-type=video/mp4",
+            "status": 206
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "bgm",
+      "key": "ctf_local_bgm",
+      "name": "CTF-bgm(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/bgm",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 14404,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?ac=detail&ids=bgm_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 4,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?ac=play&id=bgm_1"
+      },
+      "firstPlayableUrl": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "kuangren",
+      "key": "ctf_local_kuangren",
+      "name": "CTF-kuangren(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kuangren",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 8586,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?ac=detail&ids=kuangren_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?ac=play&id=kuangren_1"
+      },
+      "firstPlayableUrl": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "kanbot",
+      "key": "ctf_local_kanbot",
+      "name": "CTF-kanbot(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kanbot",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 17274,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 1,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?ac=detail&ids=kanbot_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?ac=play&id=kanbot_1"
+      },
+      "firstPlayableUrl": "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=application/vnd.apple.mpegurl",
+        "status": 200,
+        "tested": [
+          {
+            "url": "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "iyf",
+      "key": "ctf_local_iyf",
+      "name": "CTF-iyf(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/iyf",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 9394,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?ac=detail&ids=iyf_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 4,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?ac=play&id=iyf_1"
+      },
+      "firstPlayableUrl": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+      "stream": {
+        "ok": true,
+        "reason": "content-type=video/mp4",
+        "status": 206,
+        "tested": [
+          {
+            "url": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+            "ok": true,
+            "reason": "content-type=video/mp4",
+            "status": 206
+          }
+        ]
+      },
+      "status": "success"
+    },
+    {
+      "id": "libvio",
+      "key": "ctf_local_libvio",
+      "name": "CTF-libvio(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/libvio",
+      "home": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 7317,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio"
+      },
+      "list": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 4,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?ac=list&t=1&pg=1"
+      },
+      "search": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 2,
+        "message": "items=0",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?ac=search&wd=test"
+      },
+      "detail": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "items=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?ac=detail&ids=libvio_1"
+      },
+      "play": {
+        "ok": true,
+        "status": 200,
+        "durationMs": 3,
+        "message": "code=1",
+        "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?ac=play&id=libvio_1"
+      },
+      "firstPlayableUrl": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8",
+      "stream": {
+        "ok": false,
+        "reason": "HTTP 403",
+        "status": 403,
+        "tested": [
+          {
+            "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          }
+        ]
+      },
+      "status": "pending"
+    }
+  ]
+}

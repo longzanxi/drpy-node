@@ -1,0 +1,412 @@
+{
+  "keys": [
+    "ctf_local_iyf",
+    "ctf_local_kanbot",
+    "ctf_local_libvio",
+    "ctf_local_netflixgc",
+    "drpyS_Emby[优]",
+    "drpyS_七猫小说[书]",
+    "drpyS_七猫短剧[短]",
+    "drpyS_二小ᵐ[盘]",
+    "drpyS_人人影视[优]",
+    "drpyS_优酷[官]",
+    "drpyS_凤凰FM[听]",
+    "drpyS_剧海影视[优]",
+    "drpyS_哔哩大全[官]",
+    "drpyS_哔哩少儿[官]",
+    "drpyS_哔哩影视[官]",
+    "drpyS_哔哩戏曲[官]",
+    "drpyS_哔哩收藏[官]",
+    "drpyS_哔哩教育[官]",
+    "drpyS_啊哈DJ[听]",
+    "drpyS_夸克影视[盘]",
+    "drpyS_奇珍异兽[官]",
+    "drpyS_小苹果[优]",
+    "drpyS_斗鱼直播弹幕[官]",
+    "drpyS_星芽短剧[短]",
+    "drpyS_欧歌ᵐ[盘]",
+    "drpyS_热播影视[优]",
+    "drpyS_爱推图[画]",
+    "drpyS_爱看机器人[虫]",
+    "drpyS_独播库[优]",
+    "drpyS_玩偶ᵐ[盘]",
+    "drpyS_番茄小说[书]",
+    "drpyS_番茄畅听[听]",
+    "drpyS_番茄短剧[短]",
+    "drpyS_百忙无果[官]",
+    "drpyS_盘Ta[盘]",
+    "drpyS_腾云驾雾[官]",
+    "drpyS_至臻ᵐ[盘]",
+    "drpyS_荐片[优]",
+    "drpyS_西饭短剧[短]",
+    "drpyS_追新影视[优]",
+    "drpyS_酷我听书[听]",
+    "drpyS_阅读助手[书]",
+    "drpyS_雷鲸小站[盘]",
+    "hipy_py_剧永久[AV⁶]"
+  ],
+  "meta": {
+    "generatedAt": "2026-02-22T11:39:04.400Z",
+    "basedOnReport": "reports/source-checker-batch/20260222-175130/report.json",
+    "summary": {
+      "totalErrorsInReport": 83,
+      "confirmedInvalid": 44,
+      "clientSideOnly": 0,
+      "recoveredOrUnstable": 39
+    }
+  },
+  "sources": [
+    {
+      "key": "drpyS_番茄小说[书]",
+      "name": "番茄小说[书](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/番茄小说[书]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_腾云驾雾[官]",
+      "name": "腾云驾雾[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/腾云驾雾[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_Emby[优]",
+      "name": "Emby[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/Emby[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_人人影视[优]",
+      "name": "人人影视[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/人人影视[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_剧海影视[优]",
+      "name": "剧海影视[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/剧海影视[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_小苹果[优]",
+      "name": "小苹果[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/小苹果[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_热播影视[优]",
+      "name": "热播影视[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/热播影视[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_独播库[优]",
+      "name": "独播库[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/独播库[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_荐片[优]",
+      "name": "荐片[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/荐片[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_追新影视[优]",
+      "name": "追新影视[优](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/追新影视[优]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_夸克影视[盘]",
+      "name": "夸克影视[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/夸克影视[盘]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_盘Ta[盘]",
+      "name": "盘Ta[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/盘Ta[盘]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_玩偶ᵐ[盘]",
+      "name": "玩偶ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_二小ᵐ[盘]",
+      "name": "二小ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_欧歌ᵐ[盘]",
+      "name": "欧歌ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_至臻ᵐ[盘]",
+      "name": "至臻ᵐ[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/网盘[模板]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_雷鲸小站[盘]",
+      "name": "雷鲸小站[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/雷鲸小站[盘]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_七猫短剧[短]",
+      "name": "七猫短剧[短](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/七猫短剧[短]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_星芽短剧[短]",
+      "name": "星芽短剧[短](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/星芽短剧[短]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_番茄短剧[短]",
+      "name": "番茄短剧[短](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/番茄短剧[短]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_西饭短剧[短]",
+      "name": "西饭短剧[短](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/西饭短剧[短]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_优酷[官]",
+      "name": "优酷[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/优酷[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩影视[官]",
+      "name": "哔哩影视[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/哔哩影视[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩收藏[官]",
+      "name": "哔哩收藏[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/哔哩收藏[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_奇珍异兽[官]",
+      "name": "奇珍异兽[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/奇珍异兽[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩戏曲[官]",
+      "name": "哔哩戏曲[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩教育[官]",
+      "name": "哔哩教育[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩少儿[官]",
+      "name": "哔哩少儿[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_哔哩大全[官]",
+      "name": "哔哩大全[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/我的哔哩[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_斗鱼直播弹幕[官]",
+      "name": "斗鱼直播弹幕[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/斗鱼直播弹幕[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_百忙无果[官]",
+      "name": "百忙无果[官](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/百忙无果[官]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_凤凰FM[听]",
+      "name": "凤凰FM[听](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/凤凰FM[听]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_啊哈DJ[听]",
+      "name": "啊哈DJ[听](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/啊哈DJ[听]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_番茄畅听[听]",
+      "name": "番茄畅听[听](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/番茄畅听[听]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_酷我听书[听]",
+      "name": "酷我听书[听](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/酷我听书[听]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_七猫小说[书]",
+      "name": "七猫小说[书](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/七猫小说[书]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_阅读助手[书]",
+      "name": "阅读助手[书](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/阅读助手[书]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_爱推图[画]",
+      "name": "爱推图[画](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/爱推图[画]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "drpyS_爱看机器人[虫]",
+      "name": "爱看机器人[虫](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/爱看机器人[虫]",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "hipy_py_剧永久[AV⁶]",
+      "name": "剧永久[AV⁶](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV6.py",
+      "reason": "api_and_ext_unreachable"
+    },
+    {
+      "key": "ctf_local_iyf",
+      "name": "CTF-iyf(Local)",
+      "lang": "ctf_local",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/iyf",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "ctf_local_kanbot",
+      "name": "CTF-kanbot(Local)",
+      "lang": "ctf_local",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kanbot",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "ctf_local_libvio",
+      "name": "CTF-libvio(Local)",
+      "lang": "ctf_local",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/libvio",
+      "reason": "home_and_category_failed_all_retries"
+    },
+    {
+      "key": "ctf_local_netflixgc",
+      "name": "CTF-netflixgc(Local)",
+      "lang": "ctf_local",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc",
+      "reason": "home_and_category_failed_all_retries"
+    }
+  ]
+}

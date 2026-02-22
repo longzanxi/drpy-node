@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T11:42:03.722Z",
+    "finishedAt": "2026-02-22T11:42:04.599Z",
+    "timeoutMs": 20000,
+    "retries": 3,
+    "concurrency": 4,
+    "reportPath": "reports/source-checker-batch/20260222-193954/report.json",
+    "apply": true,
+    "disableFile": "D:/code/yingshi/drpy-node/data/source-checker/disabled-sources.json"
+  },
+  "summary": {
+    "totalErrorsInReport": 2,
+    "confirmedInvalid": 1,
+    "clientSideOnly": 0,
+    "recoveredOrUnstable": 1
+  },
+  "results": [
+    {
+      "key": "drpyS_木偶[盘]",
+      "name": "木偶[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/木偶[盘]",
+      "originalMessage": "推荐和分类接口均异常",
+      "originalStatus": "error",
+      "classification": "confirmed_invalid",
+      "confirmedInvalid": true,
+      "reason": "home_and_category_failed_all_retries",
+      "probes": {
+        "home": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 88,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 3,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "category": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 37,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 3,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 3,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV1.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 14,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 3,
+              "ok": false,
+              "status": -1,
+              "durationMs": 4,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://ziyuncms.feifan12.xyz/api.php",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 201,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "disablePreview": {
+    "keys": [
+      "drpyS_木偶[盘]"
+    ],
+    "meta": {
+      "generatedAt": "2026-02-22T11:42:04.599Z",
+      "basedOnReport": "reports/source-checker-batch/20260222-193954/report.json",
+      "summary": {
+        "totalErrorsInReport": 2,
+        "confirmedInvalid": 1,
+        "clientSideOnly": 0,
+        "recoveredOrUnstable": 1
+      }
+    },
+    "sources": [
+      {
+        "key": "drpyS_木偶[盘]",
+        "name": "木偶[盘](DS)",
+        "lang": "ds",
+        "type": 4,
+        "api": "http://127.0.0.1:5757/api/木偶[盘]",
+        "reason": "home_and_category_failed_all_retries"
+      }
+    ]
+  }
+}

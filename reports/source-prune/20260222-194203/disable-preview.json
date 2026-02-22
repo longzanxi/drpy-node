@@ -1,0 +1,25 @@
+{
+  "keys": [
+    "drpyS_木偶[盘]"
+  ],
+  "meta": {
+    "generatedAt": "2026-02-22T11:42:04.599Z",
+    "basedOnReport": "reports/source-checker-batch/20260222-193954/report.json",
+    "summary": {
+      "totalErrorsInReport": 2,
+      "confirmedInvalid": 1,
+      "clientSideOnly": 0,
+      "recoveredOrUnstable": 1
+    }
+  },
+  "sources": [
+    {
+      "key": "drpyS_木偶[盘]",
+      "name": "木偶[盘](DS)",
+      "lang": "ds",
+      "type": 4,
+      "api": "http://127.0.0.1:5757/api/木偶[盘]",
+      "reason": "home_and_category_failed_all_retries"
+    }
+  ]
+}
