@@ -5,6 +5,10 @@
   quickSearch: 0,
   title: '啊哈DJ[听]',
   '类型': '影视',
+  mergeList: true,
+  more: {
+    mergeList: 1
+  },
   lang: 'ds'
 })
 */
@@ -28,7 +32,15 @@ var rule = {
         // console.log('input:', input);
         let html = await request(input);
         let _url = pdfh(html, 'video&&source&&src');
-        return {parse: 0, url: _url, js: ''};
+        return {
+            parse: 0,
+            url: _url,
+            js: '',
+            header: {
+                referer: 'https://m.ahadj.com/',
+                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36'
+            }
+        };
     },
     推荐: '*',
     searchUrl: '/search/?key=**&page=fypage.html',

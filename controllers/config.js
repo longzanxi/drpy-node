@@ -23,6 +23,7 @@ import {validateBasicAuth, validatePwd} from "../utils/api_validate.js";
 import {getSitesMap} from "../utils/sites-map.js";
 import {getParsesDict} from "../utils/file.js";
 import batchExecute from '../libs_drpy/batchExecute.js';
+import {isPhpAvailable} from '../utils/phpEnv.js';
 
 const {jsEncoder} = drpyS;
 
@@ -54,6 +55,63 @@ function logExt(_ext) {
     return Array.isArray(_ext) || typeof _ext == "object" ? JSON.stringify(_ext) : _ext
 }
 
+const CTF_LOCAL_SITE_META = [
+    {id: 'kvm4', key: 'ctf_local_kvm4', name: 'CTF-4kvm(Local)'},
+    {id: 'cz233', key: 'ctf_local_cz233', name: 'CTF-cz233(Local)'},
+    {id: 'netflixgc', key: 'ctf_local_netflixgc', name: 'CTF-netflixgc(Local)'},
+    {id: 'ysxq', key: 'ctf_local_ysxq', name: 'CTF-boju(Local)'},
+    {id: 'dbkk', key: 'ctf_local_dbkk', name: 'CTF-dbkk(Local)'},
+    {id: 'aiyifan', key: 'ctf_local_aiyifan', name: 'CTF-aiyifan(Local)'},
+    {id: 'bgm', key: 'ctf_local_bgm', name: 'CTF-bgm(Local)'},
+    {id: 'kuangren', key: 'ctf_local_kuangren', name: 'CTF-kuangren(Local)'},
+    {id: 'kanbot', key: 'ctf_local_kanbot', name: 'CTF-kanbot(Local)'},
+    {id: 'iyf', key: 'ctf_local_iyf', name: 'CTF-iyf(Local)'},
+    {id: 'libvio', key: 'ctf_local_libvio', name: 'CTF-libvio(Local)'},
+];
+
+function buildCtfLocalSites(requestHost, pwd) {
+    return CTF_LOCAL_SITE_META.map((item) => {
+        let api = `${requestHost}/ctf-adapter/api/${item.id}`;
+        if (pwd) {
+            api += `?pwd=${pwd}`;
+        }
+        return {
+            key: item.key,
+            name: item.name,
+            type: 4,
+            api,
+            searchable: 1,
+            filterable: 1,
+            quickSearch: 1,
+            ext: '',
+            lang: 'ctf_local',
+        };
+    });
+}
+
+function loadDisabledSourceKeys(rootDir) {
+    const p = path.join(rootDir, 'data', 'source-checker', 'disabled-sources.json');
+    if (!existsSync(p)) return new Set();
+    try {
+        const raw = readFileSync(p, 'utf-8');
+        const j = JSON.parse(raw);
+        const keys = [];
+        if (Array.isArray(j)) {
+            keys.push(...j);
+        } else if (Array.isArray(j?.keys)) {
+            keys.push(...j.keys);
+        } else if (Array.isArray(j?.sources)) {
+            j.sources.forEach((x) => {
+                if (x && typeof x.key === 'string') keys.push(x.key);
+            });
+        }
+        return new Set(keys.map((x) => String(x || '').trim()).filter(Boolean));
+    } catch (e) {
+        console.warn('[config] failed to load disabled-sources.json:', e.message);
+        return new Set();
+    }
+}
+
 /**
  * 生成站点配置JSON数据
  * 扫描各种类型的源文件并生成统一的配置格式
@@ -76,6 +134,7 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
     const jsDir = options.jsDir;
     const dr2Dir = options.dr2Dir;
     const pyDir = options.pyDir;
+    const phpDir = options.phpDir;
     const catDir = options.catDir;
     const configDir = options.configDir;
     const jsonDir = options.jsonDir;
@@ -188,6 +247,7 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         title: ruleObject.title,
                         author: ruleObject.author,
                         类型: ruleObject.类型 || '影视',
+                        mergeList: ruleObject.二级 === '*' || ruleObject.mergeList,
                         searchable: ruleObject.searchable,
                         filterable: ruleObject.filterable,
                         quickSearch: ruleObject.quickSearch,
@@ -195,6 +255,13 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         logo: ruleObject.logo,
                         lang: 'ds',
                     });
+                    if (ruleMeta.mergeList) {
+                        if (ruleMeta.more && typeof ruleMeta.more === 'object') {
+                            ruleMeta.more.mergeList = 1;
+                        } else {
+                            ruleMeta.more = {mergeList: 1};
+                        }
+                    }
                     // console.log('ds ruleMeta:', ruleMeta);
                     await FileHeaderManager.writeHeader(filePath, ruleMeta);
                 } else {
@@ -291,6 +358,7 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                             title: ruleObject.title,
                             author: ruleObject.author,
                             类型: ruleObject.类型 || '影视',
+                            mergeList: ruleObject.二级 === '*' || ruleObject.mergeList,
                             searchable: ruleObject.searchable,
                             filterable: ruleObject.filterable,
                             quickSearch: ruleObject.quickSearch,
@@ -298,6 +366,13 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                             logo: ruleObject.logo,
                             lang: 'dr2',
                         });
+                        if (ruleMeta.mergeList) {
+                            if (ruleMeta.more && typeof ruleMeta.more === 'object') {
+                                ruleMeta.more.mergeList = 1;
+                            } else {
+                                ruleMeta.more = {mergeList: 1};
+                            }
+                        }
                         // console.log('dr2 ruleMeta:', ruleMeta);
                         await FileHeaderManager.writeHeader(filePath, ruleMeta);
                     } else {
@@ -327,9 +402,12 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                     }
 
                     fileSites.forEach((fileSite) => {
-                        if (enable_dr2 === '1') {
+                        if (enable_dr2 === '1' || enable_dr2 === '2') {
                             // dr2ApiType=0 使用接口drpy2 dr2ApiType=1 使用壳子内置的drpy2
                             let api = dr2ApiType ? `assets://js/lib/drpy2.js` : `${requestHost}/public/drpy/drpy2.min.js`;
+                            if (enable_dr2 === '2') {
+                                api = `${requestHost}/public/drpy/drpy2-fast.min.js`;
+                            }
                             let ext = `${requestHost}/js/${file}`;
                             if (pwd) {
                                 ext += `?pwd=${pwd}`;
@@ -348,31 +426,33 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                                 ext: ext || "", // 固定为空字符串
                             };
                             sites.push(site);
-                        } else if (enable_dr2 === '2') {
-                            // 模式2：只启用T3脚本的T4风格API配置
-                            const t4site = {
-                                key: fileSite.key,
-                                name: fileSite.name,
-                                type: 4, // 固定值
-                                api: `${requestHost}/api/${baseName}`,
-                                ...ruleMeta,
-                                ext: "", // 固定为空字符串
-                            };
-                            // 添加isdr2参数到API URL
-                            if (pwd) {
-                                t4site.api += `?pwd=${pwd}&do=dr`;
-                            } else {
-                                t4site.api += `?do=dr`;
-                            }
-
-                            // 处理传参源的API参数
-                            if (fileSite.queryStr) {
-                                const separator = t4site.api.includes('?') ? '&' : '?';
-                                site.api += `${separator}extend=${encodeURIComponent(fileSite.queryStr)}`;
-                            }
-
-                            sites.push(t4site);
                         }
+                        // else if (enable_dr2 === '2') {
+                        //
+                        //     // 模式2：只启用T3脚本的T4风格API配置
+                        //     const t4site = {
+                        //         key: fileSite.key,
+                        //         name: fileSite.name,
+                        //         type: 4, // 固定值
+                        //         api: `${requestHost}/api/${baseName}`,
+                        //         ...ruleMeta,
+                        //         ext: "", // 固定为空字符串
+                        //     };
+                        //     // 添加isdr2参数到API URL
+                        //     if (pwd) {
+                        //         t4site.api += `?pwd=${pwd}&do=dr`;
+                        //     } else {
+                        //         t4site.api += `?do=dr`;
+                        //     }
+                        //
+                        //     // 处理传参源的API参数
+                        //     if (fileSite.queryStr) {
+                        //         const separator = t4site.api.includes('?') ? '&' : '?';
+                        //         site.api += `${separator}extend=${encodeURIComponent(fileSite.queryStr)}`;
+                        //     }
+                        //
+                        //     sites.push(t4site);
+                        // }
                     });
                 },
                 param: {file, dr2Dir, requestHost, pwd, drpyS, SitesMap},
@@ -412,6 +492,11 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         filterable: 1, // 固定值
                         quickSearch: 1, // 固定值
                     };
+                    if (baseName.includes('[画]')) {
+                        ruleObject.类型 = '漫画'
+                    } else if (baseName.includes('[书]')) {
+                        ruleObject.类型 = '小说'
+                    }
                     let ruleMeta = {...ruleObject};
                     const filePath = path.join(pyDir, file);
                     const header = await FileHeaderManager.readHeader(filePath);
@@ -446,9 +531,13 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         SitesMap[baseName].forEach((it) => {
                             let key = `hipy_py_${it.alias}`;
                             let name = `${it.alias}(hipy)`;
-                            let _ext = it.queryStr;
-                            if (!enableOldConfig) {
-                                _ext = parseExt(_ext);
+                            let _ext = it.queryObject.type === 'url' ? it.queryObject.params : it.queryStr;
+                            if (_ext && _ext !== it.queryStr) {
+                                _ext = jsEncoder.gzip(_ext);
+                            } else {
+                                if (!enableOldConfig) {
+                                    _ext = parseExt(_ext);
+                                }
                             }
                             console.log(`[HIPY-${baseName}] alias name: ${name},typeof _ext:${typeof _ext},_ext: ${logExt(_ext)}`);
                             fileSites.push({key, name, ext: _ext});
@@ -481,6 +570,68 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
         await batchExecute(py_tasks, listener);
 
     }
+
+    // 根据用户是否启用php源去生成对应配置
+    const enable_php = ENV.get('enable_php', '1');
+    console.log('isPhpAvailable:', isPhpAvailable);
+    if ((enable_php === '1' && isPhpAvailable) || enable_php === '2') {
+        const php_files = readdirSync(phpDir);
+        const api_type = enable_php === '2' ? 3 : 4;
+        let php_valid_files = php_files.filter((file) => file.endsWith('.php') && !file.startsWith('_') && !['config.php', 'index.php', 'test_runner.php'].includes(file));
+        log(`开始生成php的T${api_type}配置，phpDir:${phpDir},源数量: ${php_valid_files.length}`);
+
+        const php_tasks = php_valid_files.map((file) => {
+            return {
+                func: async ({file, phpDir, requestHost, pwd, SitesMap}) => {
+                    const baseName = path.basename(file, '.php');
+                    let api = enable_php === '2' ? `${requestHost}/php/${file}` : `${requestHost}/api/${baseName}?do=php`;
+                    let ext = '';
+                    if (pwd) {
+                        api += enable_php === '2' ? `?pwd=${pwd}` : `&pwd=${pwd}`;
+                    }
+                    let ruleObject = {
+                        searchable: 1,
+                        filterable: 1,
+                        quickSearch: 1,
+                    };
+                    if (baseName.includes('[画]')) {
+                        ruleObject.类型 = '漫画'
+                    } else if (baseName.includes('[书]')) {
+                        ruleObject.类型 = '小说'
+                    }
+                    let ruleMeta = {...ruleObject};
+                    const filePath = path.join(phpDir, file);
+
+                    Object.assign(ruleMeta, {
+                        title: baseName,
+                        lang: 'php',
+                    });
+                    ruleMeta.title = enableRuleName ? ruleMeta.title || baseName : baseName;
+
+                    let fileSites = [];
+                    let key = `php_${ruleMeta.title}`;
+                    let name = `${ruleMeta.title}(PHP)`;
+                    fileSites.push({key, name, ext});
+
+                    fileSites.forEach((fileSite) => {
+                        const site = {
+                            key: fileSite.key,
+                            name: fileSite.name,
+                            type: api_type,
+                            api,
+                            ...ruleMeta,
+                            ext: fileSite.ext || "",
+                        };
+                        sites.push(site);
+                    });
+                },
+                param: {file, phpDir, requestHost, pwd, SitesMap},
+                id: file,
+            };
+        });
+        await batchExecute(php_tasks, listener);
+    }
+
     const enable_cat = ENV.get('enable_cat', '1');
     // 根据用户是否启用cat源去生成对应配置
     if (enable_cat === '1' || enable_cat === '2') {
@@ -511,6 +662,11 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         filterable: 1, // 固定值
                         quickSearch: 1, // 固定值
                     };
+                    if (baseName.includes('[画]')) {
+                        ruleObject.类型 = '漫画'
+                    } else if (baseName.includes('[书]')) {
+                        ruleObject.类型 = '小说'
+                    }
                     let ruleMeta = {...ruleObject};
                     const filePath = path.join(catDir, file);
                     const header = await FileHeaderManager.readHeader(filePath);
@@ -543,9 +699,13 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
                         SitesMap[baseName].forEach((it) => {
                             let key = `catvod_${it.alias}`;
                             let name = `${it.alias}(cat)`;
-                            let _ext = it.queryStr;
-                            if (!enableOldConfig) {
-                                _ext = parseExt(_ext);
+                            let _ext = it.queryObject.type === 'url' ? it.queryObject.params : it.queryStr;
+                            if (_ext && _ext !== it.queryStr) {
+                                _ext = jsEncoder.gzip(_ext);
+                            } else {
+                                if (!enableOldConfig) {
+                                    _ext = parseExt(_ext);
+                                }
                             }
                             console.log(`[CAT-${baseName}] alias name: ${name},typeof _ext:${typeof _ext},_ext: ${logExt(_ext)}`);
                             fileSites.push({key, name, ext: _ext});
@@ -581,30 +741,53 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
     if (ENV.get('enable_link_data', '0') === '1') {
         log(`开始挂载外部T4数据`);
         let link_sites = [];
-        let link_url = ENV.get('link_url');
+        let link_url = (ENV.get('link_url', '') || '').trim();
         let enable_link_push = ENV.get('enable_link_push', '0');
         let enable_link_jar = ENV.get('enable_link_jar', '0');
         try {
             let link_data = readFileSync(path.join(rootDir, './data/settings/link_data.json'), 'utf-8');
             let link_config = JSON.parse(link_data);
-            link_sites = link_config.sites.filter(site => site.type = 4);
+            link_sites = Array.isArray(link_config?.sites)
+                ? link_config.sites.filter(site => [3, 4].includes(Number(site?.type)))
+                : [];
+            const resolveLinkPath = (value) => {
+                if (typeof value !== 'string' || !value) {
+                    return value;
+                }
+                if (value.startsWith('http')) {
+                    return value;
+                }
+                if (!/^[./]/.test(value)) {
+                    return value;
+                }
+                if (!link_url) {
+                    return value;
+                }
+                return urljoin(link_url, value);
+            };
             if (link_config.spider && enable_link_jar === '1') {
                 let link_spider_arr = link_config.spider.split(';');
-                link_jar = urljoin(link_url, link_spider_arr[0]);
+                link_jar = resolveLinkPath(link_spider_arr[0]);
                 if (link_spider_arr.length > 1) {
                     link_jar = [link_jar].concat(link_spider_arr.slice(1)).join(';')
                 }
                 log(`开始挂载外部T4 Jar: ${link_jar}`);
             }
-            link_sites.forEach((site) => {
+            link_sites.forEach((rawSite) => {
+                const site = {...rawSite};
                 if (site.key === 'push_agent' && enable_link_push !== '1') {
                     return
                 }
-                if (site.api && !site.api.startsWith('http')) {
-                    site.api = urljoin(link_url, site.api)
+                const siteType = Number(site?.type) || 4;
+                if (siteType === 4 && site.api && !site.api.startsWith('http') && !link_url) {
+                    log(`[link_data] skip non-http api without link_url: ${site.key || site.name || 'unknown'}`);
+                    return;
                 }
-                if (site.ext && site.ext.startsWith('.')) {
-                    site.ext = urljoin(link_url, site.ext)
+                if (site.api) {
+                    site.api = resolveLinkPath(site.api);
+                }
+                if (typeof site.ext === 'string' && site.ext) {
+                    site.ext = resolveLinkPath(site.ext);
                 }
                 if (site.key === 'push_agent' && enable_link_push === '1') { // 推送覆盖
                     let pushIndex = sites.findIndex(s => s.key === 'push_agent');
@@ -633,6 +816,24 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
     if (ENV.get('hide_adult') === '1') {
         sites = sites.filter(it => !(new RegExp('\\[[密]\\]|密+')).test(it.name));
     }
+    if (ENV.get('enable_ctf_local_adapter', '1') === '1') {
+        const keySet = new Set(sites.map((s) => s.key));
+        const ctfSites = buildCtfLocalSites(requestHost, pwd);
+        ctfSites.forEach((site) => {
+            if (!keySet.has(site.key)) {
+                sites.push(site);
+                keySet.add(site.key);
+            }
+        });
+    }
+    if (ENV.get('enable_disabled_source_filter', '1') === '1') {
+        const disabledKeys = loadDisabledSourceKeys(rootDir);
+        if (disabledKeys.size > 0) {
+            const before = sites.length;
+            sites = sites.filter((site) => !disabledKeys.has(site.key));
+            console.log(`Filtered out disabled sources: ${before - sites.length}, remaining: ${sites.length}`);
+        }
+    }
     // console.log('sort_list:', sort_list);
     sites = naturalSort(sites, 'name', sort_list);
     return {sites, spider: link_jar};
@@ -647,78 +848,82 @@ async function generateSiteJSON(options, requestHost, sub, pwd) {
  * @returns {Promise<Object>} 包含parses数组的对象
  */
 async function generateParseJSON(jxDir, requestHost) {
-    const files = readdirSync(jxDir);
-    const jx_files = files.filter((file) => file.endsWith('.js') && !file.startsWith('_')) // 筛选出不是 "_" 开头的 .js 文件
-    const jx_dict = getParsesDict(requestHost);
+    let enable_self_jx = ENV.get('enable_self_jx', '0') === '1';
     let parses = [];
-    const tasks = jx_files.map((file) => {
-        return {
-            func: async ({file, jxDir, requestHost, drpyS}) => {
-                const baseName = path.basename(file, '.js'); // 去掉文件扩展名
-                const api = `${requestHost}/parse/${baseName}?url=`;  // 使用请求的 host 地址，避免硬编码端口
+    let sorted_parses = [];
+    const jx_dict = getParsesDict(requestHost);
+    if (enable_self_jx) {
+        const files = readdirSync(jxDir);
+        const jx_files = files.filter((file) => file.endsWith('.js') && !file.startsWith('_')) // 筛选出不是 "_" 开头的 .js 文件
+        const tasks = jx_files.map((file) => {
+            return {
+                func: async ({file, jxDir, requestHost, drpyS}) => {
+                    const baseName = path.basename(file, '.js'); // 去掉文件扩展名
+                    const api = `${requestHost}/parse/${baseName}?url=`;  // 使用请求的 host 地址，避免硬编码端口
 
-                let jxObject = {
-                    type: 1, // 固定值
-                    ext: {
-                        flag: [
-                            "qiyi",
-                            "imgo",
-                            "爱奇艺",
-                            "奇艺",
-                            "qq",
-                            "qq 预告及花絮",
-                            "腾讯",
-                            "youku",
-                            "优酷",
-                            "pptv",
-                            "PPTV",
-                            "letv",
-                            "乐视",
-                            "leshi",
-                            "mgtv",
-                            "芒果",
-                            "sohu",
-                            "xigua",
-                            "fun",
-                            "风行"
-                        ]
-                    },
-                    header: {
-                        "User-Agent": "Mozilla/5.0"
+                    let jxObject = {
+                        type: 1, // 固定值
+                        ext: {
+                            flag: [
+                                "qiyi",
+                                "imgo",
+                                "爱奇艺",
+                                "奇艺",
+                                "qq",
+                                "qq 预告及花絮",
+                                "腾讯",
+                                "youku",
+                                "优酷",
+                                "pptv",
+                                "PPTV",
+                                "letv",
+                                "乐视",
+                                "leshi",
+                                "mgtv",
+                                "芒果",
+                                "sohu",
+                                "xigua",
+                                "fun",
+                                "风行"
+                            ]
+                        },
+                        header: {
+                            "User-Agent": "Mozilla/5.0"
+                        }
+                    };
+                    try {
+                        let _jxObject = await drpyS.getJx(path.join(jxDir, file));
+                        jxObject = {...jxObject, ..._jxObject};
+                    } catch (e) {
+                        throw new Error(`Error parsing jx object for file: ${file}, ${e.message}`);
                     }
-                };
-                try {
-                    let _jxObject = await drpyS.getJx(path.join(jxDir, file));
-                    jxObject = {...jxObject, ..._jxObject};
-                } catch (e) {
-                    throw new Error(`Error parsing jx object for file: ${file}, ${e.message}`);
+
+                    parses.push({
+                        name: baseName,
+                        url: jxObject.url || api,
+                        type: jxObject.type,
+                        ext: jxObject.ext,
+                        header: jxObject.header
+                    });
+                },
+                param: {file, jxDir, requestHost, drpyS},
+                id: file,
+            };
+        });
+
+        const listener = {
+            func: (param, id, error, result) => {
+                if (error) {
+                    console.error(`Error processing file ${id}:`, error.message);
+                } else {
+                    // console.log(`Successfully processed file ${id}:`, result);
                 }
-
-                parses.push({
-                    name: baseName,
-                    url: jxObject.url || api,
-                    type: jxObject.type,
-                    ext: jxObject.ext,
-                    header: jxObject.header
-                });
             },
-            param: {file, jxDir, requestHost, drpyS},
-            id: file,
+            param: {}, // 外部参数可以在这里传入
         };
-    });
-
-    const listener = {
-        func: (param, id, error, result) => {
-            if (error) {
-                console.error(`Error processing file ${id}:`, error.message);
-            } else {
-                // console.log(`Successfully processed file ${id}:`, result);
-            }
-        },
-        param: {}, // 外部参数可以在这里传入
-    };
-    await batchExecute(tasks, listener);
-    let sorted_parses = naturalSort(parses, 'name', ['JSON并发', 'JSON合集', '虾米', '奇奇']);
+        await batchExecute(tasks, listener);
+        sorted_parses = naturalSort(parses, 'name', ['JSON并发', 'JSON合集', '虾米', '奇奇']);
+    }
     let sorted_jx_dict = naturalSort(jx_dict, 'name', ['J', 'W']);
     parses = sorted_parses.concat(sorted_jx_dict);
     return {parses};

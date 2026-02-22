@@ -12,11 +12,14 @@ import * as misc from '../utils/misc.js';
 import COOKIE from '../utils/cookieManager.js';
 import AIS from '../utils/ais.js';
 import PanS from '../utils/pans.js';
+import {createWebDAVClient} from '../utils/webdav.js';
+import {createFTPClient} from '../utils/ftp.js';
 import {ENV} from '../utils/env.js';
 import {getContentType, getMimeType} from "../utils/mime-type.js";
-import {getParsesDict, getSitesMap, pathLib, es6_extend_code, req_extend_code} from "../utils/file.js";
+import {getParsesDict, getSitesMap, pathLib, executeParse, es6_extend_code, req_extend_code} from "../utils/file.js";
 import {getFirstLetter} from "../utils/pinyin-tool.js";
 import {reqs} from "../utils/req.js";
+import {toBeijingTime} from "../utils/datetime-format.js"
 import "../utils/random-http-ua.js";
 import {initializeGlobalDollar, rootRequire} from "../libs_drpy/moduleLoader.js";
 import {base64Decode, base64Encode, md5, rc4, rc4_decode, rc4Decrypt, rc4Encrypt} from "../libs_drpy/crypto-util.js";
@@ -35,6 +38,7 @@ import {
     parseQueryString, buildQueryString, encodeIfContainsSpecialChars, objectToQueryString,
     getOriginalJs,
     pako, gbkTool, JSEncrypt, CryptoJS, NODERSA, JSON5, jinja, atob, btoa, stringify,
+    lrcToSrt, strExtract,
     jsEncoder
 } from '../libs_drpy/drpyCustom.js';
 
@@ -62,7 +66,7 @@ const {Ali, Baidu, Baidu2, Cloud, Pan, Quark, UC, Yun} = PanS;
 const {
     sleep, sleepSync, getNowTime, computeHash, deepCopy,
     urljoin, urljoin2, joinUrl, keysToLowerCase, naturalSort, $js,
-    createBasicAuthHeaders
+    createBasicAuthHeaders, get_size,
 } = utils;
 // 缓存已初始化的模块和文件 hash 值
 const moduleCache = new Map();
@@ -160,6 +164,7 @@ export async function getSandbox(env = {}) {
         naturalSort,
         $js,
         createBasicAuthHeaders,
+        get_size,
         $,
         pupWebview,
         getProxyUrl,
@@ -189,6 +194,7 @@ export async function getSandbox(env = {}) {
         desX,
         req,
         reqs,
+        toBeijingTime,
         _fetch,
         XMLHttpRequest,
         simplecc,
@@ -245,7 +251,9 @@ export async function getSandbox(env = {}) {
         buildQueryString,
         encodeIfContainsSpecialChars,
         objectToQueryString,
-        forge
+        forge,
+        lrcToSrt,
+        strExtract,
     };
 
     const libsSanbox = {
@@ -277,6 +285,7 @@ export async function getSandbox(env = {}) {
         axiosX,
         URL,
         pathLib,
+        executeParse,
         qs,
         Buffer,
         URLSearchParams,
@@ -291,6 +300,8 @@ export async function getSandbox(env = {}) {
         Cloud,
         Yun,
         Pan,
+        createWebDAVClient,
+        createFTPClient,
         DataBase,
         database,
         require,
@@ -405,9 +416,10 @@ export async function init(filePath, env = {}, refresh) {
         // ruleScript.runInContext(context);
         // const result = await ruleScript.runInContext(context);
         const executeWithTimeout = (script, context, timeout) => {
+            let timer;
             return Promise.race([
                 new Promise((_, reject) =>
-                    setTimeout(() => reject(new Error('Code execution timed out')), timeout)
+                    timer = setTimeout(() => reject(new Error('Code execution timed out')), timeout)
                 ),
                 new Promise((resolve, reject) => {
                     try {
@@ -423,7 +435,9 @@ export async function init(filePath, env = {}, refresh) {
                         reject(error);
                     }
                 })
-            ]);
+            ]).finally(() => {
+                if (timer) clearTimeout(timer);
+            });
         };
         const result = await executeWithTimeout(ruleScript, context, 30000);
         // log('result:', result);
@@ -697,7 +711,7 @@ async function invokeMethod(filePath, env, method, args = [], injectVars = {}) {
             result = await searchParseAfter(moduleObject, result, args[2]);
             log(`[invokeMethod js:] 搜索 ${injectVars.input} 执行完毕,结果为:`, JSON.stringify(result.list.slice(0, 2)));
         } else if (method === 'class_parse') {
-            result = await homeParseAfter(result, moduleObject.类型, moduleObject.hikerListCol, moduleObject.hikerClassListCol, moduleObject.hikerSkipEr, injectVars);
+            result = await homeParseAfter(result, moduleObject.类型, moduleObject.hikerListCol, moduleObject.hikerClassListCol, moduleObject.mergeList, injectVars);
         }
         return result;
     }
@@ -787,9 +801,9 @@ async function initParse(rule, env, vm, context) {
     if (!rule.hasOwnProperty('sniffer')) { // 默认关闭辅助嗅探
         rule.sniffer = false;
     }
-    // 二级为*自动添加hikerSkipEr属性允许跳过形式二级
-    if (!rule.hasOwnProperty('hikerSkipEr') && rule.二级 === '*') {
-        rule.hikerSkipEr = 1;
+    // 二级为*自动添加mergeList属性允许跳过形式二级
+    if (!rule.hasOwnProperty('mergeList') && rule.二级 === '*') {
+        rule.mergeList = 1;
     }
     rule.sniffer = rule.hasOwnProperty('sniffer') ? rule.sniffer : '';
     rule.sniffer = !!(rule.sniffer && rule.sniffer !== '0' && rule.sniffer !== 'false');

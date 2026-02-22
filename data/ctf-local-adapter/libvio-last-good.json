@@ -1,0 +1,9 @@
+{
+  "updatedAt": "2026-02-22T05:38:20.599Z",
+  "note": "from_python_capture",
+  "sources": [
+    "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=379963517&isNew=1&et=1771814416166&sign=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAk6O0pJqxmlcDDXuqPzLq7XXYtsY-yjGfKW0jDN3BDLpwWawRMi3NfFfylEqJ2fkLifDQQ=&ext=eyJ1dCI6MX0%3D&t=4&u=1039841853291957277&ot=personal&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&oi=1039841853291957277&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260222T024016Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260222%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=0b78fc09de668ef5d1ff37c95c8acec1b46273ed8b9a60b0cd9042d5fad7a9ca",
+    "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTznws2OEpP5h6jPzjftqL7Na2ZVYpmb-OlH_0jOlYZBLn6x6zKZsoq2D5W&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260222T053830Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260222%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=d136ac9162f360e730198779050463099f5a054b1198107a106b6563c2a1794b&tvkey=m3u8"
+  ],
+  "subtitles": []
+}

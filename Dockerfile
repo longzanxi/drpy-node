@@ -1,61 +1,61 @@
-# 构建器阶段
-# 使用node:20-alpine(17 < version < 23)作为基础镜像
-FROM node:20-alpine AS builder
+# syntax=docker/dockerfile:1.7
 
-# 安装git
-RUN apk add --no-cache git
+FROM node:22-bookworm-slim AS base
 
-# 如果您需要配置git以使用特定的HTTP版本，请确保这是出于必要和安全考虑
-RUN git config --global http.version HTTP/1.1
+ENV DEBIAN_FRONTEND=noninteractive
 
-# 创建一个工作目录
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    tini \
+    python3 \
+    python3-venv \
+    python3-pip \
+    php-cli \
+    php-curl \
+    php-mbstring \
+    php-xml \
+    php-sqlite3 \
+    php-mysql \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# 克隆GitHub仓库到工作目录
-RUN git clone https://github.com/hjdhnx/drpy-node.git .
+FROM base AS deps
 
-# 安装项目依赖项和puppeteer
-RUN yarn && yarn add puppeteer
+COPY package.json package-lock.json ./
+RUN --mount=type=cache,target=/root/.npm npm ci --omit=dev
 
-# 复制工作目录中的所有文件到一个临时目录中
-# 以便在运行器阶段中使用
-RUN mkdir -p /tmp/drpys && \
-    cp -r /app/. /tmp/drpys/
+COPY spider/py/base/requirements.txt /tmp/requirements.txt
+RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --upgrade pip setuptools wheel \
+    && /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
 
+FROM base AS runtime
 
-# 运行器阶段
-# 使用alpine:latest作为基础镜像来创建一个更小的镜像
-# 但是无法用pm2
-FROM alpine:latest AS runner
+ENV NODE_ENV=production \
+    PYTHONUNBUFFERED=1 \
+    VIRTUAL_ENV=/opt/venv \
+    PYTHON_PATH=/opt/venv/bin/python
+ENV PATH="/opt/venv/bin:${PATH}"
 
-# 创建一个工作目录
 WORKDIR /app
 
-# 复制构建器阶段中准备好的文件和依赖项到运行器阶段的工作目录中
-COPY --from=builder /tmp/drpys/. /app
-RUN cp /app/.env.development /app/.env && \
-    rm -f /app/.env.development && \
-    sed -i 's|^VIRTUAL_ENV[[:space:]]*=[[:space:]]*$|VIRTUAL_ENV=/app/.venv|' /app/.env && \
-    echo '{"ali_token":"","ali_refresh_token":"","quark_cookie":"","uc_cookie":"","bili_cookie":"","thread":"10","enable_dr2":"1","enable_py":"2"}' > /app/config/env.json
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /opt/venv /opt/venv
+COPY . .
 
-# 安装Node.js运行时（如果需要的话，这里已经假设在构建器阶段中安装了所有必要的Node.js依赖项）
-# 由于我们已经将node_modules目录复制到了运行器阶段，因此这里不需要再次安装npm或node_modules中的依赖项
-# 但是，我们仍然需要安装Node.js运行时本身（除非drpys项目是一个纯静态资源服务，不需要Node.js运行时）
-RUN apk add --no-cache nodejs
+RUN if [ -f .env.development ] && [ ! -f .env ]; then cp .env.development .env; fi \
+    && mkdir -p logs data/source-checker data/ctf-local-adapter \
+    && if [ ! -f config/env.json ]; then echo '{}' > config/env.json; fi \
+    && chown -R node:node /app /opt/venv
 
-# 安装python3依赖
-RUN apk add --no-cache python3 \
-    py3-pip \
-    py3-setuptools \
-    py3-wheel
+USER node
 
-# 激活python3虚拟环境并安装依pip3赖
-RUN python3 -m venv /app/.venv && \
-    . /app/.venv/bin/activate && \
-    pip3 install -r /app/spider/py/base/requirements.txt
+EXPOSE 5757 57575
 
-# 暴露应用程序端口（根据您的项目需求调整）
-EXPOSE 5757
+HEALTHCHECK --interval=30s --timeout=8s --start-period=20s --retries=3 \
+    CMD curl -fsS http://127.0.0.1:5757/health || exit 1
 
-# 指定容器启动时执行的命令
+ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD ["node", "index.js"]

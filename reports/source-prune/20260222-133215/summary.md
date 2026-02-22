@@ -1,0 +1,75 @@
+# 源失效复测与下线建议报告
+
+- reportPath: reports/source-checker-batch/20260222-115201/report.json
+- timeoutMs: 15000
+- retries: 2
+- concurrency: 10
+- error来源总数: 68
+- 确认失效(建议下线): 63
+- 客户端专属(不应服务端删除): 0
+- 复测恢复/不稳定(暂不删除): 5
+
+## 建议下线 key
+- drpyS_3Q影视[优]
+- drpyS_丫丫动漫_Appget
+- drpyS_云云_Appget
+- drpyS_五八_Appget
+- drpyS_仓鼠_Appget
+- drpyS_优兔_Appget
+- drpyS_元咲动漫_Appget
+- drpyS_剧梦_Appget
+- drpyS_咕咕动漫_Appget
+- drpyS_咖啡_Appget
+- drpyS_哔哩大杂烩[官]
+- drpyS_多多ᵐ[盘]
+- drpyS_奇奇_Appget
+- drpyS_小猪_Appget
+- drpyS_影视_Appget
+- drpyS_数字_Appget
+- drpyS_方舟动漫_Appget
+- drpyS_旗星_Appget
+- drpyS_木兮[优]
+- drpyS_樱花动漫[优]
+- drpyS_火狐_Appget
+- drpyS_火锅_Appget
+- drpyS_灵虎_Appget
+- drpyS_爆炸_Appget
+- drpyS_爱盈_Appget
+- drpyS_牛牛短剧[短]
+- drpyS_王子TV
+- drpyS_王子_Appget
+- drpyS_玩偶哥哥DM[盘]
+- drpyS_番薯动漫_Appget
+- drpyS_紫金_Appget
+- drpyS_网盘资源[搜]
+- drpyS_蓝鹰_Appget
+- drpyS_虎斑ᵐ[盘]
+- drpyS_蜡笔ᵐ[盘]
+- drpyS_金牌_Appget
+- drpyS_零度
+- drpyS_音乐磁场[听]
+- drpyS_顶点小说[书]
+- drpyS_顾我_Appget
+- drpyS_鲸鱼_Appget
+- drpyS_麻雀视频[优]
+- drpyS_黑料不打烊[密]
+- ext_tvbox_ctf_4kvm_a5f8f6a5
+- ext_tvbox_ctf_aiyifan_d48ecd55
+- ext_tvbox_ctf_bgm_f0785b8a
+- ext_tvbox_ctf_cz233_09222274
+- ext_tvbox_ctf_dbkk_4e72dab7
+- ext_tvbox_ctf_iyf_78af5d1d
+- ext_tvbox_ctf_kanbot_a05222cd
+- ext_tvbox_ctf_kuangren_5c8adfae
+- ext_tvbox_ctf_libvio_bdc5ef61
+- ext_tvbox_ctf_netflixgc_17e0d0a5
+- ext_tvbox_ctf_ysxq_b1f67587
+- ext_tvbox_demo_drpy_426eef1c
+- ext_tvbox_demo_drpy_426eef1c_2
+- ext_tvbox_demo_drpy_426eef1c_3
+- hipy_py_Free影视[AS]
+- hipy_py_七月[AG³]
+- hipy_py_好震惊[AV²]
+- hipy_py_小雅动漫[EM³]
+- hipy_py_木瓜影视[AFX]
+- hipy_py_看客联盟[AS]

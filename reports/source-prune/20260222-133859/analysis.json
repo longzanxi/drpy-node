@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T05:38:59.360Z",
+    "finishedAt": "2026-02-22T05:39:00.260Z",
+    "timeoutMs": 15000,
+    "retries": 2,
+    "concurrency": 4,
+    "reportPath": "reports/source-checker-batch/20260222-133629/report.json",
+    "apply": false,
+    "disableFile": "D:/code/yingshi/drpy-node/data/source-checker/disabled-sources.json"
+  },
+  "summary": {
+    "totalErrorsInReport": 2,
+    "confirmedInvalid": 0,
+    "clientSideOnly": 0,
+    "recoveredOrUnstable": 2
+  },
+  "results": [
+    {
+      "key": "hipy_py_五八[AG¹]",
+      "name": "五八[AG¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppGet.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 27,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 5,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "https://dy.58ys.vip",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 681,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV1.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 6,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 27,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://ziyuncms.feifan12.xyz/api.php",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 475,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "disablePreview": {
+    "keys": [],
+    "meta": {
+      "generatedAt": "2026-02-22T05:39:00.259Z",
+      "basedOnReport": "reports/source-checker-batch/20260222-133629/report.json",
+      "summary": {
+        "totalErrorsInReport": 2,
+        "confirmedInvalid": 0,
+        "clientSideOnly": 0,
+        "recoveredOrUnstable": 2
+      }
+    },
+    "sources": []
+  }
+}

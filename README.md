@@ -1,23 +1,31 @@
 # drpyS(drpy-node)
 
+[![zread](https://img.shields.io/badge/Ask_Zread-_.svg?style=plastic&color=00b0aa&labelColor=000000&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTYxNTYgMS42MDAxSDIuMjQxNTZDMS44ODgxIDEuNjAwMSAxLjYwMTU2IDEuODg2NjQgMS42MDE1NiAyLjI0MDFWNC45NjAxQzEuNjAxNTYgNS4zMTM1NiAxLjg4ODEgNS42MDAxIDIuMjQxNTYgNS42MDAxSDQuOTYxNTZDNS4zMTUwMiA1LjYwMDEgNS42MDE1NiA1LjMxMzU2IDUuNjAxNTYgNC45NjAxVjIuMjQwMUM1LjYwMTU2IDEuODg2NjQgNS4zMTUwMiAxLjYwMDEgNC45NjE1NiAxLjYwMDFaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00Ljk2MTU2IDEwLjM5OTlIMi4yNDE1NkMxLjg4ODEgMTAuMzk5OSAxLjYwMTU2IDEwLjY4NjQgMS42MDE1NiAxMS4wMzk5VjEzLjc1OTlDMS42MDE1NiAxNC4xMTM0IDEuODg4MSAxNC4zOTk5IDIuMjQxNTYgMTQuMzk5OUg0Ljk2MTU2QzUuMzE1MDIgMTQuMzk5OSA1LjYwMTU2IDE0LjExMzQgNS42MDE1NiAxMy43NTk5VjExLjAzOTlDNS42MDE1NiAxMC42ODY0IDUuMzE1MDIgMTAuMzk5OSA0Ljk2MTU2IDEwLjM5OTlaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik0xMy43NTg0IDEuNjAwMUgxMS4wMzg0QzEwLjY4NSAxLjYwMDEgMTAuMzk4NCAxLjg4NjY0IDEwLjM5ODQgMi4yNDAxVjQuOTYwMUMxMC4zOTg0IDUuMzEzNTYgMTAuNjg1IDUuNjAwMSAxMS4wMzg0IDUuNjAwMUgxMy43NTg0QzE0LjExMTkgNS42MDAxIDE0LjM5ODQgNS4zMTM1NiAxNC4zOTg0IDQuOTYwMVYyLjI0MDFDMTQuMzk4NCAxLjg4NjY0IDE0LjExMTkgMS42MDAxIDEzLjc1ODQgMS42MDAxWiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJNNCAxMkwxMiA0TDQgMTJaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00IDEyTDEyIDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=ffffff)](https://zread.ai/hjdhnx/drpy-node)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/hjdhnx/drpy-node)
+
 nodejs作为服务端的drpy实现。全面升级异步写法  
-~~积极开发中，每日一更~~，当前进度 `99.99999%`  
+~~积极开发中，每日一更~~，当前进度 `100%`  
 ~~找工作中，随缘更新~~  
 上班当牛马，下班要带娃，阶段性佛系趁娃睡觉熬夜更新
 
 ### 常用超链接
 
 * [本项目主页-免翻](https://git-proxy.playdreamer.cn/hjdhnx/drpy-node)
-* [接口文档](docs/apidoc.md) | [接口列表如定时任务](docs/apiList.md) | [小猫影视-待对接T4](https://github.com/waifu-project/movie/pull/135)
+* ~~[最新DS本地包-适配皮卡丘](/gh/release)~~
+* [DS本地包下载中心](/admin/download)
+* [接口文档](docs/apidoc.md) | [接口列表如定时任务](docs/apiList.md) |
+  ~~[小猫影视-待对接T4](https://github.com/waifu-project/movie/pull/135)~~
 * [代码质量评估工具说明](docs/codeCheck.md) | [DS项目代码评估报告](docs/codeCheckReport.md)
 * [本地配置接口-动态本地](/config?healthy=1&pwd=$pwd)
 * [本地配置接口-动态外网/局域网](/config/1?healthy=1&pwd=$pwd)
 * [其他配置接口-订阅过滤](/docs/sub.md)
 * [python环境](/docs/pyenv.md) | [DS项目环境变量说明](/docs/envdoc.md)
+* php环境(详见 spider/php/readme.md) 不在这里赘述
 * [猫源调试教程](/docs/catDebug.md)
 * [接口压测教程](/docs/httpTest.md)
 * [AI编程工具 trae](https://www.trae.ai/account-setting#subscription) | 邮编ZIP输入: 518000
-* [免费AI-360纳米](https://bot.n.cn/)|[免费AI-当贝AI](https://ai.dangbei.com/chat)
+* [推荐使用AI模型-GLM4.7](https://www.bigmodel.cn/glm-coding?ic=DRV3C8M5NX) | [GLM配置文档](https://docs.bigmodel.cn/cn/coding-plan/tool/trae)
+* [免费AI-360纳米](https://bot.n.cn/)|[免费AI-当贝AI](https://ai.dangbei.com/chat)|[国外聚合全模型](https://lmarena.ai/)
 * [本站防止爬虫协议](/robots.txt)
 * [油猴脚本-反切屏检测](/public/monkey/check_screen_leave.user.js)
 * [油猴脚本-通用网页脚本框架](/public/monkey/clipboard-sender.user.js)
@@ -27,6 +35,8 @@ nodejs作为服务端的drpy实现。全面升级异步写法
 
 ### 插件应用列表
 
+* [DrPlayer](/apps/drplayer)
+* [Websocket实时日志](/apps/websocket)
 * [cookie管理插件](/apps/cookie-butler/index.html)
 * [cron表达式插件](/apps/cron-generator/index.html)
 * [剪切板智能推送插件](/apps/clipboard-pusher/index.html)
@@ -36,6 +46,8 @@ nodejs作为服务端的drpy实现。全面升级异步写法
 * [DS内存图片管理器插件](/apps/image-manager/index.html)
 * [DS时钟插件-白色时钟](/apps/clock/white_clock.html)|[日历时钟](/apps/clock/index.html)
 * [DS庆祝页面-完结撒花](/apps/happy/index.html)
+* [bookReader](/apps/book-reader)
+* [系统备份与恢复](/apps/backup-restore/index.html)
 * [代码加解密工具](/admin/encoder)
 * [央视点播解析工具](/proxy/央视大全[官]/index.html)
 * [在线猫ds源主页](/cat/index.html)
@@ -45,44 +57,38 @@ nodejs作为服务端的drpy实现。全面升级异步写法
 
 * [DS源适配猫影视](https://github.com/hjdhnx/CatPawOpen/tree/ds-cat)
 * [DS插件项目-golang](https://github.com/hjdhnx/drpy-plugin)
+* [DS 二进制插件项目-pup-sniffer](https://github.com/hjdhnx/pup-sniffer)
+* [DS 二进制插件项目-file-index](https://github.com/hjdhnx/file-index)
+* [DS web插件项目-drplayer](https://github.com/hjdhnx/DrPlayer)
 * [drpy2打包项目](https://github.com/hjdhnx/drpy-webpack)
+
+### 免费壳子推荐
+
+* [酷9](https://wwbty.lanzouv.com/iGoUV3d3hxuf)
+* [千寻](https://wwbty.lanzouv.com/iSSN93d3hyzg)
+* [皮卡丘](https://github.com/ingriddaleusag-dotcom/PeekPiliRelease)
 
 ## 更新记录
 
-### 20250925
+### 20260214
 
-更新至V1.3.5
+更新至V1.3.24
 
-### 20250919
+### 20260212
 
-更新至V1.3.4
+更新至V1.3.23
 
-### 20250918
+### 20260208
 
-更新至V1.3.3
+更新至V1.3.22
 
-### 20250916
+### 20260131
 
-更新至V1.3.2
+更新至V1.3.21
 
-### 20250914
+### 20260127
 
-更新至V1.3.1
-
-框架已完成，预留0.1%进度修bug
-
-### 20250913
-
-更新至V1.2.30
-
-### 20250911
-
-更新至V1.2.29
-完美dr2模板源适配
-
-### 20250910
-
-更新至V1.2.28
+更新至V1.3.20
 
 [点此查看完整更新记录](docs/updateRecord.md)
 
@@ -113,6 +119,7 @@ todo:
 ## 参考资料
 
 * [crypto-js-wasm使用教程](docs/crypto-js-wasm/readme-CN.md)
+* [webdav使用教程](docs/webdav.md)
 * [puppeteer使用教程](docs/pupInstall.md)
 * [drpyS源属性说明](docs/ruleAttr.md)
 * [drpy2写源简述](docs/ruleDesc.md)
@@ -183,6 +190,9 @@ pm2 restart drpys
 * [ZY写源教学](https://zy.catni.cn/editSource/edit-grammar.html)
 * [源动力-新](https://tvshare.cn/)
 * [源动力-老](https://sourcepower.top/index)
+* [电竞专业反应测试](https://www.arealme.com/brain-memory-game/zh/)
+* [桌面启动器](https://wwbty.lanzouv.com/iDZaP3d3i5ud)
+* [不知名获取网盘CK工具](http://sspa8.top:8100/pan/admin/index.php)
 
 ## AI接入
 

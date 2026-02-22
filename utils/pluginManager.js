@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import {spawn} from "child_process";
 import {fileURLToPath, pathToFileURL} from "url";
+import {ensureExecutable} from "./binHelper.js";
 
 // 获取 pluginManager.js 的目录
 const __filename = fileURLToPath(import.meta.url);
@@ -14,7 +15,7 @@ const exampleConfigPath = path.join(__dirname, "../.plugins.example.js");
 // 尝试加载用户配置，如果没有就用 example
 let plugins = [];
 try {
-    console.log(`检查插件配置文件: ${userConfigPath} 是否存在`);
+    // console.log(`检查插件配置文件: ${userConfigPath} 是否存在`);
     if (fs.existsSync(userConfigPath)) {
         plugins = (await import(pathToFileURL(userConfigPath).href)).default;
         console.log("[pluginManager] 使用用户 .plugins.js 配置");
@@ -39,7 +40,7 @@ function getPluginBinary(rootDir, pluginPath, pluginName) {
 
     let binaryName = null;
     if (platform === "win32") {
-        binaryName = `${pluginName}-windows.exe`;
+        binaryName = `${pluginName}-win.exe`;
     } else if (platform === "linux") {
         binaryName = `${pluginName}-linux`;
     } else if (platform === "darwin") {
@@ -54,22 +55,6 @@ function getPluginBinary(rootDir, pluginPath, pluginName) {
     return path.join(binDir, binaryName);
 }
 
-function ensureExecutable(filePath) {
-    if (process.platform === "win32") {
-        // Windows 不需要 chmod，直接返回
-        return;
-    }
-    try {
-        const stats = fs.statSync(filePath);
-        if (!(stats.mode & 0o111)) {
-            fs.chmodSync(filePath, 0o755);
-            console.log(`[pluginManager] 已为插件 ${filePath} 添加执行权限`);
-        }
-    } catch (err) {
-        console.error(`[pluginManager] 无法设置执行权限: ${filePath}`, err.message);
-    }
-}
-
 /**
  * 启动插件
  * @param {Object} plugin 插件配置
@@ -77,7 +62,8 @@ function ensureExecutable(filePath) {
  */
 function startPlugin(plugin, rootDir) {
     if (!plugin.active) {
-        console.log(`[pluginManager] 插件 ${plugin.name} 未激活，跳过`);
+        // 这个检查主要用于直接调用startPlugin函数的情况
+        // 正常情况下startAllPlugins已经在调用前检查了激活状态
         return null;
     }
 
@@ -152,9 +138,18 @@ function getProcessKey(plugin, index) {
 export function startAllPlugins(rootDir = process.cwd()) {
     console.log("[pluginManager] 准备启动所有插件...");
     const processes = {};
+    const inactivePlugins = [];
+    
     plugins.forEach((plugin, index) => {
-        const proc = startPlugin(plugin, rootDir);
         const key = getProcessKey(plugin, index);
+        
+        // 先检查插件是否激活，未激活的插件收集到数组中
+        if (!plugin.active) {
+            inactivePlugins.push(plugin.name);
+            return;
+        }
+
+        const proc = startPlugin(plugin, rootDir);
 
         if (proc) {
             processes[key] = proc;
@@ -163,6 +158,12 @@ export function startAllPlugins(rootDir = process.cwd()) {
             console.error(`[pluginManager] 插件 ${key} 启动失败，未加入到 processes`);
         }
     });
+    
+    // 如果有未激活的插件，在一行中显示
+    if (inactivePlugins.length > 0) {
+        console.log(`[pluginManager] 跳过未激活的插件: [${inactivePlugins.map(name => `'${name}'`).join(',')}]`);
+    }
+    
     return processes;
 }
 

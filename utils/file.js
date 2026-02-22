@@ -16,13 +16,28 @@ import '../libs_drpy/jinja.js'
 // 获取当前模块的目录路径
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+function resolvePath(dir, relativePath) {
+    let p = path.join(dir, relativePath);
+    if (existsSync(p)) return p;
+    let fixedRelative = relativePath.replace(/^\.\.[\\\/]/, './');
+    let p2 = path.join(dir, fixedRelative);
+    if (existsSync(p2)) return p2;
+    // Try going up one more level (useful for dist/ bundle)
+    if (relativePath.startsWith('..')) {
+        let p3 = path.join(dir, '../' + relativePath);
+        if (existsSync(p3)) return p3;
+    }
+    return p;
+}
+
 // 定义核心路径常量
-const _data_path = path.join(__dirname, '../data');      // 数据文件存储路径
-const _lib_path = path.join(__dirname, '../spider/js');  // 库文件路径
+const _data_path = resolvePath(__dirname, '../data');      // 数据文件存储路径
+const _lib_path = resolvePath(__dirname, '../spider/js');  // 库文件路径
+const _jx_path = resolvePath(__dirname, '../jx');          // 解析文件路径
 
 export {getSitesMap} from "./sites-map.js";
 // ES6扩展代码路径和内容
-const es6JsPath = path.join(__dirname, '../libs_drpy/es6-extend.js');
+const es6JsPath = resolvePath(__dirname, '../libs_drpy/es6-extend.js');
 /**
  * ES6扩展代码
  * 包含ES6语法扩展和兼容性代码
@@ -30,7 +45,7 @@ const es6JsPath = path.join(__dirname, '../libs_drpy/es6-extend.js');
 export const es6_extend_code = readFileSync(es6JsPath, 'utf8');
 
 // 网络请求扩展代码路径和内容
-const reqJsPath = path.join(__dirname, '../libs_drpy/req-extend.js');
+const reqJsPath = resolvePath(__dirname, '../libs_drpy/req-extend.js');
 /**
  * 网络请求扩展代码
  * 包含HTTP请求相关的扩展功能
@@ -147,10 +162,22 @@ export function getParsesDict(host) {
         const jx_conf_text = readFileSync(jx_conf, 'utf-8');
         let jx_conf_content = jx_conf_text.trim();
 
-        // 准备模板变量字典
+        let hostName = host;
+        try {
+            const raw = String(host || '');
+            const hasScheme = raw.includes('://');
+            const u = new URL(hasScheme ? raw : `http://${raw}`);
+            const hostname = u.hostname || raw;
+            const safeHostname = hostname.includes(':') ? `[${hostname}]` : hostname;
+            hostName = hasScheme ? `${u.protocol}//${safeHostname}` : safeHostname;
+        } catch (e) {
+            const raw = String(host || '').replace(/^[a-zA-Z][a-zA-Z0-9+.-]*:\/\//, '').split('/')[0];
+            hostName = raw.startsWith('[') ? raw.split(']')[0] + ']' : raw.split(':')[0];
+        }
+
         let var_dict = {
             host,
-            hostName: host.split(':').length > 1 ? host.slice(0, host.lastIndexOf(":")) : host
+            hostName
         };
 
         // 使用Jinja模板引擎渲染配置内容
@@ -193,3 +220,23 @@ export function getParsesDict(host) {
 
     return jx_list
 }
+
+/**
+ * 执行解析
+ *
+ * @param {string} name - 解析文件名 (不含.js)
+ * @param {string} host - 主机地址
+ * @param {string} url - 需要解析的URL
+ * @returns {Array} [flag, url] - flag为true表示找到解析文件，false表示未找到
+ */
+export function executeParse(name, host, url) {
+    let _file_path = path.join(_jx_path, name + '.js');
+    if (existsSync(_file_path)) {
+        return [true, host + '/parse/' + name + '?url=' + url];
+    } else {
+        return [false, url];
+    }
+}
+
+globalThis.pathLib = pathLib;
+globalThis.executeParse = executeParse;

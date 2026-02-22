@@ -1,22 +1,23 @@
 /**
  * 静态文件服务控制器
- * 
+ *
  * 该模块负责配置和注册多个静态文件服务路径，为不同类型的资源提供HTTP访问接口。
  * 支持公共资源、应用程序、JSON配置、JavaScript脚本、Python脚本、CAT相关文件等多种资源类型。
- * 
+ *
  * @module StaticController
  * @author drpy-node
  * @since 1.0.0
  */
 
 import fastifyStatic from '@fastify/static';
+import {addSPARoutes} from './fastify-spa-routes.js';
 
 /**
  * 静态文件服务插件
- * 
+ *
  * 注册多个静态文件服务路径，每个路径对应不同的资源类型和用途。
  * 通过 @fastify/static 插件实现高效的静态文件服务。
- * 
+ *
  * @param {Object} fastify - Fastify实例
  * @param {Object} options - 配置选项对象
  * @param {string} options.publicDir - 公共资源目录路径
@@ -41,6 +42,11 @@ export default (fastify, options, done) => {
         root: options.appsDir,            // 应用程序文件根目录
         prefix: '/apps/',                 // URL访问前缀
         decorateReply: false,             // 禁用 sendFile 装饰器，避免冲突
+    });
+
+    fastify.register(addSPARoutes, {
+        appsDir: options.appsDir,
+        spaApps: ['drplayer'] // 只有drplayer需要SPA路由支持
     });
 
     // 注册JSON配置文件服务 - 用于存放各种JSON格式的配置文件
@@ -68,6 +74,19 @@ export default (fastify, options, done) => {
         setHeaders: (res, path) => {
             // 为Python文件设置正确的Content-Type，确保浏览器以纯文本形式显示
             if (path.endsWith('.py')) {
+                res.setHeader('Content-Type', 'text/plain; charset=utf-8')
+            }
+        }
+    });
+
+    // 注册PHP脚本文件服务 - 用于存放PHP相关的脚本文件
+    fastify.register(fastifyStatic, {
+        root: options.phpDir,             // PHP脚本根目录
+        prefix: '/php/',                  // URL访问前缀
+        decorateReply: false,             // 禁用 sendFile 装饰器
+        setHeaders: (res, path) => {
+            // 为PHP文件设置正确的Content-Type，确保浏览器以纯文本形式显示
+            if (path.endsWith('.php')) {
                 res.setHeader('Content-Type', 'text/plain; charset=utf-8')
             }
         }

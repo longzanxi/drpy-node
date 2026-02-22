@@ -1,0 +1,68 @@
+# 外部源全量验证汇总
+
+- 迁移批次: 20260222-092736
+- 检测批次: 20260222-094406
+- 外部接入总数: 54
+- success: 41
+- error: 2
+- pending: 11
+
+## 各源报告
+- CTF-NetflixGC [外部:tvbox] | success | source-ext_tvbox_ctf_netflixgc_17e0d0a5.md
+- CTF-播剧影视 [外部:tvbox] | success | source-ext_tvbox_ctf_ysxq_b1f67587.md
+- CTF-cz233 [外部:tvbox] | success | source-ext_tvbox_ctf_cz233_09222274.md
+- CTF-bgm [外部:tvbox] | error | source-ext_tvbox_ctf_bgm_f0785b8a.md
+- CTF-4kvm [外部:tvbox] | success | source-ext_tvbox_ctf_4kvm_a5f8f6a5.md
+- CTF-libvio [外部:tvbox] | success | source-ext_tvbox_ctf_libvio_bdc5ef61.md
+- CTF-kanbot [外部:tvbox] | success | source-ext_tvbox_ctf_kanbot_a05222cd.md
+- CTF-kuangren [外部:tvbox] | success | source-ext_tvbox_ctf_kuangren_5c8adfae.md
+- CTF-独播库 [外部:tvbox] | success | source-ext_tvbox_ctf_dbkk_4e72dab7.md
+- CTF-iyf [外部:tvbox] | success | source-ext_tvbox_ctf_iyf_78af5d1d.md
+- CTF-aiyifan [外部:tvbox] | success | source-ext_tvbox_ctf_aiyifan_d48ecd55.md
+- CTF-影视墙 [外部:tvbox] | success | source-ext_tvbox_ctf_allinone_f60924f1.md
+- CTF-NetflixGC [外部:tvbox] | success | source-ext_tvbox_ctf_netflixgc_01dd7d22.md
+- CTF-播剧影视 [外部:tvbox] | success | source-ext_tvbox_ctf_ysxq_7d3dd8e7.md
+- CTF-cz233 [外部:tvbox] | success | source-ext_tvbox_ctf_cz233_e74f66bc.md
+- CTF-bgm [外部:tvbox] | success | source-ext_tvbox_ctf_bgm_67f861fc.md
+- CTF-4kvm [外部:tvbox] | success | source-ext_tvbox_ctf_4kvm_0d129313.md
+- CTF-libvio [外部:tvbox] | success | source-ext_tvbox_ctf_libvio_1c262f4f.md
+- CTF-kanbot [外部:tvbox] | success | source-ext_tvbox_ctf_kanbot_7b4e20d5.md
+- CTF-kuangren [外部:tvbox] | success | source-ext_tvbox_ctf_kuangren_fcf0ef8f.md
+- CTF-独播库 [外部:tvbox] | success | source-ext_tvbox_ctf_dbkk_bd03b8b9.md
+- CTF-iyf [外部:tvbox] | success | source-ext_tvbox_ctf_iyf_86b105e0.md
+- CTF-aiyifan [外部:tvbox] | success | source-ext_tvbox_ctf_aiyifan_0587a225.md
+- 🪔聚合┃短剧 [外部:tvbox] | success | source-ext_tvbox_site_d5ad9e00.md
+- 同构Demo源 [外部:tvbox] | success | source-ext_tvbox_demo_drpy_426eef1c.md
+- CTF-饭太硬同款 [外部:tvbox] | success | source-ext_tvbox_ctf_allinone_f60924f1_2.md
+- ☯️微信公众号：NGZ南歌(关注不迷路) [外部:tvbox] | pending | source-ext_tvbox_site_e5f40762.md
+- 🗂个人云盘┃配置 [外部:tvbox] | pending | source-ext_tvbox_site_4d376aaa.md
+- 🎇NGZ聚合┃4K弹幕 [外部:tvbox] | success | source-ext_tvbox_site_56778c5f.md
+- 🎑巧技┃4K至臻 [外部:tvbox] | pending | source-ext_tvbox_qiao4k2_6bc837d1.md
+- 🎯移动┃在线4K [外部:tvbox] | pending | source-ext_tvbox_site_3bc43c5f.md
+- 🧲磁力在线┃原盘 [外部:tvbox] | success | source-ext_tvbox_hipy_js_4k_av_2713e15f.md
+- 🍉GZ┃HD2K [外部:tvbox] | pending | source-ext_tvbox_site_68668575.md
+- 🔦金牌┃HD2K [外部:tvbox] | success | source-ext_tvbox_site_39d28ddb.md
+- 🏮农民┃秒播 [外部:tvbox] | success | source-ext_tvbox_site_2713e15f.md
+- 🫧韩剧┃蓝光 [外部:tvbox] | success | source-ext_tvbox_site_2186f762.md
+- 🧽网盘┃玩偶哥哥 [外部:tvbox] | success | source-ext_tvbox_site_009bcb15.md
+- 🧽网盘┃玩偶至臻 [外部:tvbox] | success | source-ext_tvbox_site_009bcb15_2.md
+- 🧽网盘┃玩偶多多 [外部:tvbox] | success | source-ext_tvbox_site_009bcb15_3.md
+- 🩴米搜┃网盘 [外部:tvbox] | pending | source-ext_tvbox_site_4cad1779.md
+- 🍼漫国丨动漫 [外部:tvbox] | success | source-ext_tvbox_site_6d2949b2.md
+- 🍼樱花｜动漫 [外部:tvbox] | success | source-ext_tvbox_site_2186f762_2.md
+- 🍼巴士｜动漫 [外部:tvbox] | success | source-ext_tvbox_site_2713e15f_2.md
+- 🍼番薯丨动漫 [外部:tvbox] | success | source-ext_tvbox_site_56778c5f_2.md
+- 🍼米饭｜动漫 [外部:tvbox] | error | source-ext_tvbox_site_56778c5f_3.md
+- 📻本地┃视频 [外部:tvbox] | pending | source-ext_tvbox_site_c1a1db0b.md
+- 🎧酷狗┃音乐 [外部:tvbox] | pending | source-ext_tvbox_site_b43c3af1.md
+- 🎧全网┃音乐 [外部:tvbox] | success | source-ext_tvbox_site_78ae3c1d.md
+- ⛑️急救┃教学 [外部:tvbox] | pending | source-ext_tvbox_site_645c2129.md
+- 🏀926┃看球 [外部:tvbox] | pending | source-ext_tvbox_926_69ce7be7.md
+- ⚽实时┃球迷 [外部:tvbox] | pending | source-ext_tvbox_jrsjs_b69c0d59.md
+- 🥅企鹅┃体育直播 [外部:tvbox] | success | source-ext_tvbox_csp_xpath_45dc77f5.md
+- 同构Demo源 [外部:tvbox] | success | source-ext_tvbox_demo_drpy_426eef1c_2.md
+- 同构Demo源 [外部:参考tvbox] | success | source-ext_tvbox_demo_drpy_426eef1c_3.md
+
+## 结论
+- success 为自动检测通过。
+- error/pending 需结合 manual-checklist 做人工复核。

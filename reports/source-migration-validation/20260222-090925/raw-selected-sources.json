@@ -1,0 +1,2304 @@
+[
+  {
+    "key": "ext_tvbox_ctf_netflixgc_17e0d0a5",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/netflixgc",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/netflixgc",
+      "category": "http://127.0.0.1:7788/api/netflixgc?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/netflixgc?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/netflixgc?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/netflixgc",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 2
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/netflixgc?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:59.515Z",
+    "manuallyMarked": false,
+    "durationMs": 6
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_b1f67587",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/ysxq",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/ysxq",
+      "category": "http://127.0.0.1:7788/api/ysxq?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/ysxq?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/ysxq?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/ysxq",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 2
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 4
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 2
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/ysxq?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 3
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.483Z",
+    "manuallyMarked": false,
+    "durationMs": 13
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_09222274",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/cz233",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/cz233",
+      "category": "http://127.0.0.1:7788/api/cz233?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/cz233?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/cz233?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/cz233",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/cz233?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:58.020Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_f0785b8a",
+    "name": "CTF-bgm [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/bgm",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/bgm",
+      "category": "http://127.0.0.1:7788/api/bgm?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/bgm?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/bgm?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/bgm",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 2
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/bgm?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.890Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_a5f8f6a5",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kvm4",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kvm4",
+      "category": "http://127.0.0.1:7788/api/kvm4?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kvm4?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/kvm4?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kvm4",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kvm4?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.469Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_bdc5ef61",
+    "name": "CTF-libvio [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/libvio",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/libvio",
+      "category": "http://127.0.0.1:7788/api/libvio?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/libvio?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/libvio?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/libvio",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/libvio?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:59.297Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_a05222cd",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kanbot",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kanbot",
+      "category": "http://127.0.0.1:7788/api/kanbot?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kanbot?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/kanbot?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kanbot",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kanbot?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:58.916Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_5c8adfae",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/kuangren",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/kuangren",
+      "category": "http://127.0.0.1:7788/api/kuangren?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/kuangren?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/kuangren?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kuangren",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/kuangren?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      }
+    },
+    "checkTime": "2026-02-22T01:07:59.035Z",
+    "manuallyMarked": false,
+    "durationMs": 3
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_4e72dab7",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/dbkk",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/dbkk",
+      "category": "http://127.0.0.1:7788/api/dbkk?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/dbkk?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/dbkk?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/dbkk",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/dbkk?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.625Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_78af5d1d",
+    "name": "CTF-iyf [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/iyf",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/iyf",
+      "category": "http://127.0.0.1:7788/api/iyf?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/iyf?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/iyf?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/iyf",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/iyf?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:58.580Z",
+    "manuallyMarked": false,
+    "durationMs": 4
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_d48ecd55",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "api": "http://127.0.0.1:7788/api/aiyifan",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:7788/api/aiyifan",
+      "category": "http://127.0.0.1:7788/api/aiyifan?ac=list&t=1&pg=1",
+      "search": "http://127.0.0.1:7788/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "http://127.0.0.1:7788/api/aiyifan?ac=detail&ids=1",
+      "play": "http://127.0.0.1:7788/api/aiyifan?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/aiyifan",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 2
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=list&t=1&pg=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=detail&ids=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:7788/api/aiyifan?ac=play&id=1&play=1",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 0
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.878Z",
+    "manuallyMarked": false,
+    "durationMs": 5
+  },
+  {
+    "key": "ext_tvbox_ctf_allinone_f60924f1",
+    "name": "CTF-影视墙 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone",
+        "status": 200,
+        "durationMs": 1458,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2438,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:08:20.128Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 349,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=detail&ids=910001",
+        "status": 200,
+        "durationMs": 353,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF-NetflixGC",
+              "vod_remarks": "site:CTF-NetflixGC ; aggregate_fast_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:08:20.128Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/allinone?ac=play&id=910001&play=1",
+        "status": 200,
+        "durationMs": 349,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF-NetflixGC"
+            },
+            {
+              "type_id": "2",
+              "type_name": "CTF-播剧影视"
+            },
+            {
+              "type_id": "3",
+              "type_name": "CTF-cz233"
+            },
+            {
+              "type_id": "4",
+              "type_name": "CTF-bgm"
+            },
+            {
+              "type_id": "5",
+              "type_name": "CTF-4kvm"
+            },
+            {
+              "type_id": "6",
+              "type_name": "CTF-libvio"
+            },
+            {
+              "type_id": "7",
+              "type_name": "CTF-kanbot"
+            },
+            {
+              "type_id": "8",
+              "type_name": "CTF-kuangren"
+            },
+            {
+              "type_id": "9",
+              "type_name": "CTF-独播库"
+            },
+            {
+              "type_id": "10",
+              "type_name": "CTF-iyf"
+            },
+            {
+              "type_id": "11",
+              "type_name": "CTF-aiyifan"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:02.661Z",
+    "manuallyMarked": false,
+    "durationMs": 4947
+  },
+  {
+    "key": "ext_tvbox_ctf_netflixgc_01dd7d22",
+    "name": "CTF-NetflixGC [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=detail&ids=910001",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=play&id=910001&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc",
+        "status": 200,
+        "durationMs": 1460,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2423,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:08:21.915Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1622,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=detail&ids=910001",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910001",
+              "vod_name": "NetflixGC 实测样本",
+              "vod_pic": "https://www.netflixgc.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.netflixgc.com/play/80498-1-1.html ; 更新时间: 2026-02-22T01:08:23.901Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8#线路2$https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8#线路3$https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/netflixgc?ac=play&id=910001&play=1",
+        "status": 200,
+        "durationMs": 357,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:05.733Z",
+    "manuallyMarked": false,
+    "durationMs": 6218
+  },
+  {
+    "key": "ext_tvbox_ctf_ysxq_7d3dd8e7",
+    "name": "CTF-播剧影视 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=detail&ids=910002",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=play&id=910002&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq",
+        "status": 200,
+        "durationMs": 1814,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2981,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910002",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:08:20.799Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 351,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=detail&ids=910002",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910002",
+              "vod_name": "播剧影视 实测样本",
+              "vod_pic": "https://www.ysxq.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.ysxq.cc/vodplay/116295-1-1.html ; 更新时间: 2026-02-22T01:08:21.505Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8#线路2$https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/ysxq?ac=play&id=910002&play=1",
+        "status": 200,
+        "durationMs": 355,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:03.336Z",
+    "manuallyMarked": false,
+    "durationMs": 5853
+  },
+  {
+    "key": "ext_tvbox_ctf_cz233_e74f66bc",
+    "name": "CTF-cz233 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=detail&ids=910003",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=play&id=910003&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233",
+        "status": 200,
+        "durationMs": 1462,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1556,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910003",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:08:19.560Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路2$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=detail&ids=910003",
+        "status": 200,
+        "durationMs": 360,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910003",
+              "vod_name": "cz233 实测样本",
+              "vod_pic": "https://www.czzymovie.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.czzymovie.com/ ; 更新时间: 2026-02-22T01:08:20.277Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8#线路2$https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/cz233?ac=play&id=910003&play=1",
+        "status": 200,
+        "durationMs": 351,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:02.105Z",
+    "manuallyMarked": false,
+    "durationMs": 4085
+  },
+  {
+    "key": "ext_tvbox_ctf_bgm_67f861fc",
+    "name": "CTF-bgm [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=detail&ids=910004",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=play&id=910004&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm",
+        "status": 200,
+        "durationMs": 1817,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1102,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910004",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:08:19.327Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1383,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=detail&ids=910004",
+        "status": 200,
+        "durationMs": 365,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910004",
+              "vod_name": "bgm 实测样本",
+              "vod_pic": "https://bgm.girigirilove.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://bgm.girigirilove.com/GV26896/ ; 更新时间: 2026-02-22T01:08:21.079Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/bgm?ac=play&id=910004&play=1",
+        "status": 200,
+        "durationMs": 359,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:02.917Z",
+    "manuallyMarked": false,
+    "durationMs": 5026
+  },
+  {
+    "key": "ext_tvbox_ctf_4kvm_0d129313",
+    "name": "CTF-4kvm [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=detail&ids=910005",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=play&id=910005&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4",
+        "status": 200,
+        "durationMs": 1479,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2392,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910005",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:08:19.862Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8#线路3$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 350,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=detail&ids=910005",
+        "status": 200,
+        "durationMs": 357,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910005",
+              "vod_name": "4kvm 实测样本",
+              "vod_pic": "https://www.4kvm.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://www.4kvm.tv/movies/hsbdla ; 更新时间: 2026-02-22T01:08:20.564Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8#线路2$https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8#线路3$https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kvm4?ac=play&id=910005&play=1",
+        "status": 200,
+        "durationMs": 349,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:02.396Z",
+    "manuallyMarked": false,
+    "durationMs": 4927
+  },
+  {
+    "key": "ext_tvbox_ctf_libvio_1c262f4f",
+    "name": "CTF-libvio [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=detail&ids=910006",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=play&id=910006&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio",
+        "status": 200,
+        "durationMs": 1483,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1795,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910006",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:08:21.099Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 2001,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=detail&ids=910006",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910006",
+              "vod_name": "libvio 实测样本",
+              "vod_pic": "https://www.libvio.site/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.libvio.site/play/714893137-4-1.html ; 更新时间: 2026-02-22T01:08:23.453Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzngk-P0lG5h6jPzjftqL7Na2ZVYpmb-OlH_0miMnQBMYfAnNL2WEN1GES&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260220T175349Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260221%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=2cda89f94ad1341d5ec1e22a50d354da2d9bea851d6dd0a8f4f9d3756daff18a&tvkey=m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/libvio?ac=play&id=910006&play=1",
+        "status": 200,
+        "durationMs": 351,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:05.279Z",
+    "manuallyMarked": false,
+    "durationMs": 5982
+  },
+  {
+    "key": "ext_tvbox_ctf_kanbot_7b4e20d5",
+    "name": "CTF-kanbot [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=detail&ids=910007",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=play&id=910007&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot",
+        "status": 200,
+        "durationMs": 1803,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 2521,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910007",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:08:21.757Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 1385,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=detail&ids=910007",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910007",
+              "vod_name": "kanbot 实测样本",
+              "vod_pic": "https://v.ikanbot.com/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_unavailable(status=404) fallback_static=true ; 字幕: 无",
+              "vod_content": "入口: https://v.ikanbot.com/play/962794 ; 更新时间: 2026-02-22T01:08:23.500Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kanbot?ac=play&id=910007&play=1",
+        "status": 200,
+        "durationMs": 354,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:05.331Z",
+    "manuallyMarked": false,
+    "durationMs": 6415
+  },
+  {
+    "key": "ext_tvbox_ctf_kuangren_fcf0ef8f",
+    "name": "CTF-kuangren [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=detail&ids=910008",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=play&id=910008&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren",
+        "status": 200,
+        "durationMs": 1775,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 418,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910008",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:08:19.749Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 351,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=detail&ids=910008",
+        "status": 200,
+        "durationMs": 439,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910008",
+              "vod_name": "kuangren 实测样本",
+              "vod_pic": "https://www.kuang1.cfd/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.kuang1.cfd/vodplay/976081-2-1.html ; 更新时间: 2026-02-22T01:08:20.541Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/kuangren?ac=play&id=910008&play=1",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:02.371Z",
+    "manuallyMarked": false,
+    "durationMs": 3336
+  },
+  {
+    "key": "ext_tvbox_ctf_dbkk_bd03b8b9",
+    "name": "CTF-独播库 [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=detail&ids=910009",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=play&id=910009&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk",
+        "status": 200,
+        "durationMs": 1449,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 1414,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910009",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:08:19.013Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 363,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=detail&ids=910009",
+        "status": 200,
+        "durationMs": 362,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910009",
+              "vod_name": "独播库 实测样本",
+              "vod_pic": "https://www.dbkk.cc/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.dbkk.cc/play/2026813471-ep6 ; 更新时间: 2026-02-22T01:08:19.728Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/dbkk?ac=play&id=910009&play=1",
+        "status": 200,
+        "durationMs": 352,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:01.565Z",
+    "manuallyMarked": false,
+    "durationMs": 3940
+  },
+  {
+    "key": "ext_tvbox_ctf_iyf_86b105e0",
+    "name": "CTF-iyf [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=detail&ids=910010",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=play&id=910010&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf",
+        "status": 200,
+        "durationMs": 1504,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 376,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910010",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:08:18.978Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 358,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=detail&ids=910010",
+        "status": 200,
+        "durationMs": 363,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910010",
+              "vod_name": "iyf 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:08:19.702Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4#线路2$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/iyf?ac=play&id=910010&play=1",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:01.537Z",
+    "manuallyMarked": false,
+    "durationMs": 2957
+  },
+  {
+    "key": "ext_tvbox_ctf_aiyifan_0587a225",
+    "name": "CTF-aiyifan [外部:tvbox]",
+    "api": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_1",
+    "status": "success",
+    "message": "4/4 接口正常（play为附加探针）",
+    "testUrls": {
+      "home": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+      "category": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&t=1&pg=1",
+      "search": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=detail&ids=910011",
+      "play": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=play&id=910011&play=1"
+    },
+    "details": {
+      "home": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan",
+        "status": 200,
+        "durationMs": 1483,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      },
+      "category": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&t=1&pg=1",
+        "status": 200,
+        "durationMs": 423,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910011",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:08:18.303Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4"
+            }
+          ]
+        }
+      },
+      "search": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "durationMs": 360,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "0",
+          "list": []
+        }
+      },
+      "detail": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=detail&ids=910011",
+        "status": 200,
+        "durationMs": 356,
+        "data": {
+          "code": 1,
+          "msg": "数据列表",
+          "page": "1",
+          "pagecount": "1",
+          "limit": "20",
+          "total": "1",
+          "list": [
+            {
+              "vod_id": "910011",
+              "vod_name": "aiyifan 实测样本",
+              "vod_pic": "https://www.iyf.tv/favicon.ico",
+              "type_name": "CTF实战",
+              "vod_remarks": "worker_mode_static_only=true ; 字幕: 无",
+              "vod_content": "入口: https://www.iyf.tv/play/rHdszVLeZIT?id=1KemI6nhFaA ; 更新时间: 2026-02-22T01:08:19.021Z",
+              "vod_play_from": "CTF直连",
+              "vod_play_url": "线路1$https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4#线路2$https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4"
+            }
+          ]
+        }
+      },
+      "play": {
+        "success": true,
+        "url": "https://ctf-tvbox-gateway-20260221.knieclarine.workers.dev/api/aiyifan?ac=play&id=910011&play=1",
+        "status": 200,
+        "durationMs": 358,
+        "data": {
+          "code": 1,
+          "msg": "ok",
+          "class": [
+            {
+              "type_id": "1",
+              "type_name": "CTF实战"
+            }
+          ],
+          "filters": {}
+        }
+      }
+    },
+    "checkTime": "2026-02-22T01:08:00.859Z",
+    "manuallyMarked": false,
+    "durationMs": 2981
+  },
+  {
+    "key": "ext_tvbox_site_d5ad9e00",
+    "name": "🪔聚合┃短剧 [外部:tvbox]",
+    "api": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+      "category": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=list&t=1&pg=1",
+      "search": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=list&wd=%E6%B5%8B%E8%AF%95",
+      "detail": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=detail&ids=1",
+      "play": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=play&id=1&play=1"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js",
+        "status": 200,
+        "error": "response is not JSON",
+        "durationMs": 398,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niuniu: { 'Cache-Control': 'no-cache', 'Con"
+      },
+      "category": {
+        "success": false,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=list&t=1&pg=1",
+        "status": 200,
+        "error": "response is not JSON",
+        "durationMs": 47,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niuniu: { 'Cache-Control': 'no-cache', 'Con"
+      },
+      "search": {
+        "success": false,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=list&wd=%E6%B5%8B%E8%AF%95",
+        "status": 200,
+        "error": "response is not JSON",
+        "durationMs": 47,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niuniu: { 'Cache-Control': 'no-cache', 'Con"
+      },
+      "detail": {
+        "success": false,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=detail&ids=1",
+        "status": 200,
+        "error": "response is not JSON",
+        "durationMs": 44,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niuniu: { 'Cache-Control': 'no-cache', 'Con"
+      },
+      "play": {
+        "success": false,
+        "url": "https://16409.kstore.vip/js/%E8%81%9A%E5%90%88%E7%9F%AD%E5%89%A7.js?ac=play&id=1&play=1",
+        "status": 200,
+        "error": "response is not JSON",
+        "durationMs": 45,
+        "bodySample": "const aggConfig = {   headers: {     default: { 'User-Agent': 'okhttp/3.12.11', 'content-type': 'application/json; charset=utf-8' },     niuniu: { 'Cache-Control': 'no-cache', 'Con"
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.621Z",
+    "manuallyMarked": false,
+    "durationMs": 581
+  },
+  {
+    "key": "ext_tvbox_demo_drpy_426eef1c",
+    "name": "同构Demo源 [外部:tvbox]",
+    "api": "http://127.0.0.1:9977/js/lib/drpy2.min.js",
+    "type": 4,
+    "searchable": 1,
+    "lang": "external_3",
+    "status": "error",
+    "message": "推荐和分类接口均异常",
+    "testUrls": {
+      "home": "http://127.0.0.1:9977/js/lib/drpy2.min.js?extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+      "category": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=list&t=1&pg=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+      "search": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=list&wd=%E6%B5%8B%E8%AF%95&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+      "detail": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=detail&ids=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+      "play": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=play&id=1&play=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js"
+    },
+    "details": {
+      "home": {
+        "success": false,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js?extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 3
+      },
+      "category": {
+        "success": false,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=list&t=1&pg=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "search": {
+        "success": false,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=list&wd=%E6%B5%8B%E8%AF%95&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "detail": {
+        "success": false,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=detail&ids=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      },
+      "play": {
+        "success": false,
+        "url": "http://127.0.0.1:9977/js/lib/drpy2.min.js?ac=play&id=1&play=1&extend=http%3A%2F%2F127.0.0.1%3A9977%2Fjs%2Fdemo_source.js",
+        "status": -1,
+        "error": "request error: fetch failed",
+        "durationMs": 1
+      }
+    },
+    "checkTime": "2026-02-22T01:07:57.464Z",
+    "manuallyMarked": false,
+    "durationMs": 7
+  }
+]

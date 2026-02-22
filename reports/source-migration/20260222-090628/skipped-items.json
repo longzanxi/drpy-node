@@ -1,0 +1,288 @@
+[
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "豆瓣",
+      "name": "☯️微信公众号：NGZ南歌(关注不迷路)",
+      "api": "csp_Douban",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "配置中心",
+      "name": "🗂个人云盘┃配置",
+      "api": "csp_Config",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "秒看蓝光",
+      "name": "🎇NGZ聚合┃4K弹幕",
+      "api": "csp_AppGet",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "qiao4k2",
+      "name": "🎑巧技┃4K至臻",
+      "api": "csp_Qiji",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "移动",
+      "name": "🎯移动┃在线4K",
+      "api": "csp_YD",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "hipy_js_4K-AV",
+      "name": "🧲磁力在线┃原盘",
+      "api": "csp_XYQHiker",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "瓜子影视",
+      "name": "🍉GZ┃HD2K",
+      "api": "csp_Gz360",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "金牌影视",
+      "name": "🔦金牌┃HD2K",
+      "api": "csp_Jpys",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "农民影视",
+      "name": "🏮农民┃秒播",
+      "api": "csp_XYQHiker",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "韩剧看看",
+      "name": "🫧韩剧┃蓝光",
+      "api": "csp_XBPQ",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "玩偶哥哥",
+      "name": "🧽网盘┃玩偶哥哥",
+      "api": "csp_PanWebShare",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "至臻",
+      "name": "🧽网盘┃玩偶至臻",
+      "api": "csp_PanWebShare",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "多多",
+      "name": "🧽网盘┃玩偶多多",
+      "api": "csp_PanWebShare",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "米搜",
+      "name": "🩴米搜┃网盘",
+      "api": "csp_MiSou",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "漫国",
+      "name": "🍼漫国丨动漫",
+      "api": "csp_AppSy",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "樱花动漫",
+      "name": "🍼樱花｜动漫",
+      "api": "csp_XBPQ",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "巴士动漫",
+      "name": "🍼巴士｜动漫",
+      "api": "csp_XYQHiker",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "番薯",
+      "name": "🍼番薯丨动漫",
+      "api": "csp_AppGet",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "米饭",
+      "name": "🍼米饭｜动漫",
+      "api": "csp_AppGet",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "本地",
+      "name": "📻本地┃视频",
+      "api": "csp_LocalFile",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "酷狗",
+      "name": "🎧酷狗┃音乐",
+      "api": "csp_Kugou",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "哔哩",
+      "name": "🎧全网┃音乐",
+      "api": "csp_Bili",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "急救教学",
+      "name": "⛑️急救┃教学",
+      "api": "csp_FirstAid",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "926看球",
+      "name": "🏀926┃看球",
+      "api": "csp_Sir88",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "Jrsjs",
+      "name": "⚽实时┃球迷",
+      "api": "csp_Kanqiu",
+      "type": 3
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "reason": "non_http_api",
+    "sample": {
+      "key": "csp_XPath_鹅直播",
+      "name": "🥅企鹅┃体育直播",
+      "api": "csp_XPath",
+      "type": 3
+    }
+  }
+]

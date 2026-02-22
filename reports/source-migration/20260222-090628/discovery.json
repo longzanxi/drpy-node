@@ -1,0 +1,5541 @@
+[
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/out/subtitle.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/result.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"inp\"... is not valid JSON"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/subtitle.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/extract_full.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/extract_light.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/extract_postid.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/health.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/health_after_deploy.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/token_verify.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/worker_test/verification_summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step0_dns.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step1_movie_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step2_dooplayer.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step2_dooplayer_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step3_artplayer_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step3_extracted.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step4_ws_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step4_ws_request.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step4_ws_response.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step5_hls_subtitles.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step5_m3u8_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step5_segment_check.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step6_danmu_meta.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/step6_subtitle.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/protocol_test/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/protocol_test_result.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/e2e_summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/extract_result.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/precheck.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/protocol_attempt_1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/protocol_attempt_2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".cz233.com",
+    "file": ".cz233.com/main/e2e_runs/run_20260216_113303/protocol_test_result.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".netflixgc.com",
+    "file": ".netflixgc.com/main/cf_worker_metadata.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".netflixgc.com",
+    "file": ".netflixgc.com/main/cf_worker_subdomain_enable.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": ".netflixgc.com",
+    "file": ".netflixgc.com/main/TEST_REPORT_protocol_netflixgc.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_fetch_regression.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ok\":\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_local_fetch_only.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ok\":\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_local_full_run_nokv.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ok\":\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_local_health.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ok\":\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_local_unlock_diag.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"flow\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_register_regression.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"flow\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_unlock_diag.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"flow\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_unlock_regression.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"flow\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_unlock_token98.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"flow\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/detail_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/languagesplaylist_41377_t2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/languagesplaylist_rHdsz_t3_cid01.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_576_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_720_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_response.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_channel_chrome.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_channel_msedge.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_postbuy_api.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_postbuy_v3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_response.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/_bgm_result.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ent\"... is not valid JSON"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/worker/cf_worker_metadata.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/worker/cf_worker_subdomain_enable.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/spec/bgm_worker_response.schema.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/results/bepv1_test_report.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/results/bgm_playability_check.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"sum\"... is not valid JSON"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/results/bgm_sources_result.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ent\"... is not valid JSON"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/results/cf_worker_extract_result.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/results/cf_worker_playability_check.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"sum\"... is not valid JSON"
+  },
+  {
+    "dir": "bgm.girigirilove.com",
+    "file": "bgm.girigirilove.com/main/node/bepv1_test_report.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/.iyf_inject_cache.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_attempt_report.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run37_39_report.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run40_42_report.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run47_52_report.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/detail_resp.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��<\u0000!\u0000D\u0000O\u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/lang_playlist_resp.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_2cim_new.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_account_vip_check.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch10.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch11.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch12.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch13.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch14.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch15.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch16.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch17.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch18.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch18b_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch19c_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch19_autokey_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch19_browser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch19_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch2.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch20_browser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch20_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch21_fast_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch21_scan_browser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch21_scan_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch3.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch4.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch5.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch6.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch7.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch8.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_after_patch9.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_anygate_register_mailtm.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_auto_cairou_4k.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_auto_cairou_4k_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_before_patch.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_bfs_pyv_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cairou_episode_2160_1080.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cairou_quality_full.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cleanup_c1_pending_orders_run1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cleanup_c1_pending_orders_run2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cleanup_c1_pending_orders_run3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cmp_1d_akST.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cmp_1d_akST_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cmp_30d_akST.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_cmp_30d_akST_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_coin_pay_network.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_compare_clarity_keys.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_compare_spec_account_vs_vip30.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_compare_vip_source.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_compare_vip_source_clean.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_current_rHdsz.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_current_rHdsz_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_all_eps.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fallback_j1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fallback_j1_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fallback_test.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u0.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u0_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p10.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p10_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p1_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p2_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p3_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p4_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p5.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p5_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p6.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p6_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p7.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p7_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p8.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p8_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p9.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_p9_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_fetch_a1_u1_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_refresh_all_eps.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_refresh_plus_fallback.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_refresh_smoke.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_refresh_wait300.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_smoke.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_smoke2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_smoke3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_unlock_a1_u1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_full_auto_verify_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_getorderinfo_pattern_summary_20260217.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_inventory_scan.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_inventory_scan_filtered.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_inventory_structured.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_media_m1ya_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_pyv_before.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_key_pyv_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_mailtm_old_account_exists.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{\"@id\":\"\\\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_message_probe_compare.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_all_v1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_all_v1_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_all_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_all_v2_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_after_refresh.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_after_refresh_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v1_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v2_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v3_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v4_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v5.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_min_rHdsz_ep7_only_v5_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_multi_incognito_v1.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_multi_test.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_now_check.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_now_check_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_now_kouer_fixed.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_now_kouer_fixed_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_no_subtitle_mode_test.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_no_subtitle_mode_test_v2.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_no_subtitle_mode_test_v3.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_no_subtitle_stop_test.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_order_probe_compare.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_patch20_fail.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_patch20_tmpjar.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_1080_targeted.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_all_eps_1080_status_current.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_autotrading_candidates.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_bgc_order.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_bonus_unlock_1080.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_c1_orderlist.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_c1_orders_detail.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_cancel_appeal_action.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_candidate_matrix_dynamic.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_clarity_id_paths.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_click_cancel_appeal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_coin_bonus_chain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_coin_matrix2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_coin_task_bruteforce.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_episode_playcombo.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_flow_pyv.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_force_complete_currentbuy.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_force_complete_currentsell.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_getorderinfo_ids_vip1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_getorderinfo_ids_vip1_extra.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_getorderinfo_ids_vip1_prefix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_getorderinfo_ids_vip30.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_getusertoken_uid_matrix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_live_paypage_8bdd.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_long_queryorder_3594491.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payment_chain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run5.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run6.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payorder_bridge_matrix_run7.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_paytype1_browser_flow_newseed.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_payvideobygold_newseed.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_pay_click_enabled_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_pay_method1_click.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_play_network_capture.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_play_network_urls.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_prefix6bd_test.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_prefix6bd_test_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_purchase_matrix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_pyv.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_rHdszVLeZIT_chain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_rHdszVLeZIT_manual.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_td_manual_6573.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_thirdparty_matrix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_thirdparty_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_timegate_click_pay0.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_timegate_click_pay0_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_timegate_paytype_page.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_token_candidates_validate.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip1_matrix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip1_matrix_pay3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip1_matrix_pay5.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30_matrix.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30_matrix_pay2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30_matrix_pay3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30_matrix_pay4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_type20_channel_vip30_matrix_pay5.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_uid_pay_bypass.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_updtrading_candidates.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_updtrading_unlock_after_cancel.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_updtrading_unlock_freshacct.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_updtrading_unlock_newseed.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_probe_watchtime_coin.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_protocol_rHdszVLeZIT_live_min.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_protocol_rHdszVLeZIT_live_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_protocol_rHdszVLeZIT_min.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_protocol_rHdszVLeZIT_real.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_protocol_tvbox_tmp_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_query_order_3596916.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_quick_browser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_quick_browser2.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_recharge_compare_30v1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_repro_rHds_single.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_require_subtitle_test.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_rHds_firstseg_hash.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_rHds_key_detail_audit.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_rHds_languagesplaylist_audit.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_rHds_master_scan.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_1KemI6nhFaA_fast.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_now.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_now_2cim.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_now_2cim_fast.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHds.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHdszVLeZIT.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHdszVLeZIT_browser_now.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHdszVLeZIT_fast.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHdszVLeZIT_live.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_run_rHdszVLeZIT_live_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_scan20_nobrowser_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_sigtest.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_sigtest2.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_2cim_browser_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_2cim_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_FrAV_browser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_FrAV_browser_headful_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_FrAV_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_M1YA_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_headful_v1.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_incognito_v1.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick_v2.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick_v3.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick_v4.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick_v5.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_browser_quick_v6.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_single_PYV_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_smoke.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_state_after_order3596916.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_token_inventory.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_try_4k_kouer_main.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_try_4k_kouer_main_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_try_cairou_4k.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_try_cairou_4k_quality_map.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_type20_final_summary_20260217.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_verify_rHds_fast.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_verify_rHds_fixed.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/out_verify_rHds_nobrowser.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/package-lock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/package.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/play_resp.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\"\u0000r\u0000e\u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/run_multi.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/scan60.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected end of JSON input"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/tmp_detail_rHds_unsigned.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\"\u0000r\u0000e\u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/tmp_mailtm_payload.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_2cim.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch10.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch11.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch13.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch15.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch16.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch17.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch18.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch18b_nobrowser.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch19_browser.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch19_nobrowser.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch6.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch7.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_after_patch9.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_before_patch.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_headful.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_key_pyv_nobrowser.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_patch20_fail.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_quick.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_quick_browser.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_quick_browser2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_run.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_sample.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_test.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/trace_verify_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260220_run54_socks5_20260220_085703/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260220_run46_skipipinfo_20260220_080940/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260220_run45_relaxed_20260220_080814/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260220_run44_fullbatch0_20260220_080627/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260220_run43_allonly_20260220_080627/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run9_smoke/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run8_liveapi/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run7_retryfetch/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run5_fullscan/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run4_skip_ipinfo/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run3_quick/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run2_relaxed/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run29_all_refresh_20260220_001532/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run28_us_refresh_20260220_001422/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run27_ec_refresh_20260220_001422/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run21_ec_p1/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run20_page5_skipip/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run19_page4_skipip/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run18_page3_skipip/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run17_page2_skipip/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run16_global_skipipinfo/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run15_us_skipipinfo/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run13_ushttp/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run12_page3fresh/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run11_page2fresh/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run10_fresh/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_run1/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_page2/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/proxy_livecheck_20260219_202236/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_1_vip.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"u\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_2_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_2_vip.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"u\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_3_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_3_vip.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"u\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_4_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_4_vip.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"u\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_5_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/round_5_vip.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"u\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/summary.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/summary_final.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_vip_check_20260217_215746/summary_with_email.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿[     {\r\"... is not valid JSON"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_10_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_10_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_10_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_10_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_11_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_11_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_11_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_11_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_12_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_12_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_12_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_12_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_13_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_13_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_13_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_13_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_14_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_14_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_14_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_15_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_15_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_15_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_15_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_16_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_16_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_16_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_16_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_17_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_17_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_17_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_17_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_18_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_18_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_18_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_18_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_19_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_19_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_19_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_19_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_20_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_20_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_20_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_20_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_21_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_21_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_21_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_21_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_22_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_22_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_22_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_22_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_23_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_23_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_23_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_23_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_24_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_24_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_2_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_2_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_2_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_2_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_3_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_3_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_3_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_3_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_4_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_4_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_4_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_4_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_5_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_5_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_5_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_5_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_6_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_6_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_6_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_6_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_7_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_7_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_7_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_7_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_8_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_8_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_8_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_9_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_9_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_9_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/round_9_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/effect_replay_summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_10_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_11_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_12_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_13_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_14_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_15_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_16_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_17_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_18_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_19_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_20_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_21_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_22_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_23_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_2_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_3_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_4_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_5_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_6_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_7_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_8_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_vip30_coin_20260217_run1/effect_replay_test/round_9_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_opt_verify_20260218/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run55_se63_probe/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run55_se63_probe/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run55_se63_probe/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run55_se63_probe/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run53_ec_probe/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run52_nl5_hardtimeout/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run50_se6_hardtimeout/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run50_se6_hardtimeout/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run50_se6_hardtimeout/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run50_se6_hardtimeout/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run49_se5_hardtimeout/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run48_nl4_hardtimeout/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_cleanup_retry2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_coin_unlock_retry3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_state_after_retry2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run42_us2_tuned2/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run41_se4_tuned2/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run41_se4_tuned2/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run41_se4_tuned2/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run41_se4_tuned2/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run40_nl3_tuned2/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run40_nl3_tuned2/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run40_nl3_tuned2/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run40_nl3_tuned2/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run39_se3_tuned/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run38_se2_tuned/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run37_nl2_tuned/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run36_us1_tuned/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run35_se1_manual/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run34_nl_manual/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run33_us1_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run32_se2_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run31_se1_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260220_noncn_proxy_run30_nl1_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_cleanup_pending.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run5_finaltry/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_cleanup_pending.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_cleanup_pending_retry2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_coin_unlock_after_cleanup.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_state_check_latest.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/round_1_state_check_via_usproxy.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run4_nl/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_cleanup_pending.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_coin_unlock_retry2_after_cleanup.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run3_manual/round_1_state_direct_check.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_cleanup_direct.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run26_us_oneshot/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_cleanup_direct.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_effect_signal_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_state_after_final.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run25_ec_oneshot/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_cleanup_attempt_1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_cleanup_direct_attempt_1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_cleanup_direct_attempt_2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_cleanup_direct_attempt_3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_cleanup_direct_attempt_4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_coin_unlock_direct_attempt_1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_coin_unlock_direct_attempt_2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_coin_unlock_direct_attempt_3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run24_ec_final/round_1_state_before_direct_refresh.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run2/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run2/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run2/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run2/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run2/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260219_noncn_proxy_run1/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run3/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run2b/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_2_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_2_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_2_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_2_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_2_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_3_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_3_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_3_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_3_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/round_3_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_livecheck_20260218_run1/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/full_test_validation.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_10_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_10_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_10_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_10_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_10_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_11_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_11_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_11_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_11_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_11_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_12_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_12_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_12_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_12_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_12_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_13_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_13_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_13_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_13_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_13_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_14_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_14_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_14_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_14_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_14_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_15_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_15_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_15_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_15_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_15_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_16_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_16_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_16_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_16_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_16_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_17_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_17_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_17_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_17_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_17_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_18_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_18_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_18_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_18_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_18_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_19_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_19_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_19_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_19_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_19_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_1_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_1_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_1_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_1_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_1_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_20_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_20_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_20_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_20_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_20_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_21_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_21_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_21_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_21_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_21_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_22_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_22_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_22_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_22_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_22_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_23_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_23_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_23_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_23_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_23_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_24_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_24_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_24_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_24_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_24_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_25_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_25_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_25_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_25_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_25_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_26_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_26_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_26_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_26_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_26_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_27_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_27_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_27_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_27_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_27_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_28_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_28_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_28_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_28_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_28_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_29_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_29_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_29_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_29_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_29_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_2_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_2_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_2_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_2_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_2_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_30_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_30_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_30_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_30_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_30_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_3_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_3_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_3_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_3_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_3_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_4_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_4_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_4_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_4_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_4_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_5_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_5_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_5_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_5_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_5_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_6_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_6_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_6_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_6_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_6_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_7_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_7_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_7_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_7_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_7_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_8_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_8_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_8_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_8_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_8_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_9_coin_unlock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_9_effect_signal.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_9_register.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_9_state_after.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/round_9_state_before.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/batch_repro_fulltest_20260218_run1/summary.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/analysis/devtools_req11_body.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/analysis/ppt_probe_network.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "iyf.tv",
+    "file": "iyf.tv/analysis/probe_out.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/enable_subdomain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/keygen_962794.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '�', \"��{\u0000\r\u0000 \u0000 \u0000\"... is not valid JSON"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/cf_token_verify.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/cf_workers_subdomain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/cf_worker_enable_subdomain.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/cf_worker_put.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/worker_extract.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/worker_health.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/dbg_E.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/final_flag.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/flag.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/hits.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/package-lock.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/package.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/subtitle_candidates.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/subtitle_catalog.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/subtitles/results.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/artifacts/capture/hits.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/artifacts/capture/init-f1-ffprobe.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{  } \" is not valid JSON"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/artifacts/capture/init-f2-ffprobe.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{     \"s\"... is not valid JSON"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/artifacts/capture/state.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/CTF_TVBox全站接入实测报告_20260220.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/CTF_TVBox多仓源_20260220.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/CTF_TVBox聚合仓_20260220.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 11,
+    "matchedItems": 11,
+    "discovered": 11,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/.tmp_repo_fty_remote.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 1,
+    "matchedItems": 1,
+    "discovered": 1,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_local.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_local_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_local_v3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_local_v4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_remote_v1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_remote_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_remote_v3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_FTY真实影视墙专项测试_20260221_remote_v4.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_全量实测报告_20260221.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_全量实测报告_20260221_local_after_compatfix_v1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_全量实测报告_20260221_local_after_realwall.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_全量实测报告_20260221_local_after_realwall_v2.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_全量实测报告_20260221_local_after_realwall_v3.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_线上回归报告_20260221.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_Worker_部署实测报告_20260221.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_参考站点对照与兼容增强深度报告_20260221.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"gene\"... is not valid JSON"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_影视墙搜索兼容性深度修复报告_20260221.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"gene\"... is not valid JSON"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_影视墙搜索冷启动根因与修复报告_20260221.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"gene\"... is not valid JSON"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox_自建真实影视墙实施报告_20260221.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"gene\"... is not valid JSON"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox多仓源_Worker_20260221.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/worker/CTF_TVBox聚合仓_Worker_20260221.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 12,
+    "matchedItems": 12,
+    "discovered": 12,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/dyg.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '/', \"//写法思路来海阔视\"... is not valid JSON"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/hanjukan.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/reference_impl_20260221/ngzmods.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 27,
+    "matchedItems": 27,
+    "discovered": 1,
+    "skipped": 26,
+    "skipReasons": {
+      "non_http_api": 26
+    }
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/minimal_stack_exact/public/xc_minimal.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 1,
+    "matchedItems": 1,
+    "discovered": 1,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "tvbox",
+    "file": "tvbox/local_spider_stack/public/xc_minimal.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 1,
+    "matchedItems": 1,
+    "discovered": 1,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/XC.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '/', \"//本人无公众号、无\"... is not valid JSON"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/XC.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '/', \"//本人无公众号、无\"... is not valid JSON"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/alist.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/Bili.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/Blixq.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/Blixs.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected non-whitespace character after JSON at position 4746 (line 272 column 1)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/douban.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/jianpian.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/peizhi.json",
+    "ok": false,
+    "reason": "json_parse_error: Expected double-quoted property name in JSON at position 191 (line 10 column 3)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/wogg.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/youtube.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/低端影视.json",
+    "ok": false,
+    "reason": "json_parse_error: Expected double-quoted property name in JSON at position 505 (line 17 column 5)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/农民影视.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/初中课堂.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/剧圈圈.json",
+    "ok": false,
+    "reason": "json_parse_error: Expected double-quoted property name in JSON at position 563 (line 18 column 5)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/嗷呜动漫.json",
+    "ok": false,
+    "reason": "json_parse_error: Expected double-quoted property name in JSON at position 836 (line 23 column 5)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/小学课堂.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/少儿教育.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/樱花动漫.json",
+    "ok": false,
+    "reason": "json_parse_error: Expected double-quoted property name in JSON at position 558 (line 17 column 5)"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/网盘集合.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/upstream_TVBox/json/高中课堂.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "参考tvbox",
+    "file": "参考tvbox/minimal_stack/public/xc_minimal.json",
+    "ok": true,
+    "sourcePath": "sites",
+    "totalItems": 1,
+    "matchedItems": 1,
+    "discovered": 1,
+    "skipped": 0,
+    "skipReasons": {}
+  },
+  {
+    "dir": "播剧影视",
+    "file": "播剧影视/main/protocol-test-result.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "播剧影视",
+    "file": "播剧影视/main/result-116295-1-1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "播剧影视",
+    "file": "播剧影视/main/cf-worker/metadata.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113209.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113254.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113512.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260220_182911.json",
+    "ok": false,
+    "reason": "no_site_array"
+  }
+]

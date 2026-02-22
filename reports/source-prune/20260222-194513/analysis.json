@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "startedAt": "2026-02-22T11:45:13.961Z",
+    "finishedAt": "2026-02-22T11:45:14.527Z",
+    "timeoutMs": 20000,
+    "retries": 3,
+    "concurrency": 2,
+    "reportPath": "reports/source-checker-batch/20260222-194303/report.json",
+    "apply": true,
+    "disableFile": "D:/code/yingshi/drpy-node/data/source-checker/disabled-sources.json"
+  },
+  "summary": {
+    "totalErrorsInReport": 1,
+    "confirmedInvalid": 0,
+    "clientSideOnly": 0,
+    "recoveredOrUnstable": 1
+  },
+  "results": [
+    {
+      "key": "hipy_py_紫云[AV¹]",
+      "name": "紫云[AV¹](hipy)",
+      "lang": "hipy",
+      "type": 3,
+      "api": "http://127.0.0.1:5757/py/AppV1.py",
+      "originalMessage": "resource check failed: api=true extAny=false",
+      "originalStatus": "error",
+      "classification": "recovered_or_unstable",
+      "confirmedInvalid": false,
+      "reason": "api_or_ext_recovered",
+      "probes": {
+        "api": {
+          "ok": false,
+          "attempts": [
+            {
+              "index": 1,
+              "ok": false,
+              "status": -1,
+              "durationMs": 37,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 2,
+              "ok": false,
+              "status": -1,
+              "durationMs": 2,
+              "error": "fetch failed",
+              "sample": ""
+            },
+            {
+              "index": 3,
+              "ok": false,
+              "status": -1,
+              "durationMs": 1,
+              "error": "fetch failed",
+              "sample": ""
+            }
+          ]
+        },
+        "ext": [
+          {
+            "url": "http://ziyuncms.feifan12.xyz/api.php",
+            "ok": true,
+            "attempts": [
+              {
+                "index": 1,
+                "ok": true,
+                "status": 200,
+                "durationMs": 152,
+                "error": "",
+                "sample": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "disablePreview": {
+    "keys": [],
+    "meta": {
+      "generatedAt": "2026-02-22T11:45:14.527Z",
+      "basedOnReport": "reports/source-checker-batch/20260222-194303/report.json",
+      "summary": {
+        "totalErrorsInReport": 1,
+        "confirmedInvalid": 0,
+        "clientSideOnly": 0,
+        "recoveredOrUnstable": 1
+      }
+    },
+    "sources": []
+  }
+}
