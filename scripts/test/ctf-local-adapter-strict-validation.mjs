@@ -2,7 +2,7 @@ import fs from 'fs';
 import fsp from 'fs/promises';
 import path from 'path';
 import net from 'net';
-import {spawn} from 'child_process';
+import {spawn, spawnSync} from 'child_process';
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -113,7 +113,10 @@ async function probePlayable(url, timeoutMs = 12_000) {
     const headers = /\.mp4(?:\?|$)/i.test(url) ? {Range: 'bytes=0-4095'} : {};
     const r = await req(url, timeoutMs, {headers, redirect: 'follow'});
     if (r.error) {
-        return {ok: false, reason: r.error, status: r.status};
+        const byCurl = probePlayableByCurl(url, timeoutMs);
+        if (byCurl.ok) return byCurl;
+        const combined = byCurl.reason ? `${r.error}; ${byCurl.reason}` : r.error;
+        return {ok: false, reason: combined, status: byCurl.status || r.status};
     }
     if (r.status < 200 || r.status >= 400) {
         return {ok: false, reason: `HTTP ${r.status}`, status: r.status};
@@ -130,6 +133,41 @@ async function probePlayable(url, timeoutMs = 12_000) {
         return {ok: true, reason: 'stream_signature_matched', status: r.status};
     }
     return {ok: false, reason: 'signature_not_matched', status: r.status, sample: cut(sample, 140)};
+}
+
+function probePlayableByCurl(url, timeoutMs = 12_000) {
+    const target = String(url || '').trim();
+    if (!target) return {ok: false, reason: 'curl_empty_url', status: -1};
+    const timeoutSec = Math.max(4, Math.ceil(Math.min(timeoutMs, 24_000) / 1000));
+    const out = spawnSync('curl', [
+        '-L',
+        '--max-time', String(timeoutSec),
+        '-sS',
+        '-o', '/dev/null',
+        '-w', '%{http_code}|%{content_type}',
+        target,
+    ], {
+        encoding: 'utf8',
+        timeout: Math.min(timeoutMs + 3_000, 28_000),
+        maxBuffer: 1024 * 64,
+    });
+    if (out.error || out.status !== 0) {
+        const reason = out.error ? (out.error.message || String(out.error)) : `curl_exit_${out.status}`;
+        return {ok: false, reason: `curl_failed:${reason}`, status: -1};
+    }
+    const text = String(out.stdout || '').trim();
+    const [statusText, ctRaw = ''] = text.split('|');
+    const status = Number(statusText);
+    if (!Number.isFinite(status)) return {ok: false, reason: `curl_bad_status:${statusText}`, status: -1};
+    if (status < 200 || status >= 400) return {ok: false, reason: `curl HTTP ${status}`, status};
+    const contentType = String(ctRaw || '').toLowerCase();
+    if (/(mpegurl|video|mp4|dash|octet-stream)/i.test(contentType)) {
+        return {ok: true, reason: `curl content-type=${contentType || '-'}`, status};
+    }
+    if (/\.(m3u8|mp4|mpd)(\?|$)/i.test(target) || /manifest\.mpd/i.test(target)) {
+        return {ok: true, reason: `curl extension_probe status=${status}`, status};
+    }
+    return {ok: false, reason: `curl signature_not_matched status=${status}`, status};
 }
 
 function parseVodUrls(vod) {

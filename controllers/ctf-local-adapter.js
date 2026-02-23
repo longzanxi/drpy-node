@@ -399,10 +399,36 @@ async function probePlayable(url, timeoutMs = PROBE_TIMEOUT_MS) {
         const looksMp4 = /ftyp/i.test(sample);
         return res.ok && (looksHls || looksMpd || looksMp4 || /\.mp4(?:\?|$)/i.test(url) || /\.m3u8(?:\?|$)/i.test(url));
     } catch {
-        return false;
+        return probePlayableByCurl(url, timeoutMs);
     } finally {
         clearTimeout(timer);
     }
+}
+
+function probePlayableByCurl(url, timeoutMs = PROBE_TIMEOUT_MS) {
+    const target = String(url || '').trim();
+    if (!target) return false;
+    const timeoutSec = Math.max(4, Math.ceil(Math.min(timeoutMs, 24_000) / 1000));
+    const out = spawnSync('curl', [
+        '-L',
+        '--max-time', String(timeoutSec),
+        '-sS',
+        '-o', '/dev/null',
+        '-w', '%{http_code}|%{content_type}',
+        target,
+    ], {
+        encoding: 'utf8',
+        timeout: Math.min(timeoutMs + 3_000, 28_000),
+        maxBuffer: 1024 * 64,
+    });
+    if (out.error || out.status !== 0) return false;
+    const text = String(out.stdout || '').trim();
+    const [statusText, ctRaw = ''] = text.split('|');
+    const status = Number(statusText);
+    if (!Number.isFinite(status) || status < 200 || status >= 400) return false;
+    const contentType = String(ctRaw || '').toLowerCase();
+    if (/(mpegurl|video|mp4|dash|octet-stream)/i.test(contentType)) return true;
+    return /\.(m3u8|mp4|mpd)(?:\?|$)/i.test(target);
 }
 
 async function promoteFirstPlayable(urls) {
