@@ -28,6 +28,12 @@ test -f config/env.json || echo '{}' > config/env.json
 2. `API_AUTH_CODE`
 3. `API_PWD`
 
+若你要求 `ctf_local` 全部 11 源都启用，再额外确认以下项：
+
+1. `CTF_LOCAL_INCLUDE_UNSTABLE=1`
+2. `CTF_LOCAL_KANBOT_ENABLE_LOCAL_SCRIPT=1`
+3. `CTF_LOCAL_LIBVIO_ENABLE_SCAN=1`（首次建议开启，后续稳定后可改 `0`）
+
 ## 3. 登录并拉取镜像
 
 若 GHCR 是私有镜像，先登录（Token 需要 `read:packages`）：
@@ -56,6 +62,23 @@ docker compose --env-file .env.docker logs -f --tail=200
 
 ```bash
 curl http://127.0.0.1:5757/health
+```
+
+`ctf_local` 站点检查：
+
+```bash
+curl http://127.0.0.1:5757/ctf-adapter/health
+```
+
+当全量 11 源开启时，返回里应看到 `site_count=11`。
+
+严格测试（搜索/分页/详情/播放探测）：
+
+```bash
+API_PWD=$(grep '^API_PWD=' .env.docker | sed 's/^API_PWD=//')
+CTF_LOCAL_LIBVIO_ENABLE_SCAN=1 \
+node scripts/test/ctf-local-adapter-strict-validation.mjs \
+  --port=5757 --concurrency=4 --timeout=80000 --pwd="$API_PWD"
 ```
 
 访问首页（需要 BasicAuth）：
