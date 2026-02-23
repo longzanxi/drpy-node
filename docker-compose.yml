@@ -3,7 +3,7 @@ services:
     image: ${DRPY_IMAGE:-ghcr.io/longzanxi/drpy-node:latest}
     container_name: ${DRPY_CONTAINER_NAME:-drpy-node}
     restart: unless-stopped
-    pull_policy: always
+    pull_policy: ${DRPY_PULL_POLICY:-always}
     ports:
       - "${DRPY_PORT:-5757}:5757"
       - "${DRPY_WS_PORT:-57575}:57575"

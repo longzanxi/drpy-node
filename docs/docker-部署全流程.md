@@ -112,6 +112,7 @@ docker build -t drpy-node:local .
 
 ```text
 DRPY_IMAGE=drpy-node:local
+DRPY_PULL_POLICY=never
 ```
 
 再执行：
