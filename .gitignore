@@ -78,6 +78,8 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
+.env.compose
+.env.docker
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -136,7 +138,6 @@ dist
 /json/UC分享.json
 /jx/奇奇.js
 /spider/js/百忙无果[官].js
-/data/settings/link_data.json
 /yarn.lock
 /t4_daemon.pid
 /custom.json

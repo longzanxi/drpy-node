@@ -1,0 +1,92 @@
+[
+  {
+    "dir": ".4kvm.tv",
+    "file": ".4kvm.tv/main/report/result.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"inp\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/worker-bonus/tmp_fetch_regression.json",
+    "ok": false,
+    "reason": "json_parse_error: Unexpected token '﻿', \"﻿{   \"ok\":\"... is not valid JSON"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_576_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_720_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_api_now.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_channel_chrome.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "aiyifan",
+    "file": "aiyifan/ctf/play_channel_msedge.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kanbot.com",
+    "file": "kanbot.com/main/artifacts/worker_extract.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/dbg_E.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "kuangren.us",
+    "file": "kuangren.us/main/flag.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "播剧影视",
+    "file": "播剧影视/main/result-116295-1-1.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113209.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113254.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260216_113512.json",
+    "ok": false,
+    "reason": "no_site_array"
+  },
+  {
+    "dir": "独播库",
+    "file": "独播库/main/out/e2e_20260220_182911.json",
+    "ok": false,
+    "reason": "no_site_array"
+  }
+]

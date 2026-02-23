@@ -1,0 +1,67 @@
+{
+  "player": {
+    "isPremium": false,
+    "restrictCountry": "",
+    "id": "ma5",
+    "allowErotic": false,
+    "allowAdblock": true,
+    "allowExternal": true,
+    "allowDownload": false,
+    "ui": "{\"branding\":\"#f5f5f5\",\"iconColor\":\"#f5f5f5\",\"timeColor\":\"#f5f5f5\",\"sliderTrackColor\":\"#ffffff4d\",\"sliderLoadColor\":\"rgba(255, 255, 255, 0.5)\",\"sliderTimeColor\":\"#ffffff\",\"sliderTimeBackground\":\"rgba(0, 0, 0, 0.7)\",\"menuPrimary\":\"#1a1a1a\",\"menuSecondary\":\"#6b6b6b\",\"menuBackground\":\"rgb(250 250 250)\",\"menuTopBar\":\"rgba(235, 235, 235, 0.6)\",\"menuSection\":\"transparent\",\"subtitleColor\":\"#ffffff\",\"subtitleBackground\":\"rgba(0, 0, 0, 0.7)\",\"subtitleFontSize\":\"\",\"subtitleFontWeight\":\"\",\"tooltipColor\":\"#000000\",\"tooltipBackground\":\"#ffffff\",\"fontFamily\":\"sans-serif\",\"timeFontSize\":16,\"timeFontWeight\":600,\"tooltipFontSize\":14,\"tooltipFontWeight\":500,\"downloadButton\":true,\"downloadLink\":\"\",\"resumePlayback\":false,\"resumeTextColor\":\"#064c4c\",\"resumeAcceptButton\":\"#22cd29\",\"resumeRejectButton\":\"#f6af21\"}",
+    "iframeApi": false,
+    "logo": "",
+    "restrictEmbed": "",
+    "userId": "tvm",
+    "defaultAudio": "en",
+    "defaultSubtitle": "zh",
+    "pickSubtitle": true,
+    "translation": ""
+  },
+  "metric": {
+    "os": "Windows",
+    "browser": "ChromiumBase",
+    "country": "CN",
+    "city": "Kunming",
+    "ipAddress": "182.246.43.83",
+    "language": "en",
+    "timezone": "Asia/Shanghai",
+    "screenWidth": "1366",
+    "screenHeight": "768",
+    "refererUrl": "kuang1.cfd",
+    "streamerId": "3",
+    "cfDomain": "individualprofile.cyou",
+    "userId": "tvm",
+    "videoId": "98dem",
+    "playerId": "ma5",
+    "platform": "Desktop",
+    "adBlock": 0
+  },
+  "version": "1770717509",
+  "source": "https://185.237.106.95/v4/xUYd0gD-rabj0PEvsQ5qYA/1771620664/pk8/98dem/master.m3u8?v=1770717509",
+  "cf": "https://ssf.individualprofile.cyou/v4/pk8/98dem/cf-master.1770717509.txt",
+  "swarmId": "98dem",
+  "hlsVideoTiktok": "/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+  "iceServers": [
+    {
+      "urls": "stun:185.237.107.127:3478"
+    },
+    {
+      "urls": "stun:203.188.166.230:3478"
+    },
+    {
+      "urls": "stun:stun.l.google.com:19302"
+    }
+  ],
+  "title": "20260210_65011_0.mp4",
+  "thumbnail": "/xlin7nCGmZDi7Ter7Cnn5g/pk8/ghsr6mxj/tmwzup/thumbnail.vtt",
+  "cfExpire": false,
+  "userId": "tvm",
+  "streamingConfig": "{\"order\":[\"Tiktok\",\"Google\",\"Cloudflare\",\"In-House\"],\"adjust\":{\"Tiktok\":{\"disabled\":false,\"domain\":\"p16-ad-site-sign-sg.tiktokcdn.com\",\"params\":{\"v\":\"1766826492\"}},\"Google\":{\"disabled\":true,\"domain\":\"\",\"params\":[]}}}",
+  "torrentTrackers": [
+    "wss://185.237.107.127:8080",
+    "wss://203.188.166.230:8080",
+    "wss://tracker.webtorrent.dev"
+  ],
+  "visitorCountry": "CN",
+  "poster": "/uv254v49wIFACZ3kughAwQ/pk8/ghsr6mxj/tmwzup/poster.png"
+}

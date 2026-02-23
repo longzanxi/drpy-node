@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "play_url": "https://v.ikanbot.com/play/962794",
+  "video_id": "962794",
+  "mtype": "19",
+  "token": "c9c1cd837dbc966e1bee8072499ac0c5",
+  "source_count": 3,
+  "sources": [
+    {
+      "site_id": "39",
+      "line_id": "20790140",
+      "flag": "lzm3u8",
+      "name": "20260215",
+      "url": "https://v.lzcdn28.com/20260215/8578_a032d144/index.m3u8"
+    },
+    {
+      "site_id": "84",
+      "line_id": "20790161",
+      "flag": "dyttm3u8",
+      "name": "20260215",
+      "url": "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/index.m3u8"
+    },
+    {
+      "site_id": "38",
+      "line_id": "20790257",
+      "flag": "1080zyk",
+      "name": "HD国语",
+      "url": "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/index.m3u8"
+    }
+  ],
+  "final_playlists": [
+    "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+    "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8",
+    "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+  ],
+  "final_playlists_by_source": {
+    "https://v.lzcdn28.com/20260215/8578_a032d144/index.m3u8": [
+      "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8"
+    ],
+    "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/index.m3u8": [
+      "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8"
+    ],
+    "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/index.m3u8": [
+      "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8"
+    ]
+  },
+  "subtitle_urls": [],
+  "subtitle_urls_by_source": {
+    "https://v.lzcdn28.com/20260215/8578_a032d144/index.m3u8": [],
+    "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/index.m3u8": [],
+    "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/index.m3u8": []
+  }
+}

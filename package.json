@@ -25,7 +25,9 @@
     "ungzip-1": "node controllers/decoder.js json/十六万歌曲.json.gz",
     "moontv": "node scripts/mjs/moontv.mjs 采集2025.json -p",
     "bundle": "cd drpy-node-bundle && npx rolldown -c",
-    "test:bundle": "cd drpy-node-bundle && node localDsCoreTest.js"
+    "test:bundle": "cd drpy-node-bundle && node localDsCoreTest.js",
+    "sources:internalize": "node scripts/test/internalize-external-sources.mjs",
+    "sources:migrate:internal": "node scripts/test/external-source-migration.mjs --workspace=external/workspace-sources"
   },
   "engines": {
     "node": ">17 <23"

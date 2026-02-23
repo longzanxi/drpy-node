@@ -1,0 +1,3388 @@
+{
+  "meta": {
+    "batch": "20260223-093947",
+    "startedAt": "2026-02-23T01:39:47.854Z",
+    "finishedAt": "2026-02-23T01:40:09.131Z",
+    "port": 5757,
+    "timeoutMs": 30000,
+    "concurrency": 6,
+    "reusedService": false,
+    "mode": "strict"
+  },
+  "summary": {
+    "total": 11,
+    "success": 11,
+    "error": 0,
+    "requiredTotal": 319,
+    "requiredPassed": 319,
+    "requiredFailed": 0
+  },
+  "sources": [
+    {
+      "id": "kvm4",
+      "key": "ctf_local_kvm4",
+      "name": "CTF-4kvm(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "4kvm",
+      "firstPlayableUrl": "https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://play.kvmplay.org/m3/583812e1771853991/59Njk5YmFmZTdiZmY3YiQzNTY3JDEkMTc3MTgxMDc5MQ699bafe7bff78.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16247
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16247
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16247
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=kvm4_1,play_lines=2",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16247
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=kvm4_1,ac=kvm4_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=kvm4_1,list=kvm4_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=search&wd=4kvm",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=4kvm,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=search&wd=4kvm",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806808_vemyby",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806808_vemyby",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=detail&ids=kvm4_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kvm4_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=detail&ids=kvm4_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=detail&ids=kvm4_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=detail&ids=kvm4_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=videolist&ids=kvm4_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kvm4_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=videolist&ids=kvm4_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=play&id=kvm4_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=play&id=kvm4_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=play&id=kvm4_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8 actual=https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=play&id=kvm4_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kvm4?pwd=dzyyds&ac=play&id=kvm4_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://play.kvmplay.org/m3/d86dcbe1771653498/95Njk5OGEwYmFlN2RhNyQzNTY3JDEkMTc3MTYxMDI5OA6998a0bae7da4.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": true,
+          "required": false,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://play.kvmplay.org/m3/583812e1771853991/59Njk5YmFmZTdiZmY3YiQzNTY3JDEkMTc3MTgxMDc5MQ699bafe7bff78.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "cz233",
+      "key": "ctf_local_cz233",
+      "name": "CTF-cz233(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "cz23",
+      "firstPlayableUrl": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1107
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1107
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1107
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=cz233_1,play_lines=2",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1107
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=cz233_1,ac=cz233_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=cz233_1,list=cz233_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=search&wd=cz23",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=cz23,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=search&wd=cz23",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791670_td2msm",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791670_td2msm",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=detail&ids=cz233_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=cz233_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=detail&ids=cz233_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=detail&ids=cz233_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=detail&ids=cz233_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=videolist&ids=cz233_1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=cz233_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=videolist&ids=cz233_1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=play&id=cz233_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=play&id=cz233_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=play&id=cz233_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8 actual=https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=play&id=cz233_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/cz233?pwd=dzyyds&ac=play&id=cz233_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://119.91.61.181:906/hls3/hls/%E5%B3%A1%E8%B0%B7.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": false,
+          "required": false,
+          "message": "HTTP 403",
+          "url": "https://v3-cdn-tos.ppxvod.com/89c36eb497ee45088e4c74db8485fef3/69989763/video/tos/cn/tos-cn-v-ec2668/o4ohIX4YUDEdxgdEQR9BfFBkIADbLJ2Nl6KyeA/?fileccc=1.mp4",
+          "status": 403,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "netflixgc",
+      "key": "ctf_local_netflixgc",
+      "name": "CTF-netflixgc(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "netf",
+      "firstPlayableUrl": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://vip.dytt-see.com/20251107/5052_86b48b56/index.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1225
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1225
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1225
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=netflixgc_1,play_lines=3",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1225
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=netflixgc_1,ac=netflixgc_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=netflixgc_1,list=netflixgc_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=search&wd=netf",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=netf,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=search&wd=netf",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791788_ca27g1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791788_ca27g1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=detail&ids=netflixgc_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=netflixgc_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=detail&ids=netflixgc_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=detail&ids=netflixgc_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=detail&ids=netflixgc_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=videolist&ids=netflixgc_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=netflixgc_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=videolist&ids=netflixgc_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=play&id=netflixgc_1&play=1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=play&id=netflixgc_1&play=1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=play&id=netflixgc_1&play=1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8 actual=https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=play&id=netflixgc_1&play=1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/netflixgc?pwd=dzyyds&ac=play&id=netflixgc_1&play=1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://json.ksdiy.cn/Vtche/FF/4100819155.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": true,
+          "required": false,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://json.ksdiy.cn/Vtche/YZ/3919318965.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "ysxq",
+      "key": "ctf_local_ysxq",
+      "name": "CTF-boju(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "boju",
+      "firstPlayableUrl": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16665
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16665
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16665
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=ysxq_1,play_lines=2",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 16665
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=ysxq_1,ac=ysxq_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=ysxq_1,list=ysxq_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=search&wd=boju",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=boju,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=search&wd=boju",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810807228_k3vo8z",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810807228_k3vo8z",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=detail&ids=ysxq_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=ysxq_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=detail&ids=ysxq_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=detail&ids=ysxq_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=detail&ids=ysxq_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=videolist&ids=ysxq_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=ysxq_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=videolist&ids=ysxq_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=play&id=ysxq_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=play&id=ysxq_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=play&id=ysxq_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8 actual=https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=play&id=ysxq_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/ysxq?pwd=dzyyds&ac=play&id=ysxq_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": true,
+          "required": false,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "dbkk",
+      "key": "ctf_local_dbkk",
+      "name": "CTF-dbkk(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "dbkk",
+      "firstPlayableUrl": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 907
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 907
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 907
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=dbkk_1,play_lines=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 907
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 8
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=dbkk_1,ac=dbkk_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 8
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=dbkk_1,list=dbkk_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=search&wd=dbkk",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=dbkk,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=search&wd=dbkk",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791482_8q5lvg",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791482_8q5lvg",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=detail&ids=dbkk_1",
+          "status": 200,
+          "durationMs": 4
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=dbkk_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=detail&ids=dbkk_1",
+          "status": 200,
+          "durationMs": 4
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=detail&ids=dbkk_1_not_exists",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=detail&ids=dbkk_1_not_exists",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=videolist&ids=dbkk_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=dbkk_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=videolist&ids=dbkk_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=play&id=dbkk_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=play&id=dbkk_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=play&id=dbkk_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8 actual=https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=play&id=dbkk_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/dbkk?pwd=dzyyds&ac=play&id=dbkk_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://cdn.wlcdn99.com:777/86a2ec51/index.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "aiyifan",
+      "key": "ctf_local_aiyifan",
+      "name": "CTF-aiyifan(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "aiyi",
+      "firstPlayableUrl": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+      "stream": {
+        "primary": {
+          "url": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+          "ok": true,
+          "reason": "content-type=video/mp4",
+          "status": 206
+        },
+        "probes": [
+          {
+            "url": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+            "ok": true,
+            "reason": "content-type=video/mp4",
+            "status": 206
+          },
+          {
+            "url": "https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          },
+          {
+            "url": "https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/manifest.mpd?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5",
+            "ok": true,
+            "reason": "content-type=application/dash+xml",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 928
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 928
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 928
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=aiyifan_1,play_lines=18",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 928
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 4
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=aiyifan_1,ac=aiyifan_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 4
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=aiyifan_1,list=aiyifan_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=search&wd=aiyi",
+          "status": 200,
+          "durationMs": 34
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=aiyi,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=search&wd=aiyi",
+          "status": 200,
+          "durationMs": 34
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791528_uxq1gb",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810791528_uxq1gb",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=detail&ids=aiyifan_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=aiyifan_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=detail&ids=aiyifan_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=detail&ids=aiyifan_1_not_exists",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=detail&ids=aiyifan_1_not_exists",
+          "status": 200,
+          "durationMs": 3
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=videolist&ids=aiyifan_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=aiyifan_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=videolist&ids=aiyifan_1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=play&id=aiyifan_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=play&id=aiyifan_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=play&id=aiyifan_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4 actual=https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=play&id=aiyifan_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/aiyifan?pwd=dzyyds&ac=play&id=aiyifan_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=video/mp4",
+          "url": "https://s1-a1.global-cdn.me/vod/8390EA63781-74441.mp4",
+          "status": 206,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": false,
+          "required": false,
+          "message": "HTTP 403",
+          "url": "https://global.dudupro.com/s2/ppot/_definst_/mp4:s17/live/lxj-sxfysmfsd1j-07-03491EA44.mp4/chunklist.m3u8?vendtime=1771437743&vhash=S-ZF1up3qzTtvCZIepMNfaUYQRV_NONp7r6z3eOd8Bs=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=029813cf9d9913c131504effd38518e0&us=1&proxy=Sp8jPJ4kPsLkPN9XR6DaRYvZRsryEPaMifYNDpAxkxoniZSNCRUslZcP5hAObpSokxoxE32NCRUslZcP5hAObpSokxoxE38NCRUslZcP5hAObp2vCh4yNHbBdXvU2&proxyize=5",
+          "status": 403,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "bgm",
+      "key": "ctf_local_bgm",
+      "name": "CTF-bgm(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "bgm ",
+      "firstPlayableUrl": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14612
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14612
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14612
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=bgm_1,play_lines=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14612
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=bgm_1,ac=bgm_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=bgm_1,list=bgm_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=search&wd=bgm+",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=bgm ,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=search&wd=bgm+",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806924_auyc2b",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806924_auyc2b",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=detail&ids=bgm_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=bgm_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=detail&ids=bgm_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=detail&ids=bgm_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=detail&ids=bgm_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=videolist&ids=bgm_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=bgm_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=videolist&ids=bgm_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=play&id=bgm_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=play&id=bgm_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=play&id=bgm_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8 actual=https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=play&id=bgm_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/bgm?pwd=dzyyds&ac=play&id=bgm_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://ai.girigirilove.net/zijian/oldanime/2026/01/cht/OsananajimitowaLoveComedyniNaranaiCHT/01/playlist.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "kuangren",
+      "key": "ctf_local_kuangren",
+      "name": "CTF-kuangren(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "kuan",
+      "firstPlayableUrl": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://185.237.106.95/v4/xUYd0gD-rabj0PEvsQ5qYA/1771620664/pk8/98dem/master.m3u8?v=1770717509",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          },
+          {
+            "url": "https://185.237.106.95/v4/C9Rn1p-H0k4Wz6Zvn1n0yg/1771244727/pk8/98dem/master.m3u8?v=1770717509",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1119
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1119
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1119
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=kuangren_1,play_lines=3",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 1119
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=kuangren_1,ac=kuangren_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=kuangren_1,list=kuangren_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=search&wd=kuan",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=kuan,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=search&wd=kuan",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810793538_e22lbg",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810793538_e22lbg",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=detail&ids=kuangren_1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kuangren_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=detail&ids=kuangren_1",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=detail&ids=kuangren_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=detail&ids=kuangren_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=videolist&ids=kuangren_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kuangren_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=videolist&ids=kuangren_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=play&id=kuangren_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=play&id=kuangren_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=play&id=kuangren_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8 actual=https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=play&id=kuangren_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kuangren?pwd=dzyyds&ac=play&id=kuangren_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://soul.ezplayer.me/hls/4Sl94K3NDr6mT4x_JDV3uA/pk8/5z1ivqb8/tmwzup/tt/master.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": false,
+          "required": false,
+          "message": "HTTP 403",
+          "url": "https://185.237.106.95/v4/xUYd0gD-rabj0PEvsQ5qYA/1771620664/pk8/98dem/master.m3u8?v=1770717509",
+          "status": 403,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "kanbot",
+      "key": "ctf_local_kanbot",
+      "name": "CTF-kanbot(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "kanb",
+      "firstPlayableUrl": "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+      "stream": {
+        "primary": {
+          "url": "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+          "ok": true,
+          "reason": "content-type=application/vnd.apple.mpegurl",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          },
+          {
+            "url": "https://cdn.yzzy29-play.com/20260215/20128_9abcd7ad/2000k/hls/mixed.m3u8",
+            "ok": true,
+            "reason": "content-type=application/vnd.apple.mpegurl",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14060
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14060
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14060
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=kanbot_1,play_lines=6",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 14060
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=kanbot_1,ac=kanbot_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=kanbot_1,list=kanbot_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=search&wd=kanb",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=kanb,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=search&wd=kanb",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806828_epgvxo",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806828_epgvxo",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=detail&ids=kanbot_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kanbot_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=detail&ids=kanbot_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=detail&ids=kanbot_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=detail&ids=kanbot_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=videolist&ids=kanbot_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=kanbot_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=videolist&ids=kanbot_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=play&id=kanbot_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=play&id=kanbot_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=play&id=kanbot_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8 actual=https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=play&id=kanbot_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/kanbot?pwd=dzyyds&ac=play&id=kanbot_1&play=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://v.lzcdn28.com/20260215/8578_a032d144/2000k/hls/mixed.m3u8",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": true,
+          "required": false,
+          "message": "content-type=application/vnd.apple.mpegurl",
+          "url": "https://vip.dytt-cinema.com/20260215/49425_d78e4f87/3000k/hls/mixed.m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "iyf",
+      "key": "ctf_local_iyf",
+      "name": "CTF-iyf(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "iyf ",
+      "firstPlayableUrl": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+      "stream": {
+        "primary": {
+          "url": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+          "ok": true,
+          "reason": "content-type=video/mp4",
+          "status": 206
+        },
+        "probes": [
+          {
+            "url": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+            "ok": true,
+            "reason": "content-type=video/mp4",
+            "status": 206
+          },
+          {
+            "url": "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5",
+            "ok": false,
+            "reason": "HTTP 403",
+            "status": 403
+          },
+          {
+            "url": "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/manifest.mpd?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5",
+            "ok": true,
+            "reason": "content-type=application/dash+xml",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 179
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 179
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 179
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=iyf_1,play_lines=64",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 179
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=iyf_1,ac=iyf_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=iyf_1,list=iyf_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=search&wd=iyf+",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=iyf ,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=search&wd=iyf+",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810793640_old2vq",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810793640_old2vq",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=detail&ids=iyf_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=iyf_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=detail&ids=iyf_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=detail&ids=iyf_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=detail&ids=iyf_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=videolist&ids=iyf_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=iyf_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=videolist&ids=iyf_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=play&id=iyf_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=play&id=iyf_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=play&id=iyf_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4 actual=https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=play&id=iyf_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/iyf?pwd=dzyyds&ac=play&id=iyf_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "content-type=video/mp4",
+          "url": "https://s1-a1.global-cdn.me/vod/11611D87803-61387.mp4",
+          "status": 206,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": false,
+          "required": false,
+          "message": "HTTP 403",
+          "url": "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-01-02A6E5551.mp4/chunklist.m3u8?vendtime=1771443205&vhash=HJZHTKucWqyGj-tnSSP8IOh0tv80ySCDcT86kiHn9ls=&vCustomParameter=0_140.245.72.39_KR_1_0_1&lb=5d0a0ac059db525d3aab997940d839ec&us=1&proxy=SpOjPJ4kOsnlTMHcRt9cTMukTcbmV7CsBMKnBcDiRtLaQcyrDvSxDBWz7CsBMKnBcDiRtLaOsytjXSxDBWz7CsBMKnBcDiRtLaSsXbQMukTcbmV7CsBMKnBdHcOcyyM5XOIvZRsD&proxyize=5",
+          "status": 403,
+          "durationMs": 0
+        }
+      ]
+    },
+    {
+      "id": "libvio",
+      "key": "ctf_local_libvio",
+      "name": "CTF-libvio(Local)",
+      "api": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds",
+      "status": "success",
+      "requiredTotal": 29,
+      "requiredPassed": 29,
+      "requiredFailed": 0,
+      "searchKeyword": "libv",
+      "firstPlayableUrl": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=379963517&isNew=1&et=1771892902259&sign=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAE8NktNqBqqcDDXuqPzLq7XXYtsY-yjGfKW0jDN3BDLpwWawbzWjm1_uECer2XjcKl12cI=&ext=eyJ1dCI6MX0%3D&t=4&u=1039841853291957277&ot=personal&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&oi=1039841853291957277&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T002822Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=526dd052ec06929d34af41f322907bf89b5848d257383c2fe352912c90544ee5",
+      "stream": {
+        "primary": {
+          "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=379963517&isNew=1&et=1771892902259&sign=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAE8NktNqBqqcDDXuqPzLq7XXYtsY-yjGfKW0jDN3BDLpwWawbzWjm1_uECer2XjcKl12cI=&ext=eyJ1dCI6MX0%3D&t=4&u=1039841853291957277&ot=personal&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&oi=1039841853291957277&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T002822Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=526dd052ec06929d34af41f322907bf89b5848d257383c2fe352912c90544ee5",
+          "ok": true,
+          "reason": "stream_signature_matched",
+          "status": 200
+        },
+        "probes": [
+          {
+            "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=379963517&isNew=1&et=1771892902259&sign=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAE8NktNqBqqcDDXuqPzLq7XXYtsY-yjGfKW0jDN3BDLpwWawbzWjm1_uECer2XjcKl12cI=&ext=eyJ1dCI6MX0%3D&t=4&u=1039841853291957277&ot=personal&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&oi=1039841853291957277&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T002822Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=526dd052ec06929d34af41f322907bf89b5848d257383c2fe352912c90544ee5",
+            "ok": true,
+            "reason": "stream_signature_matched",
+            "status": 200
+          },
+          {
+            "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAk-OEJH5h6jPzjftqL7Na2ZVYpmb-OlH_2dSn5-Ww_XhfE9Nbyavzyt&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T013958Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=8477109969e6278402a92a9f18261f31d5ff476a4f2479b8c5816b21c436fb7a&tvkey=m3u8",
+            "ok": true,
+            "reason": "stream_signature_matched",
+            "status": 200
+          }
+        ]
+      },
+      "checks": [
+        {
+          "id": "home.default.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 12311
+        },
+        {
+          "id": "home.default.class",
+          "ok": true,
+          "required": true,
+          "message": "class_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 12311
+        },
+        {
+          "id": "home.default.list",
+          "ok": true,
+          "required": true,
+          "message": "list_len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 12311
+        },
+        {
+          "id": "home.default.vod",
+          "ok": true,
+          "required": true,
+          "message": "vod_id=libvio_1,play_lines=2",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds",
+          "status": 200,
+          "durationMs": 12311
+        },
+        {
+          "id": "home.ac.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "home.ac.same_id",
+          "ok": true,
+          "required": true,
+          "message": "default=libvio_1,ac=libvio_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=home",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg1.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.meta",
+          "ok": true,
+          "required": true,
+          "message": "page=1,limit=1,total=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.size",
+          "ok": true,
+          "required": true,
+          "message": "len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg1.same_id",
+          "ok": true,
+          "required": true,
+          "message": "home=libvio_1,list=libvio_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=1&limit=1",
+          "status": 200,
+          "durationMs": 2
+        },
+        {
+          "id": "list.pg999.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.clamp",
+          "ok": true,
+          "required": true,
+          "message": "page=1,pagecount=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "list.pg999.size",
+          "ok": true,
+          "required": true,
+          "message": "total=1,len=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=list&t=1&pg=999&limit=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=search&wd=libv",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "wd=libv,hits=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=search&wd=libv",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806691_ax7no5",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "search.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=search&wd=__strict_not_found_1771810806691_ax7no5",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=detail&ids=libvio_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.pos.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=libvio_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=detail&ids=libvio_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=detail&ids=libvio_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "detail.neg.empty",
+          "ok": true,
+          "required": true,
+          "message": "total=0,len=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=detail&ids=libvio_1_not_exists",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=videolist&ids=libvio_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "videolist.hit",
+          "ok": true,
+          "required": true,
+          "message": "len=1,id=libvio_1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=videolist&ids=libvio_1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.code",
+          "ok": true,
+          "required": true,
+          "message": "code=1",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=play&id=libvio_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.parse_zero",
+          "ok": true,
+          "required": true,
+          "message": "parse=0",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=play&id=libvio_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.nonempty",
+          "ok": true,
+          "required": true,
+          "message": "url=https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=37",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=play&id=libvio_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.expected_first",
+          "ok": true,
+          "required": true,
+          "message": "expected=https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=37 actual=https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=37",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=play&id=libvio_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.media",
+          "ok": true,
+          "required": true,
+          "message": "url=https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=37",
+          "url": "http://127.0.0.1:5757/ctf-adapter/api/libvio?pwd=dzyyds&ac=play&id=libvio_1&play=1",
+          "status": 200,
+          "durationMs": 1
+        },
+        {
+          "id": "play.url.probe",
+          "ok": true,
+          "required": true,
+          "message": "stream_signature_matched",
+          "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/playlist.m3u8?ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&fileSize=379963517&isNew=1&et=1771892902259&sign=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAE8NktNqBqqcDDXuqPzLq7XXYtsY-yjGfKW0jDN3BDLpwWawbzWjm1_uECer2XjcKl12cI=&ext=eyJ1dCI6MX0%3D&t=4&u=1039841853291957277&ot=personal&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&oi=1039841853291957277&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T002822Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=526dd052ec06929d34af41f322907bf89b5848d257383c2fe352912c90544ee5",
+          "status": 200,
+          "durationMs": 0
+        },
+        {
+          "id": "play.alt.probe",
+          "ok": true,
+          "required": false,
+          "message": "stream_signature_matched",
+          "url": "https://wxkdhls.mcloud.139.com/v3/hls/1866184771348994688/1080/index.m3u8?ecc=ck_HdmUMvmRVEC5H3uxkkyi5jVWMwSTzkAk-OEJH5h6jPzjftqL7Na2ZVYpmb-OlH_2dSn5-Ww_XhfE9Nbyavzyt&ci=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&t=4&u=1039841853291957277&ot=personal&oi=1039841853291957277&f=Ft0_uLy7ZRPiYVts78PJJQqMLGiAOWUv4&ext=eyJ1dCI6MX0=&X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T013958Z&X-Amz-SignedHeaders=host&X-Amz-Credential=Q2PNRN2OGHZQ1ZDF90XQ%2F20260223%2FZGVmYXVsdA%2Fdefault%2Faws4_request&X-Amz-Signature=8477109969e6278402a92a9f18261f31d5ff476a4f2479b8c5816b21c436fb7a&tvkey=m3u8",
+          "status": 200,
+          "durationMs": 0
+        }
+      ]
+    }
+  ]
+}

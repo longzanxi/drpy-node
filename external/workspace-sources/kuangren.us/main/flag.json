@@ -1,0 +1,20 @@
+{
+  "title": "20260210_65011_0.mp4",
+  "video_id": null,
+  "main_source": "https://ssf.individualprofile.cyou/v4/pk8/98dem/cf-master.1770717509.txt",
+  "source_candidates": [
+    {
+      "name": "Cloudflare",
+      "src": "https://ssf.individualprofile.cyou/v4/pk8/98dem/cf-master.1770717509.txt",
+      "raw": "https://ssf.individualprofile.cyou/v4/pk8/98dem/cf-master.1770717509.txt",
+      "adjust": null
+    },
+    {
+      "name": "In-House",
+      "src": "https://185.237.106.95/v4/C9Rn1p-H0k4Wz6Zvn1n0yg/1771244727/pk8/98dem/master.m3u8?v=1770717509",
+      "raw": "https://185.237.106.95/v4/C9Rn1p-H0k4Wz6Zvn1n0yg/1771244727/pk8/98dem/master.m3u8?v=1770717509",
+      "adjust": null
+    }
+  ],
+  "subtitles": []
+}

@@ -1,0 +1,31 @@
+services:
+  drpy-node:
+    image: ${DRPY_IMAGE:-ghcr.io/longzanxi/drpy-node:latest}
+    container_name: ${DRPY_CONTAINER_NAME:-drpy-node}
+    restart: unless-stopped
+    pull_policy: always
+    ports:
+      - "${DRPY_PORT:-5757}:5757"
+      - "${DRPY_WS_PORT:-57575}:57575"
+    environment:
+      TZ: ${TZ:-Asia/Shanghai}
+      NODE_ENV: ${NODE_ENV:-production}
+      API_AUTH_NAME: ${API_AUTH_NAME:?API_AUTH_NAME is required}
+      API_AUTH_CODE: ${API_AUTH_CODE:?API_AUTH_CODE is required}
+      API_PWD: ${API_PWD:?API_PWD is required}
+      PROXY_AUTH: ${PROXY_AUTH:-drpys}
+      ENABLE_TASKER: ${ENABLE_TASKER:-0}
+      MAX_TASK: ${MAX_TASK:-8}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      PYTHON_PATH: /opt/venv/bin/python
+      VIRTUAL_ENV: /opt/venv
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./config/env.json:/app/config/env.json
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:5757/health"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 20s

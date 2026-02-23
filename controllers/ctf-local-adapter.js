@@ -20,6 +20,21 @@ const SITE_IDS = [
     'libvio',
 ];
 
+const CTF_INTERNAL_WORKSPACE_REL = path.join('external', 'workspace-sources');
+const CTF_EXPECTED_DIRS = [
+    '.4kvm.tv',
+    '.cz233.com',
+    '.netflixgc.com',
+    CHN_BOJU,
+    CHN_DBKK,
+    'aiyifan',
+    'bgm.girigirilove.com',
+    'kuangren.us',
+    'kanbot.com',
+    'iyf.tv',
+    'libvio',
+];
+
 const SITE_META = {
     kvm4: {
         key: 'ctf_local_kvm4',
@@ -160,6 +175,43 @@ const cache = new Map();
 
 function uniq(arr) {
     return [...new Set((arr || []).filter((x) => typeof x === 'string' && x.trim()).map((x) => x.trim()))];
+}
+
+function dirExists(dirPath) {
+    try {
+        return fs.existsSync(dirPath) && fs.statSync(dirPath).isDirectory();
+    } catch {
+        return false;
+    }
+}
+
+function countWorkspaceMarkers(root) {
+    if (!dirExists(root)) return 0;
+    let hit = 0;
+    for (const name of CTF_EXPECTED_DIRS) {
+        const p = path.resolve(root, name);
+        if (dirExists(p) || fs.existsSync(p)) {
+            hit += 1;
+        }
+    }
+    return hit;
+}
+
+function resolveWorkspaceRoot(rootDir) {
+    const fromEnv = String(process.env.CTF_LOCAL_WORKSPACE_ROOT || '').trim();
+    const candidates = [];
+    if (fromEnv) {
+        candidates.push({source: 'env', root: path.resolve(fromEnv)});
+    }
+    candidates.push({source: 'internal', root: path.resolve(rootDir, CTF_INTERNAL_WORKSPACE_REL)});
+    candidates.push({source: 'legacy-parent', root: path.resolve(rootDir, '..')});
+
+    const scored = candidates.map((x) => ({
+        ...x,
+        markers: countWorkspaceMarkers(x.root),
+    }));
+    const best = scored.find((x) => x.markers >= 3) || scored.find((x) => dirExists(x.root));
+    return best || {source: 'internal', root: path.resolve(rootDir, CTF_INTERNAL_WORKSPACE_REL), markers: 0};
 }
 
 function safeText(filePath) {
@@ -426,12 +478,12 @@ function runPythonCaptureUrls(workspaceRoot, timeoutMs = 95_000) {
     };
 }
 
-function getLibvioLastGoodPath(workspaceRoot) {
-    return path.join(workspaceRoot, 'drpy-node', 'data', 'ctf-local-adapter', 'libvio-last-good.json');
+function getLibvioLastGoodPath(rootDir) {
+    return path.join(rootDir, 'data', 'ctf-local-adapter', 'libvio-last-good.json');
 }
 
-function loadLibvioLastGood(workspaceRoot) {
-    const filePath = getLibvioLastGoodPath(workspaceRoot);
+function loadLibvioLastGood(rootDir) {
+    const filePath = getLibvioLastGoodPath(rootDir);
     const j = safeJson(filePath);
     if (!j || typeof j !== 'object') return null;
     const sources = uniq((Array.isArray(j.sources) ? j.sources : []).filter(isMediaUrl)).filter((u) => !isExpiredSignedUrl(u));
@@ -453,11 +505,11 @@ function loadLibvioLastGood(workspaceRoot) {
     };
 }
 
-function saveLibvioLastGood(workspaceRoot, sources, subtitles, note = '') {
+function saveLibvioLastGood(rootDir, sources, subtitles, note = '') {
     const cleanSources = uniq((sources || []).filter(isMediaUrl)).filter((u) => !isExpiredSignedUrl(u));
     if (!cleanSources.length) return false;
     const cleanSubtitles = uniq((subtitles || []).filter(isSubtitleUrl));
-    const filePath = getLibvioLastGoodPath(workspaceRoot);
+    const filePath = getLibvioLastGoodPath(rootDir);
     try {
         fs.mkdirSync(path.dirname(filePath), {recursive: true});
         fs.writeFileSync(filePath, JSON.stringify({
@@ -616,8 +668,10 @@ async function extractKvm4(paths) {
     };
 }
 
-async function extractLibvio(workspaceRoot) {
-    const lastGood = loadLibvioLastGood(workspaceRoot);
+async function extractLibvio(context) {
+    const workspaceRoot = context.workspaceRoot;
+    const rootDir = context.rootDir;
+    const lastGood = loadLibvioLastGood(rootDir);
     const parsed = runNodeJson(
         workspaceRoot,
         [path.join('libvio', 'ctf_libvio.js'), '--play', 'https://www.libvio.site/play/714893137-4-1.html', '--json'],
@@ -631,7 +685,7 @@ async function extractLibvio(workspaceRoot) {
         const nonExpired = sources.filter((u) => !isExpiredSignedUrl(u));
         const subtitles = uniq((Array.isArray(parsed.subtitles) ? parsed.subtitles : []).filter(Boolean));
         if (nonExpired.length) {
-            saveLibvioLastGood(workspaceRoot, nonExpired, subtitles, 'from_node_script');
+            saveLibvioLastGood(rootDir, nonExpired, subtitles, 'from_node_script');
             return {sources: nonExpired, subtitles, note: 'local_script_ok=true'};
         }
     }
@@ -641,7 +695,7 @@ async function extractLibvio(workspaceRoot) {
         const freshUrls = uniq((capture.urls || []).filter(isMediaUrl)).filter((u) => !isExpiredSignedUrl(u));
         const subtitles = uniq((capture.subtitles || []).filter(isSubtitleUrl));
         if (freshUrls.length) {
-            saveLibvioLastGood(workspaceRoot, freshUrls, subtitles, 'from_python_capture');
+            saveLibvioLastGood(rootDir, freshUrls, subtitles, 'from_python_capture');
             return {
                 sources: freshUrls,
                 subtitles,
@@ -809,7 +863,7 @@ async function extractBySite(siteId, context) {
     if (siteId === 'kuangren') return extractKuangren(context.paths);
     if (siteId === 'kanbot') return extractKanbot(context.paths);
     if (siteId === 'iyf') return extractIyf(context.paths);
-    if (siteId === 'libvio') return extractLibvio(context.workspaceRoot);
+    if (siteId === 'libvio') return extractLibvio(context);
     throw new Error(`unsupported site: ${siteId}`);
 }
 
@@ -890,7 +944,9 @@ function maccmsPlayPayload(vod) {
 }
 
 export default (fastify, options, done) => {
-    const workspaceRoot = path.resolve(options.rootDir, '..');
+    const rootDir = path.resolve(options.rootDir || process.cwd());
+    const resolvedWorkspace = resolveWorkspaceRoot(rootDir);
+    const workspaceRoot = resolvedWorkspace.root;
     const paths = {
         ysxqSnapshot: path.resolve(workspaceRoot, CHN_BOJU, 'main', 'result-116295-1-1.json'),
         kvm4Snapshot: path.resolve(workspaceRoot, '.4kvm.tv', 'main', 'report', 'result.json'),
@@ -912,7 +968,7 @@ export default (fastify, options, done) => {
             path.resolve(workspaceRoot, 'aiyifan', 'worker-bonus', 'tmp_fetch_regression.json'),
         ],
     };
-    const context = {workspaceRoot, paths};
+    const context = {workspaceRoot, rootDir, paths};
 
     const buildRequestHost = (request) => `${request.protocol}://${request.headers.host}`;
 
@@ -923,6 +979,8 @@ export default (fastify, options, done) => {
             now: nowIso(),
             site_count: SITE_IDS.length,
             workspace_root: workspaceRoot,
+            workspace_source: resolvedWorkspace.source,
+            workspace_markers: resolvedWorkspace.markers,
         };
     });
 

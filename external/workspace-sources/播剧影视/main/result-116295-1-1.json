@@ -1,0 +1,40 @@
+{
+  "input": {
+    "vodplayUrl": "https://www.ysxq.cc/vodplay/116295-1-1.html"
+  },
+  "player": {
+    "from": "1080zyk",
+    "encrypt": 0,
+    "url": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8",
+    "url_next": "",
+    "id": "116295",
+    "sid": 1,
+    "nid": 1
+  },
+  "flow": {
+    "playerScriptUrl": "https://www.ysxq.cc/static/player/1080zyk.js",
+    "mode": "ec.php",
+    "ecPhpUrl": "https://play.91ju.cc/player/ec.php?code=lg&if=1&url=1080zyk&url=https%3A%2F%2Fcdn.yzzy29-play.com%2F20250820%2F620_b73dfe25%2Findex.m3u8"
+  },
+  "config": {
+    "uid": "B5wPHZ",
+    "id1": "3ce2d5ea08720a69",
+    "id2": "d5ea08720a699d9d725b",
+    "code": 103,
+    "type": "auto",
+    "zm_url": null,
+    "enc_url": "rI4ge5v+hEEYbfrJDd0+VUimL6+vjN7NTIHbV3PSOZl85MW2TZR1HU4JjgAV8nHWW+O8WxMFVyvqEq3upkCWBw=="
+  },
+  "result": {
+    "decryptedUrl": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8",
+    "masterUrl": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/index.m3u8",
+    "playlistUrl": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+    "subtitles": [],
+    "pickedVariant": {
+      "bandwidth": 800000,
+      "uri": "https://cdn.yzzy29-play.com/20250820/620_b73dfe25/2000k/hls/mixed.m3u8",
+      "rawUri": "2000k/hls/mixed.m3u8",
+      "rawInf": "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=800000,RESOLUTION=1920x804"
+    }
+  }
+}

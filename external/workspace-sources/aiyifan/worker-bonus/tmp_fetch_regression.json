@@ -1,0 +1,500 @@
+﻿{
+  "ok": true,
+  "startedAt": "2026-02-17T09:52:27.073Z",
+  "finishedAt": "2026-02-17T09:52:37.652Z",
+  "inputUrl": "https://www.iyf.tv/play/rHdszVLeZIT?id=KOUERlGlTbC",
+  "playKey": "rHdszVLeZIT",
+  "queryEpisodeKey": "KOUERlGlTbC",
+  "detail": {
+    "status": 200,
+    "code": 0,
+    "msg": "",
+    "id": "41377",
+    "key": "rHdszVLeZIT",
+    "name": "嗜血法医：杀魔复生第1季",
+    "cid": "0,1,4,152"
+  },
+  "authChain": {
+    "dnTokenPrefix": "fe7bff85",
+    "ok": true,
+    "uid": "130415023",
+    "gid": "1",
+    "expire": "1776505958.80222",
+    "steps": [
+      {
+        "step": "validate_seed",
+        "status": 200,
+        "code": 0,
+        "msg": "",
+        "hasAutoLoginKey": true
+      },
+      {
+        "step": "user_auto_login",
+        "status": 200,
+        "code": 0,
+        "msg": "",
+        "hasAutoLoginToken": true
+      },
+      {
+        "step": "validate_auto_token",
+        "status": 200,
+        "code": 0,
+        "msg": "",
+        "hasUserToken": true
+      }
+    ]
+  },
+  "languageRequests": [
+    {
+      "cid": "KOUERlGlTbC",
+      "taxis": "0",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "0,1,4,152",
+      "taxis": "0",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "rHdszVLeZIT",
+      "taxis": "0",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "41377",
+      "taxis": "0",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "KOUERlGlTbC",
+      "taxis": "1",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "0,1,4,152",
+      "taxis": "1",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "rHdszVLeZIT",
+      "taxis": "1",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    },
+    {
+      "cid": "41377",
+      "taxis": "1",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "episodeCount": 10,
+      "hasQuery": true,
+      "overlapDetail": 0,
+      "sampleKeys": [
+        "QygmvrnQUcQ",
+        "c5lyxSApzae",
+        "KOUERlGlTbC",
+        "Ify0IygMDzk0",
+        "rrzbUzUtBSu",
+        "UD3cVPygJqN",
+        "1KemI6nhFaA",
+        "5NyLUXV3RUA"
+      ]
+    }
+  ],
+  "episodesDiscovered": [
+    {
+      "episode": "01",
+      "key": "QygmvrnQUcQ",
+      "playListId": "1134840",
+      "group": ""
+    },
+    {
+      "episode": "02",
+      "key": "c5lyxSApzae",
+      "playListId": "1134841",
+      "group": ""
+    },
+    {
+      "episode": "03",
+      "key": "KOUERlGlTbC",
+      "playListId": "1136949",
+      "group": ""
+    },
+    {
+      "episode": "04",
+      "key": "Ify0IygMDzk0",
+      "playListId": "1139355",
+      "group": ""
+    },
+    {
+      "episode": "05",
+      "key": "rrzbUzUtBSu",
+      "playListId": "1142010",
+      "group": ""
+    },
+    {
+      "episode": "06",
+      "key": "UD3cVPygJqN",
+      "playListId": "1145549",
+      "group": ""
+    },
+    {
+      "episode": "07",
+      "key": "1KemI6nhFaA",
+      "playListId": "1147788",
+      "group": ""
+    },
+    {
+      "episode": "08",
+      "key": "5NyLUXV3RUA",
+      "playListId": "1149728",
+      "group": ""
+    },
+    {
+      "episode": "09",
+      "key": "qty852ryDTX",
+      "playListId": "1152548",
+      "group": ""
+    },
+    {
+      "episode": "10",
+      "key": "dwh2e0H6R04",
+      "playListId": "1154654",
+      "group": ""
+    }
+  ],
+  "episodesRan": [
+    {
+      "episode": "03",
+      "key": "KOUERlGlTbC",
+      "playListId": "1136949",
+      "group": ""
+    }
+  ],
+  "playResults": [
+    {
+      "episode": "03",
+      "key": "KOUERlGlTbC",
+      "playListId": "1136949",
+      "status": 200,
+      "code": 0,
+      "msg": "",
+      "playingMedia": {
+        "key": "KOUERlGlTbC",
+        "title": "576"
+      },
+      "mediaKey": "KOUERlGlTbC",
+      "uniqueKey": "41377_1136949",
+      "playAttempts": [
+        {
+          "candidate": "epDirect576",
+          "status": 200,
+          "code": 0,
+          "msg": "",
+          "matchOk": true,
+          "keyMatched": true,
+          "uniqueMatched": true,
+          "mediaKey": "KOUERlGlTbC",
+          "playingKey": "KOUERlGlTbC",
+          "uniqueKey": "41377_1136949"
+        }
+      ],
+      "matchedPlayCandidate": "epDirect576",
+      "fallbackPlayCandidate": "",
+      "episodeMatched": true,
+      "match": {
+        "ok": true,
+        "keyMatched": true,
+        "uniqueMatched": true,
+        "expectedKey": "KOUERlGlTbC",
+        "expectedPlayListId": "1136949",
+        "mediaKey": "KOUERlGlTbC",
+        "playingKey": "KOUERlGlTbC",
+        "uniqueKey": "41377_1136949"
+      },
+      "clarity": [
+        {
+          "quality": "1080",
+          "title": "1080",
+          "bitrate": 1080000,
+          "key": "sZWEKATCDU2",
+          "line": "",
+          "isVIP": true,
+          "isEnabled": true,
+          "isBought": false,
+          "isNav": false,
+          "pathAvailable": true,
+          "urls": [
+            "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+            "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1"
+          ]
+        },
+        {
+          "quality": "720",
+          "title": "720",
+          "bitrate": 720000,
+          "key": "tF8J92QbCBB",
+          "line": "",
+          "isVIP": true,
+          "isEnabled": true,
+          "isBought": false,
+          "isNav": false,
+          "pathAvailable": true,
+          "urls": [
+            "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+            "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1"
+          ]
+        },
+        {
+          "quality": "576",
+          "title": "576",
+          "bitrate": 576000,
+          "key": "KOUERlGlTbC",
+          "line": "",
+          "isVIP": false,
+          "isEnabled": true,
+          "isBought": false,
+          "isNav": true,
+          "pathAvailable": true,
+          "urls": [
+            "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5",
+            "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+          ]
+        },
+        {
+          "quality": "auto",
+          "title": "自动",
+          "bitrate": 0,
+          "key": "",
+          "line": "",
+          "isVIP": false,
+          "isEnabled": true,
+          "isBought": false,
+          "isNav": false,
+          "pathAvailable": true,
+          "urls": [
+            "https://m10.iyf.tv/v3/video/masterplaylist/vaHZhUOnPMgMHiJzjlyL0I7ev4Fn29gdsuwD2h3Iun0rzIlxXvBh40",
+            "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+          ]
+        }
+      ],
+      "has1080": true,
+      "sources": {
+        "hls": [
+          "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5",
+          "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+          "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1"
+        ],
+        "dash": [
+          "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+          "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+          "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+        ],
+        "mp4": [],
+        "other": [
+          "https://m10.iyf.tv/v3/video/masterplaylist/vaHZhUOnPMgMHiJzjlyL0I7ev4Fn29gdsuwD2h3Iun0rzIlxXvBh40"
+        ]
+      }
+    }
+  ],
+  "playbackSources": {
+    "sourceUrls": [
+      "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+      "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+      "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+      "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+      "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5",
+      "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5",
+      "https://m10.iyf.tv/v3/video/masterplaylist/vaHZhUOnPMgMHiJzjlyL0I7ev4Fn29gdsuwD2h3Iun0rzIlxXvBh40"
+    ],
+    "hlsUrls": [
+      "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+      "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+      "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+    ],
+    "dashUrls": [
+      "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+      "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+      "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+    ],
+    "mp4Urls": [],
+    "qualityMap": {
+      "576": {
+        "urlCount": 2,
+        "urls": [
+          "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5",
+          "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/manifest.mpd?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+        ],
+        "episodeKeys": [
+          "KOUERlGlTbC"
+        ]
+      },
+      "720": {
+        "urlCount": 2,
+        "urls": [
+          "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/chunklist.m3u8?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1",
+          "https://sss2-e1.pipecdn.vip/ppot/_definst_/mp4:s17/gvod/lxj-sxfysmfsd1j-03-02AD5736F.mp4/manifest.mpd?vendtime=1771494766&vhash=2CnmjqdOBtPRFSjZkw66815m5q0pIQvA5U0BcKN7y-s=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=aa2fe08757c6ee544b8c8143cf143c15&us=1"
+        ],
+        "episodeKeys": [
+          "KOUERlGlTbC"
+        ]
+      },
+      "1080": {
+        "urlCount": 2,
+        "urls": [
+          "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/chunklist.m3u8?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1",
+          "https://sss5-e1.pipecdn.vip/ppot/_definst_/mp4:s5/gvod/lxj-sxfysmfsd1j-03-0212D23BC-hd.mp4/manifest.mpd?vendtime=1771494766&vhash=FBCGnShck2xO2iOoT0iUonEecOJMJqq7fXih3ggBkRM=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=363880d76a168df9353fab40a0492aec&us=1"
+        ],
+        "episodeKeys": [
+          "KOUERlGlTbC"
+        ]
+      },
+      "auto": {
+        "urlCount": 2,
+        "urls": [
+          "https://m10.iyf.tv/v3/video/masterplaylist/vaHZhUOnPMgMHiJzjlyL0I7ev4Fn29gdsuwD2h3Iun0rzIlxXvBh40",
+          "https://global.dudupro.com/s6/ppot/_definst_/mp4:s15/hvod/lxj-sxfysmfsd1j-03-030B344FB.mp4/chunklist.m3u8?vendtime=1771494766&vhash=4j1yEgwny-zKI2bgB_ayPySxLvpaXKXVKWjUzymvTD4=&vCustomParameter=130415023_144.24.69.162_KR_1_0_1&lb=e4d3574d3eb84872fab7a085679bd7ec&us=1&proxy=SpOjPJ4kT6PYPsHaP2vZRsryEPiMifYNEZCnCxAoifSnjxQz7CsBMKnBcTbRcLoOMnZP6ukOsyslZcR5hAObpSokxkyMDaRYvZRsryEPiMifYNDpAxlBiuC9SnjxD&proxyize=5"
+        ],
+        "episodeKeys": [
+          "KOUERlGlTbC"
+        ]
+      }
+    },
+    "qualityLevels": [
+      "1080",
+      "720",
+      "576",
+      "auto"
+    ],
+    "has1080": true
+  },
+  "subtitles": [],
+  "subtitleStatus": "not_found",
+  "notes": [
+    "字幕按评委口径为 not_found。",
+    "已发现 1080 资源。"
+  ],
+  "cookies": {
+    "dn_config": "device=desktop&player=CkPlayer&tech=HLS&region=KR&country=KR&lang=none&v=1&isDark=1&volume=0.8"
+  },
+  "trace": [
+    {
+      "step": "play_page",
+      "status": 200,
+      "hasInject": true,
+      "hasPConfig": true
+    },
+    {
+      "step": "m10_auth_chain",
+      "ok": true,
+      "uid": "130415023",
+      "gid": "1",
+      "seedPrefix": "fe7bff85"
+    }
+  ]
+}

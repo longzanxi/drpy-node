@@ -7,7 +7,10 @@ import {fileURLToPath} from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..', '..');
-const DEFAULT_WORKSPACE = path.resolve(ROOT, '..');
+const DEFAULT_INTERNAL_WORKSPACE = path.resolve(ROOT, 'external', 'workspace-sources');
+const DEFAULT_WORKSPACE = fs.existsSync(DEFAULT_INTERNAL_WORKSPACE)
+    ? DEFAULT_INTERNAL_WORKSPACE
+    : path.resolve(ROOT, '..');
 
 const nowIso = () => new Date().toISOString();
 const ts = (d = new Date()) =>

@@ -1,0 +1,154 @@
+{
+  "batch": "20260223-093856",
+  "startedAt": "2026-02-23T01:38:56.545Z",
+  "finishedAt": "2026-02-23T01:38:56.873Z",
+  "workspaceRoot": "d:\\code\\yingshi",
+  "targetRoot": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources",
+  "includeDirs": [
+    ".4kvm.tv",
+    ".cz233.com",
+    ".netflixgc.com",
+    "播剧影视",
+    "独播库",
+    "aiyifan",
+    "bgm.girigirilove.com",
+    "kuangren.us",
+    "kanbot.com",
+    "iyf.tv",
+    "libvio"
+  ],
+  "cleanTarget": true,
+  "apply": true,
+  "fullCopy": false,
+  "totals": {
+    "totalDirs": 11,
+    "copiedDirs": 11,
+    "missingDirs": 0,
+    "totalFiles": 36,
+    "totalBytes": 309542,
+    "totalSizeMB": 0.3
+  },
+  "dirResults": [
+    {
+      "dir": ".4kvm.tv",
+      "status": "copied",
+      "files": 1,
+      "bytes": 700,
+      "src": "d:\\code\\yingshi\\.4kvm.tv",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\.4kvm.tv",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": ".cz233.com",
+      "status": "copied",
+      "files": 1,
+      "bytes": 24066,
+      "src": "d:\\code\\yingshi\\.cz233.com",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\.cz233.com",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": ".netflixgc.com",
+      "status": "copied",
+      "files": 1,
+      "bytes": 12083,
+      "src": "d:\\code\\yingshi\\.netflixgc.com",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\.netflixgc.com",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "播剧影视",
+      "status": "copied",
+      "files": 1,
+      "bytes": 1388,
+      "src": "d:\\code\\yingshi\\播剧影视",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\播剧影视",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "独播库",
+      "status": "copied",
+      "files": 16,
+      "bytes": 109353,
+      "src": "d:\\code\\yingshi\\独播库",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\独播库",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "aiyifan",
+      "status": "copied",
+      "files": 6,
+      "bytes": 64624,
+      "src": "d:\\code\\yingshi\\aiyifan",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\aiyifan",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "bgm.girigirilove.com",
+      "status": "copied",
+      "files": 1,
+      "bytes": 10042,
+      "src": "d:\\code\\yingshi\\bgm.girigirilove.com",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\bgm.girigirilove.com",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "kuangren.us",
+      "status": "copied",
+      "files": 2,
+      "bytes": 3664,
+      "src": "d:\\code\\yingshi\\kuangren.us",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\kuangren.us",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "kanbot.com",
+      "status": "copied",
+      "files": 1,
+      "bytes": 1806,
+      "src": "d:\\code\\yingshi\\kanbot.com",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\kanbot.com",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "iyf.tv",
+      "status": "copied",
+      "files": 3,
+      "bytes": 25029,
+      "src": "d:\\code\\yingshi\\iyf.tv",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\iyf.tv",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    },
+    {
+      "dir": "libvio",
+      "status": "copied",
+      "files": 3,
+      "bytes": 56787,
+      "src": "d:\\code\\yingshi\\libvio",
+      "dst": "D:\\code\\yingshi\\drpy-node\\external\\workspace-sources\\libvio",
+      "skippedDirs": [],
+      "skippedFiles": [],
+      "missingRuleItems": []
+    }
+  ]
+}

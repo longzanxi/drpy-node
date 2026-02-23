@@ -44,10 +44,12 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /opt/venv /opt/venv
 COPY . .
+COPY docker/entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 RUN if [ -f .env.development ] && [ ! -f .env ]; then cp .env.development .env; fi \
     && mkdir -p logs data/source-checker data/ctf-local-adapter \
     && if [ ! -f config/env.json ]; then echo '{}' > config/env.json; fi \
+    && chmod +x /usr/local/bin/docker-entrypoint.sh \
     && chown -R node:node /app /opt/venv
 
 USER node
@@ -57,5 +59,5 @@ EXPOSE 5757 57575
 HEALTHCHECK --interval=30s --timeout=8s --start-period=20s --retries=3 \
     CMD curl -fsS http://127.0.0.1:5757/health || exit 1
 
-ENTRYPOINT ["/usr/bin/tini", "--"]
+ENTRYPOINT ["/usr/bin/tini", "--", "/usr/local/bin/docker-entrypoint.sh"]
 CMD ["node", "index.js"]

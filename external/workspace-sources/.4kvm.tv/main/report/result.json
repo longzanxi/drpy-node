@@ -1,0 +1,13 @@
+﻿{
+  "input": "https://www.4kvm.tv/movies/hsbdla",
+  "postid": 14975,
+  "dooplayer_source": 1,
+  "movie_url": "https://www.4kvm.tv/movies/hsbdla",
+  "art_url": "https://www.4kvm.tv/artplayer?mvsource=0&id=14975&type=hls",
+  "ws_url": "https://play.kvmplay.org/ws/dc4a95d1771214316/58Njk5MWVkMmMzOTJlYiQzNTY3JDEkMTc3MTE3MTExNg6991ed2c392e8.svg",
+  "play_url": "https://play.kvmplay.org/m3/dc4a95d1771214316/58Njk5MWVkMmMzOTJlYiQzNTY3JDEkMTc3MTE3MTExNg6991ed2c392e8.m3u8",
+  "hls_subtitles": [],
+  "subtitle_url": "https://4k.danmk.info/api.php?postid=14975.0&action=get_danmuku",
+  "danmu_url": "https://4k.danmk.info/api.php?postid=14975.0&action=get_danmuku",
+  "danmu_count": 2651
+}
