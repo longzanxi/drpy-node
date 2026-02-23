@@ -6,7 +6,7 @@ import {validatePwd} from '../utils/api_validate.js';
 const CHN_BOJU = '\u64ad\u5267\u5f71\u89c6';
 const CHN_DBKK = '\u72ec\u64ad\u5e93';
 
-const SITE_IDS = [
+const ALL_SITE_IDS = [
     'kvm4',
     'cz233',
     'netflixgc',
@@ -19,6 +19,28 @@ const SITE_IDS = [
     'iyf',
     'libvio',
 ];
+
+const DEFAULT_DISABLED_SITE_IDS = new Set(['ysxq', 'kanbot', 'libvio']);
+
+function parseSiteIdsFromEnv() {
+    const raw = String(process.env.CTF_LOCAL_ADAPTER_SITE_IDS || '').trim();
+    if (!raw) return null;
+    const allow = new Set(ALL_SITE_IDS);
+    const picked = raw.split(',').map((x) => x.trim()).filter((x) => allow.has(x));
+    return uniq(picked);
+}
+
+function resolveEnabledSiteIds() {
+    const explicit = parseSiteIdsFromEnv();
+    if (explicit && explicit.length) return explicit;
+
+    const includeUnstable = ['1', 'true', 'yes', 'on']
+        .includes(String(process.env.CTF_LOCAL_INCLUDE_UNSTABLE || '').trim().toLowerCase());
+    if (includeUnstable) return [...ALL_SITE_IDS];
+    return ALL_SITE_IDS.filter((id) => !DEFAULT_DISABLED_SITE_IDS.has(id));
+}
+
+const SITE_IDS = resolveEnabledSiteIds();
 
 const CTF_INTERNAL_WORKSPACE_REL = path.join('external', 'workspace-sources');
 const CTF_EXPECTED_DIRS = [
@@ -977,7 +999,10 @@ export default (fastify, options, done) => {
             ok: true,
             service: 'ctf-local-adapter',
             now: nowIso(),
+            all_site_count: ALL_SITE_IDS.length,
             site_count: SITE_IDS.length,
+            site_ids: SITE_IDS,
+            disabled_default_site_ids: [...DEFAULT_DISABLED_SITE_IDS],
             workspace_root: workspaceRoot,
             workspace_source: resolvedWorkspace.source,
             workspace_markers: resolvedWorkspace.markers,
