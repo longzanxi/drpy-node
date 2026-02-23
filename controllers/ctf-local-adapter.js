@@ -818,6 +818,15 @@ async function runKanbotLocalScript(workspaceRoot, playUrl) {
     return one.sources.length ? one : null;
 }
 
+async function hasPlayableCandidate(urls, maxProbe = 3) {
+    const cands = uniq(urls).slice(0, Math.max(1, maxProbe));
+    for (const one of cands) {
+        const ok = await probePlayable(one, Math.min(PROBE_TIMEOUT_MS, 5_000));
+        if (ok) return true;
+    }
+    return false;
+}
+
 function parseLibvioScriptResult(parsed) {
     const variantUrls = Array.isArray(parsed?.debug?.variants)
         ? parsed.debug.variants.map((x) => (x && typeof x.url === 'string' ? x.url : ''))
@@ -989,20 +998,26 @@ async function extractKanbot(context) {
     u.searchParams.set('play_url', workerPlayUrl);
     u.searchParams.set('max_depth', '2');
     const r = await fetchJsonWithTimeoutNoThrow(u.toString(), WORKER_TIMEOUT_MS);
+    let workerResult = null;
     if (r.status === 200 && r.body && r.body.ok === true) {
         const fromWorker = parseKanbotScriptResult(r.body);
         if (fromWorker.sources.length) {
-            return {
-                sources: fromWorker.sources,
-                subtitles: fromWorker.subtitles,
-                note: `worker_ok=true play=${workerPlayUrl}`,
-            };
+            workerResult = fromWorker;
+            const workerPlayable = await hasPlayableCandidate(fromWorker.sources, 3);
+            if (workerPlayable) {
+                return {
+                    sources: fromWorker.sources,
+                    subtitles: fromWorker.subtitles,
+                    note: `worker_ok=true play=${workerPlayUrl}`,
+                };
+            }
         }
     }
 
     const enableLocalScript = ['1', 'true', 'yes', 'on']
         .includes(String(process.env.CTF_LOCAL_KANBOT_ENABLE_LOCAL_SCRIPT || '').trim().toLowerCase());
-    if (enableLocalScript) {
+    const shouldRunLocalScript = enableLocalScript || !workerResult || workerResult.sources.length > 0;
+    if (shouldRunLocalScript) {
         for (const playUrl of candidatePlayUrls.slice(0, 2)) {
             const fromLocal = await runKanbotLocalScript(context.workspaceRoot, playUrl);
             if (!fromLocal || !fromLocal.sources.length) continue;
@@ -1012,6 +1027,14 @@ async function extractKanbot(context) {
                 note: `local_script_ok=true play=${playUrl}`,
             };
         }
+    }
+
+    if (workerResult && workerResult.sources.length) {
+        return {
+            sources: workerResult.sources,
+            subtitles: workerResult.subtitles,
+            note: `worker_unstable(status=${r.status}) fallback_worker_result=true play=${workerPlayUrl}`,
+        };
     }
 
     const snap = safeJson(paths.kanbotSnapshot);
