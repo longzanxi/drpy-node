@@ -20,7 +20,7 @@ const ALL_SITE_IDS = [
     'libvio',
 ];
 
-const DEFAULT_DISABLED_SITE_IDS = new Set(['ysxq', 'kanbot', 'libvio']);
+const DEFAULT_DISABLED_SITE_IDS = new Set(['libvio']);
 
 function parseSiteIdsFromEnv() {
     const raw = String(process.env.CTF_LOCAL_ADAPTER_SITE_IDS || '').trim();
@@ -199,6 +199,26 @@ function uniq(arr) {
     return [...new Set((arr || []).filter((x) => typeof x === 'string' && x.trim()).map((x) => x.trim()))];
 }
 
+function parseCsvList(raw) {
+    return uniq(String(raw || '').split(',').map((x) => x.trim()).filter(Boolean));
+}
+
+function normalizeSubtitleValues(rawList) {
+    const out = [];
+    for (const one of (Array.isArray(rawList) ? rawList : [])) {
+        if (typeof one === 'string' && one.trim()) {
+            out.push(one.trim());
+            continue;
+        }
+        if (one && typeof one === 'object') {
+            if (typeof one.uri === 'string' && one.uri.trim()) out.push(one.uri.trim());
+            else if (typeof one.url === 'string' && one.url.trim()) out.push(one.url.trim());
+            else if (typeof one.src === 'string' && one.src.trim()) out.push(one.src.trim());
+        }
+    }
+    return uniq(out);
+}
+
 function dirExists(dirPath) {
     try {
         return fs.existsSync(dirPath) && fs.statSync(dirPath).isDirectory();
@@ -334,6 +354,28 @@ function fetchJsonWithTimeoutNoThrow(url, timeoutMs = WORKER_TIMEOUT_MS) {
         })
         .catch((error) => ({status: 0, body: null, text: '', error: error.message || String(error)}))
         .finally(() => clearTimeout(timer));
+}
+
+function fetchTextWithTimeoutNoThrow(url, timeoutMs = WORKER_TIMEOUT_MS, headers = undefined) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    return fetch(url, {signal: controller.signal, headers, redirect: 'follow'})
+        .then(async (res) => ({status: res.status, text: await res.text(), url: res.url || url}))
+        .catch((error) => ({status: 0, text: '', url: String(url || ''), error: error.message || String(error)}))
+        .finally(() => clearTimeout(timer));
+}
+
+function collectPathMatchesAsAbs(text, base, pattern) {
+    const src = String(text || '');
+    if (!src) return [];
+    const out = [];
+    for (const m of src.matchAll(pattern)) {
+        const raw = String(m[1] || m[0] || '').trim();
+        if (!raw) continue;
+        const abs = asAbsUrl(raw, base);
+        if (abs) out.push(abs);
+    }
+    return uniq(out);
 }
 
 async function probePlayable(url, timeoutMs = PROBE_TIMEOUT_MS) {
@@ -581,7 +623,66 @@ async function extractNetflixgc() {
     };
 }
 
-async function extractYsxq(paths) {
+async function discoverYsxqPlayUrls(maxDetailPages = 4, maxPlayPages = 12) {
+    const origin = 'https://www.ysxq.cc';
+    const home = await fetchTextWithTimeoutNoThrow(`${origin}/`, Math.max(8_000, WORKER_TIMEOUT_MS));
+    if (home.status !== 200 || !home.text) return [];
+    const directPlayUrls = collectPathMatchesAsAbs(home.text, origin, /\/vodplay\/\d+-\d+-\d+\.html/gi);
+    const detailUrls = collectPathMatchesAsAbs(home.text, origin, /\/voddetail\/\d+\.html/gi).slice(0, Math.max(1, maxDetailPages));
+    if (!detailUrls.length) return directPlayUrls.slice(0, maxPlayPages);
+
+    const detailResponses = await Promise.all(detailUrls.map((u) =>
+        fetchTextWithTimeoutNoThrow(u, Math.max(8_000, WORKER_TIMEOUT_MS)),
+    ));
+    const fromDetails = [];
+    for (const one of detailResponses) {
+        if (one.status !== 200 || !one.text) continue;
+        fromDetails.push(...collectPathMatchesAsAbs(one.text, origin, /\/vodplay\/\d+-\d+-\d+\.html/gi));
+    }
+    return uniq([...directPlayUrls, ...fromDetails]).slice(0, maxPlayPages);
+}
+
+function parseYsxqScriptResult(parsed) {
+    const result = parsed?.result || {};
+    const sources = uniq([result.playlistUrl, result.masterUrl, result.decryptedUrl, result.url].filter(isMediaUrl));
+    const subtitles = normalizeSubtitleValues(result.subtitles);
+    return {sources, subtitles};
+}
+
+async function runYsxqLocalScript(workspaceRoot, playUrl) {
+    const parsed = runNodeJson(
+        workspaceRoot,
+        [path.join(CHN_BOJU, 'main', 'extract-play-source.js'), playUrl, '--timeout-ms', String(Math.max(12_000, WORKER_TIMEOUT_MS))],
+        80_000,
+    );
+    if (!parsed || typeof parsed !== 'object') return null;
+    const one = parseYsxqScriptResult(parsed);
+    return one.sources.length ? one : null;
+}
+
+async function extractYsxq(context) {
+    const paths = context.paths;
+    const manualPlayUrls = parseCsvList(process.env.CTF_LOCAL_YSXQ_PLAY_URLS || process.env.CTF_LOCAL_YSXQ_PLAY_URL || '')
+        .map((x) => asAbsUrl(x, 'https://www.ysxq.cc'))
+        .filter(Boolean);
+    const discoveredPlayUrls = await discoverYsxqPlayUrls(4, 10);
+    const candidatePlays = uniq([...manualPlayUrls, ...discoveredPlayUrls]).slice(0, 3);
+    const localSources = [];
+    const localSubtitles = [];
+    for (const playUrl of candidatePlays) {
+        const one = await runYsxqLocalScript(context.workspaceRoot, playUrl);
+        if (!one || !one.sources.length) continue;
+        localSources.push(...one.sources);
+        localSubtitles.push(...one.subtitles);
+    }
+    if (localSources.length) {
+        return {
+            sources: uniq(localSources),
+            subtitles: uniq(localSubtitles),
+            note: `local_script_ok=true plays=${candidatePlays.length}`,
+        };
+    }
+
     const u = new URL('https://ysxq-ctf-extractor.knieclarine.workers.dev/extract');
     u.searchParams.set('id', '116295');
     u.searchParams.set('sid', '1');
@@ -690,25 +791,158 @@ async function extractKvm4(paths) {
     };
 }
 
+async function discoverKanbotPlayUrls(maxPlayPages = 12) {
+    const origin = 'https://v.ikanbot.com';
+    const home = await fetchTextWithTimeoutNoThrow(`${origin}/`, Math.max(8_000, WORKER_TIMEOUT_MS));
+    if (home.status !== 200 || !home.text) return [];
+    return collectPathMatchesAsAbs(home.text, origin, /\/play\/\d+/gi).slice(0, maxPlayPages);
+}
+
+function parseKanbotScriptResult(parsed) {
+    const sources = uniq([
+        ...(Array.isArray(parsed?.final_playlists) ? parsed.final_playlists : []),
+        ...(Array.isArray(parsed?.sources) ? parsed.sources.map((x) => (x ? x.url : '')) : []),
+    ].filter(isMediaUrl));
+    const subtitles = normalizeSubtitleValues(parsed?.subtitle_urls);
+    return {sources, subtitles};
+}
+
+async function runKanbotLocalScript(workspaceRoot, playUrl) {
+    const parsed = runNodeJson(
+        workspaceRoot,
+        [path.join('kanbot.com', 'main', 'ikanbot_keygen.js'), playUrl, '--max-depth', '0'],
+        90_000,
+    );
+    if (!parsed || typeof parsed !== 'object') return null;
+    const one = parseKanbotScriptResult(parsed);
+    return one.sources.length ? one : null;
+}
+
+function parseLibvioScriptResult(parsed) {
+    const variantUrls = Array.isArray(parsed?.debug?.variants)
+        ? parsed.debug.variants.map((x) => (x && typeof x.url === 'string' ? x.url : ''))
+        : [];
+    const sources = uniq([parsed?.source, parsed?.master, ...variantUrls].filter(isMediaUrl));
+    const subtitles = normalizeSubtitleValues(parsed?.subtitles);
+    return {sources, subtitles};
+}
+
+async function discoverLibvioOrigins(startUrl = 'https://www.libvio.app/') {
+    const discovered = [];
+    const home = await fetchTextWithTimeoutNoThrow(startUrl, Math.max(8_000, WORKER_TIMEOUT_MS));
+    if (home.status === 200 && home.text) {
+        const urls = extractAllUrls(home.text).filter((u) => /libvio\./i.test(u));
+        for (const one of urls) {
+            try {
+                discovered.push(new URL(one).origin);
+            } catch {
+            }
+        }
+    }
+    return uniq([
+        ...parseCsvList(process.env.CTF_LOCAL_LIBVIO_ORIGINS || ''),
+        ...discovered,
+        'https://www.libvio.site',
+        'https://www.libvio.mov',
+        'https://www.libvio.app',
+        'https://libvio.app',
+        'https://libvio.mov',
+    ]);
+}
+
+function buildLibvioPlayCandidates(origins) {
+    const envCandidates = parseCsvList(process.env.CTF_LOCAL_LIBVIO_PLAY_URLS || '');
+    const defaultPlayPaths = [
+        '/play/714893137-4-1.html',
+        '/play/714892162-5-1.html',
+    ];
+    const out = [];
+    for (const raw of envCandidates) {
+        if (/^https?:\/\//i.test(raw)) out.push(raw);
+        else {
+            for (const origin of origins) {
+                const u = asAbsUrl(raw, origin);
+                if (u) out.push(u);
+            }
+        }
+    }
+    for (const origin of origins) {
+        for (const p of defaultPlayPaths) {
+            const u = asAbsUrl(p, origin);
+            if (u) out.push(u);
+        }
+    }
+    return uniq(out);
+}
+
 async function extractLibvio(context) {
     const workspaceRoot = context.workspaceRoot;
     const rootDir = context.rootDir;
     const lastGood = loadLibvioLastGood(rootDir);
-    const parsed = runNodeJson(
-        workspaceRoot,
-        [path.join('libvio', 'ctf_libvio.js'), '--play', 'https://www.libvio.site/play/714893137-4-1.html', '--json'],
-    );
+    const refreshLibvio = ['1', 'true', 'yes', 'on']
+        .includes(String(process.env.CTF_LOCAL_LIBVIO_REFRESH || '').trim().toLowerCase());
+    if (!refreshLibvio && lastGood && lastGood.sources.length) {
+        return {
+            sources: lastGood.sources,
+            subtitles: lastGood.subtitles,
+            note: `last_good_cache=true age_s=${lastGood.ageSec}`,
+        };
+    }
 
-    if (parsed && typeof parsed === 'object') {
-        const variantUrls = Array.isArray(parsed?.debug?.variants)
-            ? parsed.debug.variants.map((x) => (x && typeof x.url === 'string' ? x.url : ''))
-            : [];
-        const sources = uniq([parsed.source, parsed.master, ...variantUrls].filter(isMediaUrl));
-        const nonExpired = sources.filter((u) => !isExpiredSignedUrl(u));
-        const subtitles = uniq((Array.isArray(parsed.subtitles) ? parsed.subtitles : []).filter(Boolean));
-        if (nonExpired.length) {
-            saveLibvioLastGood(rootDir, nonExpired, subtitles, 'from_node_script');
-            return {sources: nonExpired, subtitles, note: 'local_script_ok=true'};
+    const scriptPath = path.join('libvio', 'ctf_libvio.js');
+    const normalizeLibvio = (parsed) => {
+        const one = parseLibvioScriptResult(parsed);
+        const nonExpired = one.sources.filter((u) => !isExpiredSignedUrl(u));
+        return {
+            sources: nonExpired.length ? nonExpired : one.sources,
+            subtitles: one.subtitles,
+        };
+    };
+
+    const origins = (await discoverLibvioOrigins(process.env.CTF_LOCAL_LIBVIO_START_URL || 'https://www.libvio.app/')).slice(0, 5);
+    const playCandidates = buildLibvioPlayCandidates(origins).slice(0, 6);
+    for (const playUrl of playCandidates) {
+        const parsed = runNodeJson(
+            workspaceRoot,
+            [scriptPath, '--play', playUrl, '--json'],
+            80_000,
+        );
+        if (!parsed || typeof parsed !== 'object') continue;
+        const one = normalizeLibvio(parsed);
+        if (!one.sources.length) continue;
+        saveLibvioLastGood(rootDir, one.sources, one.subtitles, `from_node_script_play ${playUrl}`);
+        return {sources: one.sources, subtitles: one.subtitles, note: `local_script_play_ok=true play=${playUrl}`};
+    }
+
+    const enableScan = ['1', 'true', 'yes', 'on']
+        .includes(String(process.env.CTF_LOCAL_LIBVIO_ENABLE_SCAN || '').trim().toLowerCase());
+    if (enableScan) {
+        for (const origin of origins.slice(0, 2)) {
+            const parsed = runNodeJson(
+                workspaceRoot,
+                [scriptPath, '--origin', origin, '--scan', '--max-details', '24', '--max-plays', '80', '--show-seeds', '3', '--show-pages', '8', '--json'],
+                95_000,
+            );
+            if (!parsed || typeof parsed !== 'object') continue;
+            const one = normalizeLibvio(parsed);
+            if (!one.sources.length) continue;
+            saveLibvioLastGood(rootDir, one.sources, one.subtitles, `from_node_script_scan ${origin}`);
+            return {sources: one.sources, subtitles: one.subtitles, note: `local_script_scan_ok=true origin=${origin}`};
+        }
+
+        if (origins.length) {
+            const parsed = runNodeJson(
+                workspaceRoot,
+                [scriptPath, '--origin', origins[0], '--scan-deep', '--max-details', '80', '--max-plays', '260', '--show-seeds', '5', '--show-pages', '24', '--json'],
+                120_000,
+            );
+            if (parsed && typeof parsed === 'object') {
+                const one = normalizeLibvio(parsed);
+                if (one.sources.length) {
+                    saveLibvioLastGood(rootDir, one.sources, one.subtitles, `from_node_script_scan_deep ${origins[0]}`);
+                    return {sources: one.sources, subtitles: one.subtitles, note: `local_script_scan_deep_ok=true origin=${origins[0]}`};
+                }
+            }
         }
     }
 
@@ -742,34 +976,50 @@ async function extractLibvio(context) {
     };
 }
 
-async function extractKanbot(paths) {
+async function extractKanbot(context) {
+    const paths = context.paths;
+    const manualPlayUrls = parseCsvList(process.env.CTF_LOCAL_KANBOT_PLAY_URLS || process.env.CTF_LOCAL_KANBOT_PLAY_URL || '')
+        .map((x) => asAbsUrl(x, 'https://v.ikanbot.com'))
+        .filter(Boolean);
+    const discoveredPlayUrls = await discoverKanbotPlayUrls(10);
+    const candidatePlayUrls = uniq([...manualPlayUrls, ...discoveredPlayUrls]);
+    const workerPlayUrl = candidatePlayUrls[0] || 'https://v.ikanbot.com/play/962794';
+
     const u = new URL('https://ikanbot-ctf-extractor.knieclarine.workers.dev/extract');
-    u.searchParams.set('play_url', 'https://v.ikanbot.com/play/962794');
+    u.searchParams.set('play_url', workerPlayUrl);
     u.searchParams.set('max_depth', '2');
     const r = await fetchJsonWithTimeoutNoThrow(u.toString(), WORKER_TIMEOUT_MS);
     if (r.status === 200 && r.body && r.body.ok === true) {
-        const fromWorker = uniq([
-            ...(Array.isArray(r.body.final_playlists) ? r.body.final_playlists : []),
-            ...(Array.isArray(r.body.sources) ? r.body.sources.map((x) => (x ? x.url : '')) : []),
-        ].filter(isMediaUrl));
-        if (fromWorker.length) {
+        const fromWorker = parseKanbotScriptResult(r.body);
+        if (fromWorker.sources.length) {
             return {
-                sources: fromWorker,
-                subtitles: uniq(Array.isArray(r.body.subtitle_urls) ? r.body.subtitle_urls : []),
-                note: 'worker_ok=true',
+                sources: fromWorker.sources,
+                subtitles: fromWorker.subtitles,
+                note: `worker_ok=true play=${workerPlayUrl}`,
+            };
+        }
+    }
+
+    const enableLocalScript = ['1', 'true', 'yes', 'on']
+        .includes(String(process.env.CTF_LOCAL_KANBOT_ENABLE_LOCAL_SCRIPT || '').trim().toLowerCase());
+    if (enableLocalScript) {
+        for (const playUrl of candidatePlayUrls.slice(0, 2)) {
+            const fromLocal = await runKanbotLocalScript(context.workspaceRoot, playUrl);
+            if (!fromLocal || !fromLocal.sources.length) continue;
+            return {
+                sources: fromLocal.sources,
+                subtitles: fromLocal.subtitles,
+                note: `local_script_ok=true play=${playUrl}`,
             };
         }
     }
 
     const snap = safeJson(paths.kanbotSnapshot);
-    const snapSources = uniq([
-        ...(Array.isArray(snap?.final_playlists) ? snap.final_playlists : []),
-        ...(Array.isArray(snap?.sources) ? snap.sources.map((x) => (x ? x.url : '')) : []),
-    ].filter(isMediaUrl));
-    if (snapSources.length) {
+    const fromSnap = parseKanbotScriptResult(snap || {});
+    if (fromSnap.sources.length) {
         return {
-            sources: snapSources,
-            subtitles: uniq(Array.isArray(snap?.subtitle_urls) ? snap.subtitle_urls : []),
+            sources: fromSnap.sources,
+            subtitles: fromSnap.subtitles,
             note: `worker_unavailable(status=${r.status}) fallback_snapshot=true`,
         };
     }
@@ -878,12 +1128,12 @@ async function extractBySite(siteId, context) {
     if (siteId === 'kvm4') return extractKvm4(context.paths);
     if (siteId === 'cz233') return extractCz233();
     if (siteId === 'netflixgc') return extractNetflixgc();
-    if (siteId === 'ysxq') return extractYsxq(context.paths);
+    if (siteId === 'ysxq') return extractYsxq(context);
     if (siteId === 'dbkk') return extractDbkk(context.paths);
     if (siteId === 'aiyifan') return extractAiyifan(context.paths);
     if (siteId === 'bgm') return extractBgm();
     if (siteId === 'kuangren') return extractKuangren(context.paths);
-    if (siteId === 'kanbot') return extractKanbot(context.paths);
+    if (siteId === 'kanbot') return extractKanbot(context);
     if (siteId === 'iyf') return extractIyf(context.paths);
     if (siteId === 'libvio') return extractLibvio(context);
     throw new Error(`unsupported site: ${siteId}`);
